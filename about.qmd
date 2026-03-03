@@ -1,5 +1,13 @@
 ---
 title: "About"
+theme: lux
+image: DennisChumakov_Headshot.jpg
+about: 
+    template: jolla
+    links:
+        - icon: linkedin
+          href: https://www.linkedin.com/in/dennischumakov/
+
 ---
 
 My name is Dennis Chumakov. I am a final year student....

@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Dennis Chumakov"
 theme: lux
 image: DennisChumakov_Headshot.jpg
 about: 
@@ -10,6 +10,6 @@ about:
 
 ---
 
-My name is Dennis Chumakov. I am a final year student....
+A final year student working towards...
 
 

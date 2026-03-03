@@ -6,9 +6,10 @@ website:
   title: "Dennis Chumakov"
   navbar:
     left:
+      - href: about.qmd
+        text: About Me
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Home 
 
 format:
   html:

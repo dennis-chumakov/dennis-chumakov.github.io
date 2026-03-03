@@ -5,7 +5,7 @@ project:
 website:
   title: "Dennis Chumakov"
   navbar:
-    left:
+    right:
       - href: about.qmd
         text: About Me
       - href: index.qmd

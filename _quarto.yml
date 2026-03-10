@@ -4,10 +4,10 @@ project:
 
 website:
   title: "Dennis Chumakov"
-  favicon: favicon.ico
+  favicon: images\favicon.ico
   navbar:
     title: false
-    logo: dc_logo.png
+    logo: images\dc_logo.png
     right:
       - href: about.qmd
         text: About Me

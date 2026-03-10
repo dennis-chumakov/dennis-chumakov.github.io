@@ -1,7 +1,7 @@
 ---
 title: "Dennis Chumakov"
 theme: lux
-image: DennisChumakov_Headshot.jpg
+image: images\DennisChumakov_Headshot.jpg
 about: 
     template: jolla
     links:

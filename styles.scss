@@ -1,6 +1,9 @@
 /*-- scss:defaults --*/
 
-// Website colours
+// Import font
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
+
+// Colours
 $light-sage: #8aa68b;
 $sage-gray: #d2d6d2;
 $brown-gray: #474336;
@@ -18,14 +21,25 @@ $navbar-light-active-color: $white-active;
 
 /*-- scss:rules --*/
 
-// Navbar links 
+body {
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar,
+.navbar .nav-link,
+.navbar-brand {
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+/* Navbar links */
 .navbar .nav-link {
   position: relative;
   color: $brown-gray !important;
   transition: color 0.25s ease;
 }
 
-//Underline animation for navbar links
+/* Underline animation */
 .navbar .nav-link::after {
   content: "";
   position: absolute;

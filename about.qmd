@@ -1,6 +1,5 @@
 ---
 title: "Dennis Chumakov"
-theme: lux
 image: images\DennisChumakov_Headshot.jpg
 about: 
     template: jolla
@@ -10,6 +9,14 @@ about:
 
 ---
 
-A final year student working towards...
+I am a final-year business student with a strong interest in data analytics, operations, and applied problem-solving.
+
+I am currently completing a dual degree in Business Administration at the Goodman School of Business, Brock University (St. Catharines, Ontario, Canada), and Global Business at Dublin City University Business School (Dublin, Ireland). Through this program, I have developed experience in data analysis, research, and project-based learning across a range of business contexts.
+
+Through academic projects and internship experience, I have worked with tools such as Excel and Power BI to analyse data, build dashboards, and present insights to non-technical audiences. I enjoy combining analytical thinking with practical business decision-making and working on projects that have real-world relevance.
+
+I am a motivated and detail-oriented individual who values clear communication, structured thinking, and continuous learning.
+
+Outside of my academic and professional work, I enjoy cooking for friends and family, travelling, and photography. These interests allow me to explore new places and perspectives while also giving me a creative outlet.
 
 

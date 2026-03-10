@@ -32,14 +32,21 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Google Sans Flex", sans-serif;
 }
 
-/* Navbar links */
+//Navbar Logo
+.navbar-brand img {
+  max-height: 70px;
+  width: auto;
+}
+
+
+// Navbar links
 .navbar .nav-link {
   position: relative;
   color: $brown-gray !important;
   transition: color 0.25s ease;
 }
 
-/* Underline animation */
+// Underline animation for navbar links 
 .navbar .nav-link::after {
   content: "";
   position: absolute;
@@ -51,7 +58,7 @@ h1, h2, h3, h4, h5, h6,
   transition: width 0.25s ease;
 }
 
-/* Hover state */
+// Hover state
 .navbar .nav-link:hover {
   color: $white-active !important;
 }
@@ -60,7 +67,7 @@ h1, h2, h3, h4, h5, h6,
   width: 100%;
 }
 
-/* Active page */
+// Active page
 .navbar .nav-link.active {
   color: $white-active !important;
 }

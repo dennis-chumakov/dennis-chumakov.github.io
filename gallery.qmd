@@ -1,0 +1,23 @@
+---
+title: "Gallery"
+---
+
+# Photography
+
+Outside of my academic and professional work, I enjoy photography and capturing moments from travel and everyday life.
+
+## Travel
+
+![](images\travel01.jpeg)
+
+![](images\travel02.PNG)
+
+![](images\travel03.jpeg)
+
+---
+
+## Food & Cooking
+
+![](images\food01.jpeg)
+
+![](images\food02.jpeg)

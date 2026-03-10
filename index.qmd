@@ -1,7 +1,17 @@
 ---
-title: "Welcome to my website!"
+title: "Home"
 ---
 
-This is a Quarto website.
+# Welcome to My Portfolio
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This website serves as my e-portfolio and was created as part of a continuous assessment component for one of my courses. It brings together selected academic work, projects, and reflections developed throughout my studies in Business Administration and Global Business.
+
+Throughout my studies I have developed experience in areas such as data analysis, research, and business problem-solving. Many of the projects featured in this portfolio involve analysing data, building dashboards, and presenting insights clearly using tools such as Excel and Power BI.
+
+## What You'll Find on This Site:
+
+- **Projects** – Academic and analytical projects completed during my degree  
+- **Experience** – Internship and professional experience  
+- **Gallery** – Photography and personal interests outside of my academic work
+
+Use the navigation bar above to explore the different sections of the site.

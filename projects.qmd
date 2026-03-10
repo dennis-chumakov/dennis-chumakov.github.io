@@ -1,0 +1,38 @@
+---
+title: "Projects"
+---
+
+Below are selected academic projects that demonstrate my skills in data analysis, research, and business problem-solving.
+
+---
+
+## Data Analysis Dashboard
+
+![Dashboard Example](images\dashboard_example.png)
+
+**Tools used:** Excel, Power BI  
+
+This project involved analysing a dataset and creating an interactive dashboard to identify key trends and communicate insights clearly to non-technical audiences.
+
+Key elements of the project included:
+
+- Data cleaning and preparation  
+- Building interactive visualisations  
+- Identifying patterns and insights in the data  
+- Presenting findings through a clear dashboard design
+
+---
+
+## Business Strategy Analysis
+
+![Strategy Project](images\strategy_project.png)
+
+**Tools used:** Research, strategic frameworks  
+
+This project focused on analysing a company's competitive strategy and market positioning using common business strategy frameworks.
+
+Key elements included:
+
+- Industry and market analysis  
+- Strategic framework application  
+- Business recommendations

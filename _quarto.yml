@@ -18,9 +18,9 @@ format:
   html:
     theme:
       - lux
-      - brand
-    css: styles.css
-    toc: true
+      - styles.scss
+    toc: false
+    page-layout: full
 
 
 

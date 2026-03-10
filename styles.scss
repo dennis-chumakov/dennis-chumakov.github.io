@@ -1,0 +1,56 @@
+/*-- scss:defaults --*/
+
+// Website colours
+$light-sage: #8aa68b;
+$sage-gray: #d2d6d2;
+$brown-gray: #474336;
+$white-active: #ffffff;
+
+// Base colours
+$navbar-bg: $light-sage;
+$navbar-fg: $brown-gray;
+$body-bg: $sage-gray;
+
+// Bootstrap navbar variables
+$navbar-light-color: $brown-gray;
+$navbar-light-hover-color: $white-active;
+$navbar-light-active-color: $white-active;
+
+/*-- scss:rules --*/
+
+// Navbar links 
+.navbar .nav-link {
+  position: relative;
+  color: $brown-gray !important;
+  transition: color 0.25s ease;
+}
+
+//Underline animation for navbar links
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: $white-active;
+  transition: width 0.25s ease;
+}
+
+/* Hover state */
+.navbar .nav-link:hover {
+  color: $white-active !important;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active page */
+.navbar .nav-link.active {
+  color: $white-active !important;
+}
+
+.navbar .nav-link.active::after {
+  width: 100%;
+}

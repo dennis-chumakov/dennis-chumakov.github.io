@@ -16,9 +16,51 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Dennis Chumakov",
+    "title": "About Me",
     "section": "",
-    "text": "I am a final-year business student with a strong interest in data analytics, operations, and applied problem-solving.\nI am currently completing a dual degree in Business Administration at the Goodman School of Business, Brock University (St. Catharines, Ontario, Canada), and Global Business at Dublin City University Business School (Dublin, Ireland). Through this program, I have developed experience in data analysis, research, and project-based learning across a range of business contexts.\nThrough academic projects and internship experience, I have worked with tools such as Excel and Power BI to analyse data, build dashboards, and present insights to non-technical audiences. I enjoy combining analytical thinking with practical business decision-making and working on projects that have real-world relevance.\nI am a motivated and detail-oriented individual who values clear communication, structured thinking, and continuous learning.\nOutside of my academic and professional work, I enjoy cooking for friends and family, travelling, and photography. These interests allow me to explore new places and perspectives while also giving me a creative outlet."
+    "text": "I’m a dual-degree business student wrapping up five years split between Brock University in St. Catharines, Ontario, Canada and Dublin City University in Dublin, Ireland. The degree is unusual by design. I completed three years in Canada and two years in Ireland, with internships in each. It has shaped how I think about problems, people, and places more than any single course has.\nMy academic focus sits at the intersection of business and data: how you collect it, make sense of it, and turn it into decisions that actually matter. Outside the classroom, I’m a photographer and traveller who believes the best way to understand something is to go and see it yourself.1"
+  },
+  {
+    "objectID": "about.html#who-i-am",
+    "href": "about.html#who-i-am",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a dual-degree business student wrapping up five years split between Brock University in St. Catharines, Ontario, Canada and Dublin City University in Dublin, Ireland. The degree is unusual by design. I completed three years in Canada and two years in Ireland, with internships in each. It has shaped how I think about problems, people, and places more than any single course has.\nMy academic focus sits at the intersection of business and data: how you collect it, make sense of it, and turn it into decisions that actually matter. Outside the classroom, I’m a photographer and traveller who believes the best way to understand something is to go and see it yourself.1"
+  },
+  {
+    "objectID": "about.html#my-journey",
+    "href": "about.html#my-journey",
+    "title": "About Me",
+    "section": "My Journey",
+    "text": "My Journey\n\n\n\n\n\ntimeline\n    title Academic & Professional Journey\n    2021 : Started BBA at Brock University\n         : St. Catharines, Ontario, Canada\n    2022 : First internship experience\n         : Developed a passion for the automotive industry and operations \n    2024 : Transferred to DCU for Global Business\n         : Dublin, Ireland\n    2025 : Second internship experience\n         : Developed Excel and Power BI skills\n         : Found my passion for data analytics\n    2025/2026 : Final Year of College \n         : FreshTRACK Startup — New Enterprise Development \n         : Machine Learning research paper\n         : Undergraduate Dissertation\n         : ePortfolio and graduation"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\n\n\n\n\n\n\nArea\nTools & Technologies\n\n\n\n\nData Analysis\nPython, Pandas, Excel, Power BI\n\n\nMachine Learning\nScikit-learn, classification models, model evaluation\n\n\nWeb & Workflow\nQuarto, Git, GitHub Pages, SCSS\n\n\nVisualisation\nPlotly, Matplotlib, Seaborn\n\n\nBusiness\nStrategy, marketing, operations, sales"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\nNote🎓 Dublin City University — Global Business\n\n\n\nBSc Global Business · 2024–2026 · Dublin, Ireland\nModules include Innovation Economics, New Enterprise Development, Workflow & Data Management, and Business Ethics.\n\n\n\n\n\n\n\n\nNote🎓 Brock University — Business Administration\n\n\n\nBBA Business Administration · 2021–2026 · St. Catharines, Ontario, Canada\nGoodman School of Business. Focus on operations, data analytics, and strategic management."
+  },
+  {
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "About Me",
+    "section": "Interests",
+    "text": "Interests\nBeyond the academic work, a few things keep me grounded:\n\n📷 Photography — I shoot wherever I travel, mostly landscapes and street. You can see some of it on the Photography page.\n🍳 Cooking — feeding people is one of my favourite things to do.\n✈️ Travel — the dual-degree provided me with numerous opportunities for spontaneous travel, fuelling my passion.\n\n\n\n\n\n\n\n\nTipCurrently Open To\n\n\n\nGraduate roles and opportunities in data analytics, business intelligence, or operations — particularly where analytical thinking meets real business impact."
+  },
+  {
+    "objectID": "about.html#footnotes",
+    "href": "about.html#footnotes",
+    "title": "About Me",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe photography page on this site is a small record of that: a collection of\nmy favourite photos from my travels.↩︎"
   },
   {
     "objectID": "experience.html",

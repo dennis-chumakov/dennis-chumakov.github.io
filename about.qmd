@@ -1,22 +1,90 @@
 ---
-title: "Dennis Chumakov"
-image: images\DennisChumakov_Headshot.jpg
-about: 
-    template: jolla
-    links:
-        - icon: linkedin
-          href: https://www.linkedin.com/in/dennischumakov/
+title: "About Me"
+page-layout: article
+---
+
+## Who I Am
+
+I'm a dual-degree business student wrapping up five years split between 
+**Brock University** in St. Catharines, Ontario, Canada and **Dublin City University** 
+in Dublin, Ireland. The degree is unusual by design. I completed three years in Canada and two years in Ireland, with internships in each. It has shaped how I think about problems, people, and places more than any single course has.
+
+My academic focus sits at the intersection of business and data: how you collect 
+it, make sense of it, and turn it into decisions that actually matter. Outside the 
+classroom, I'm a photographer and traveller who believes the best way to understand 
+something is to go and see it yourself.[^1]
+
+[^1]: The photography page on this site is a small record of that: a collection of  
+my favourite photos from my travels.
 
 ---
 
-I am a final-year business student with a strong interest in data analytics, operations, and applied problem-solving.
+## My Journey
 
-I am currently completing a dual degree in Business Administration at the Goodman School of Business, Brock University (St. Catharines, Ontario, Canada), and Global Business at Dublin City University Business School (Dublin, Ireland). Through this program, I have developed experience in data analysis, research, and project-based learning across a range of business contexts.
+```{mermaid}
+timeline
+    title Academic & Professional Journey
+    2021 : Started BBA at Brock University
+         : St. Catharines, Ontario, Canada
+    2022 : First internship experience
+         : Developed a passion for the automotive industry and operations 
+    2024 : Transferred to DCU for Global Business
+         : Dublin, Ireland
+    2025 : Second internship experience
+         : Developed Excel and Power BI skills
+         : Found my passion for data analytics
+    2025/2026 : Final Year of College 
+         : FreshTRACK Startup — New Enterprise Development 
+         : Machine Learning research paper
+         : Undergraduate Dissertation
+         : ePortfolio and graduation
+```
 
-Through academic projects and internship experience, I have worked with tools such as Excel and Power BI to analyse data, build dashboards, and present insights to non-technical audiences. I enjoy combining analytical thinking with practical business decision-making and working on projects that have real-world relevance.
+---
 
-I am a motivated and detail-oriented individual who values clear communication, structured thinking, and continuous learning.
+## Skills
 
-Outside of my academic and professional work, I enjoy cooking for friends and family, travelling, and photography. These interests allow me to explore new places and perspectives while also giving me a creative outlet.
+| Area | Tools & Technologies |
+|------|----------------------|
+| Data Analysis | Python, Pandas, Excel, Power BI |
+| Machine Learning | Scikit-learn, classification models, model evaluation |
+| Web & Workflow | Quarto, Git, GitHub Pages, SCSS |
+| Visualisation | Plotly, Matplotlib, Seaborn |
+| Business | Strategy, marketing, operations, sales |
 
+---
 
+## Education
+
+::: {.callout-note icon=false}
+### 🎓 Dublin City University — Global Business
+**BSc Global Business** · 2024–2026 · Dublin, Ireland  
+Modules include Innovation Economics, New Enterprise Development, 
+Workflow & Data Management, and Business Ethics.
+:::
+
+::: {.callout-note icon=false}
+### 🎓 Brock University — Business Administration
+**BBA Business Administration** · 2021–2026 · St. Catharines, Ontario, Canada  
+Goodman School of Business. Focus on operations, data analytics, 
+and strategic management.
+:::
+
+---
+
+## Interests
+
+Beyond the academic work, a few things keep me grounded:
+
+- 📷 **Photography** — I shoot wherever I travel, mostly landscapes and street. 
+You can see some of it on the [Photography](/photography.html) page.
+- 🍳 **Cooking** — feeding people is one of my favourite things to do.
+- ✈️ **Travel** — the dual-degree provided me with numerous opportunities for spontaneous travel, fuelling my passion. 
+
+---
+
+::: {.callout-tip}
+## Currently Open To
+Graduate roles and opportunities in **data analytics**, **business intelligence**, 
+or **operations** — particularly where analytical thinking meets real business impact.
+:::

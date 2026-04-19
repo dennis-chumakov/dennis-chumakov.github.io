@@ -1,17 +1,48 @@
 ---
-title: "Home"
+title: "Dennis Chumakov"
+subtitle: "Business · Data · Analytics"
+image: images/DennisChumakov_Headshot.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/dennischumakov/
+      target: _blank
+    - icon: github
+      text: GitHub
+      href: https://github.com/dennis-chumakov
+      target: _blank
 ---
 
-# Welcome to My Portfolio
+I'm a dual-degree business student finishing up at **Dublin City University** 
+and **Brock University**, with a focus on data analytics, workflow automation, 
+and applied problem-solving.
 
-This website serves as my e-portfolio and was created as part of a continuous assessment component for one of my courses. It brings together selected academic work, projects, and reflections developed throughout my studies in Business Administration and Global Business.
+From machine learning models to building a startup from the ground up — 
+this portfolio captures the work and experiences that have defined my 
+time in college.
 
-Throughout my studies I have developed experience in areas such as data analysis, research, and business problem-solving. Many of the projects featured in this portfolio involve analysing data, building dashboards, and presenting insights clearly using tools such as Excel and Power BI.
+When I'm not buried in data, I'm usually behind a camera somewhere new.
 
-## What You'll Find on This Site:
+---
 
-- **Projects** – Academic and analytical projects completed during my degree  
-- **Experience** – Internship and professional experience  
-- **Gallery** – Photography and personal interests outside of my academic work
+:::: {.grid}
 
-Use the navigation bar above to explore the different sections of the site.
+::: {.g-col-12 .g-col-md-4 .card .text-center .p-4}
+### 🎓 Education
+Dual degree across **Ireland** and **Canada**, combining Global Business 
+with Business Administration.
+:::
+
+::: {.g-col-12 .g-col-md-4 .card .text-center .p-4}
+### 📊 Skills
+Python · Quarto · Git · Data Analysis · Machine Learning · SCSS
+:::
+
+::: {.g-col-12 .g-col-md-4 .card .text-center .p-4}
+### 📷 Beyond the Desk
+Traveller and photographer — always looking for the next shot.
+:::
+
+::::

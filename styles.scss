@@ -75,3 +75,19 @@ h1, h2, h3, h4, h5, h6,
 .navbar .nav-link.active::after {
   width: 100%;
 }
+
+//CENTER MY NAME UNDER PICTURE ON LANDING PAGE: 
+.about-entity {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.about-entity .about-subtitle {
+  text-align: center !important;
+  width: 100% !important;
+}
+.about-entity .about-title {
+  text-align: center !important;
+  width: 100% !important;
+}

@@ -1,0 +1,10 @@
+---
+title: "Projects"
+listing:
+  contents: list
+  type: grid
+  sort: "date desc"
+  categories: true
+  fields: [image, title, description, categories, date]
+page-layout: full
+---

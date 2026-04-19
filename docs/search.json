@@ -1,31 +1,24 @@
 [
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Below are selected academic projects that demonstrate my skills in data analysis, research, and business problem-solving."
+    "text": "No matching items"
   },
   {
-    "objectID": "projects.html#data-analysis-dashboard",
-    "href": "projects.html#data-analysis-dashboard",
-    "title": "Projects",
-    "section": "Data Analysis Dashboard",
-    "text": "Data Analysis Dashboard\n\n\n\nDashboard Example\n\n\nTools used: Excel, Power BI\nThis project involved analysing a dataset and creating an interactive dashboard to identify key trends and communicate insights clearly to non-technical audiences.\nKey elements of the project included:\n\nData cleaning and preparation\n\nBuilding interactive visualisations\n\nIdentifying patterns and insights in the data\n\nPresenting findings through a clear dashboard design"
-  },
-  {
-    "objectID": "projects.html#business-strategy-analysis",
-    "href": "projects.html#business-strategy-analysis",
-    "title": "Projects",
-    "section": "Business Strategy Analysis",
-    "text": "Business Strategy Analysis\n\n\n\nStrategy Project\n\n\nTools used: Research, strategic frameworks\nThis project focused on analysing a company’s competitive strategy and market positioning using common business strategy frameworks.\nKey elements included:\n\nIndustry and market analysis\n\nStrategic framework application\n\nBusiness recommendations"
-  },
-  {
-    "objectID": "gallery.html",
-    "href": "gallery.html",
-    "title": "Gallery",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
     "section": "",
-    "text": "Outside of my academic and professional work, I enjoy photography and capturing moments from travel and everyday life."
+    "text": "This website serves as my e-portfolio and was created as part of a continuous assessment component for one of my courses. It brings together selected academic work, projects, and reflections developed throughout my studies in Business Administration and Global Business.\nThroughout my studies I have developed experience in areas such as data analysis, research, and business problem-solving. Many of the projects featured in this portfolio involve analysing data, building dashboards, and presenting insights clearly using tools such as Excel and Power BI.\n\n\n\nProjects – Academic and analytical projects completed during my degree\n\nExperience – Internship and professional experience\n\nGallery – Photography and personal interests outside of my academic work\n\nUse the navigation bar above to explore the different sections of the site."
+  },
+  {
+    "objectID": "index.html#what-youll-find-on-this-site",
+    "href": "index.html#what-youll-find-on-this-site",
+    "title": "Home",
+    "section": "",
+    "text": "Projects – Academic and analytical projects completed during my degree\n\nExperience – Internship and professional experience\n\nGallery – Photography and personal interests outside of my academic work\n\nUse the navigation bar above to explore the different sections of the site."
   },
   {
     "objectID": "about.html",
@@ -56,17 +49,31 @@
     "text": "Bartender\nnubar – Dublin City University\nWorking in a fast-paced hospitality environment helped develop strong communication, teamwork, and customer service skills."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
+    "objectID": "photography.html",
+    "href": "photography.html",
+    "title": "Photography",
     "section": "",
-    "text": "This website serves as my e-portfolio and was created as part of a continuous assessment component for one of my courses. It brings together selected academic work, projects, and reflections developed throughout my studies in Business Administration and Global Business.\nThroughout my studies I have developed experience in areas such as data analysis, research, and business problem-solving. Many of the projects featured in this portfolio involve analysing data, building dashboards, and presenting insights clearly using tools such as Excel and Power BI.\n\n\n\nProjects – Academic and analytical projects completed during my degree\n\nExperience – Internship and professional experience\n\nGallery – Photography and personal interests outside of my academic work\n\nUse the navigation bar above to explore the different sections of the site."
+    "text": "Outside of my academic and professional work, I enjoy photography and capturing moments from travel and everyday life."
   },
   {
-    "objectID": "index.html#what-youll-find-on-this-site",
-    "href": "index.html#what-youll-find-on-this-site",
-    "title": "Home",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "Projects – Academic and analytical projects completed during my degree\n\nExperience – Internship and professional experience\n\nGallery – Photography and personal interests outside of my academic work\n\nUse the navigation bar above to explore the different sections of the site."
+    "text": "Below are selected academic projects that demonstrate my skills in data analysis, research, and business problem-solving."
+  },
+  {
+    "objectID": "projects.html#data-analysis-dashboard",
+    "href": "projects.html#data-analysis-dashboard",
+    "title": "Projects",
+    "section": "Data Analysis Dashboard",
+    "text": "Data Analysis Dashboard\n\n\n\nDashboard Example\n\n\nTools used: Excel, Power BI\nThis project involved analysing a dataset and creating an interactive dashboard to identify key trends and communicate insights clearly to non-technical audiences.\nKey elements of the project included:\n\nData cleaning and preparation\n\nBuilding interactive visualisations\n\nIdentifying patterns and insights in the data\n\nPresenting findings through a clear dashboard design"
+  },
+  {
+    "objectID": "projects.html#business-strategy-analysis",
+    "href": "projects.html#business-strategy-analysis",
+    "title": "Projects",
+    "section": "Business Strategy Analysis",
+    "text": "Business Strategy Analysis\n\n\n\nStrategy Project\n\n\nTools used: Research, strategic frameworks\nThis project focused on analysing a company’s competitive strategy and market positioning using common business strategy frameworks.\nKey elements included:\n\nIndustry and market analysis\n\nStrategic framework application\n\nBusiness recommendations"
   }
 ]

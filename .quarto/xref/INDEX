@@ -13,5 +13,17 @@
   },
   "projects.qmd": {
     "projects.html": "6b1540c4"
+  },
+  "contact.qmd": {
+    "contact.html": "f67bbc6d"
+  },
+  "photography.qmd": {
+    "photography.html": "522d6106"
+  },
+  "projects/index.qmd": {
+    "index.html": "49446401"
+  },
+  "reflection.qmd": {
+    "reflection.html": "824164e1"
   }
 }

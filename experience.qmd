@@ -1,23 +1,106 @@
 ---
 title: "Experience"
+page-layout: article
 ---
 
-## HR Business Partner Intern  
-**An Post – Dublin, Ireland**  
-2025
+## Work Experience
 
-During this internship I worked on a range of HR analytics and policy development projects.
+::: {.callout-note icon=false}
+### 🏢 HR Business Partner Intern — An Post
+**January 2025 – August 2025** · Dublin, Ireland
 
-Key responsibilities included:
+- Developed Excel dashboards that contributed to a **4% reduction in absence rates** over six months
+- Prepared monthly reports and presentation decks for retail management highlighting key absenteeism trends
+- Conducted 20+ meetings with managers across Group Technology Solutions to standardise on-call frameworks
+- Helped design a structured exit interview process covering tenure, onboarding, and team culture
+:::
 
-- Analysing absenteeism data using Excel dashboards  
-- Conducting meetings with retail managers to understand operational challenges  
-- Supporting the development of HR policies and service agreements  
-- Assisting with exit interview insights and reporting
+::: {.callout-note icon=false}
+### 🚗 Fleet Assistant (Operations) — Budds' Chevrolet
+**January 2024 – August 2024** · Oakville, Ontario, Canada
+
+- Built a digital documentation system in Excel for off-site storage, improving vehicle access efficiency
+- Maintained **100% accuracy** in data entry and filing, enabling smooth audits
+- Streamlined inventory tracking and eliminated discrepancies across vehicle records
+:::
+
+::: {.callout-note icon=false}
+### 🏊 Shop Clerk — Pressure Clean Pools
+**April 2022 – October 2023** · Oakville, Ontario, Canada
+
+- Delivered customer service resulting in measurable repeat bookings
+- Processed invoices and payments using QuickBooks with full accuracy and data security
+:::
+
+::: {.callout-note icon=false}
+### 🛒 Customer Service Representative — Canadian Tire
+**May 2020 – March 2022** · Oakville, Ontario, Canada
+
+- Resolved escalated customer concerns, resulting in positive feedback survey results
+- Co-ordinated cash handling and customer service training for new staff
+:::
 
 ---
 
-## Bartender  
-**nubar – Dublin City University**
+## Education
 
-Working in a fast-paced hospitality environment helped develop strong communication, teamwork, and customer service skills.
+| Degree | Institution | Years | Result |
+|--------|------------|-------|--------|
+| Honours BBA | Brock University, Canada | 2021–2026 | 1.1 |
+| BA Global Business Studies | Dublin City University, Ireland | 2021–2026 | 1.1 |
+
+> Dual degree completed across two continents — internship placements in both Canada and Ireland.
+
+---
+
+## Awards & Achievements
+
+::: {.callout-tip icon=false}
+### 🏆 Honours & Recognition
+
+- **Beta Gamma Sigma** — Top 10% of students in AACSB-accredited business programmes *(June 2024)*
+- **Golden Key International Honour Society** — Top 15% of students by invitation *(September 2023)*
+- **Dean's Honour List** — Year Two *(May 2023)*
+- **Dean's Honour List** — Year One *(May 2022)*
+- **Brock Scholars Entry Award** — $16,000 over 4 years based on maintaining an 80% average *(September 2021)*
+- **Ontario Scholars Award** — 80%+ academic average *(June 2021)*
+:::
+
+---
+
+## Voluntary Work
+
+::: {.callout-caution icon=false}
+### 🤝 Community Involvement
+
+**Global Aid Club** · St. Ignatius of Loyola Catholic Secondary School, Oakville  
+Developed and executed fundraising events and donation collections for local and international charities.
+
+**Kerr Street Mission** · Oakville, Ontario  
+Raised awareness and promoted local food drives through community outreach efforts.
+:::
+
+---
+
+## Technical Skills
+
+| Category | Skills |
+|----------|--------|
+| Data & Analytics | Python, Pandas, Excel (Advanced), Power BI |
+| Development | Quarto, Git, GitHub Pages, SCSS |
+| Machine Learning | Scikit-learn, classification models, model evaluation |
+| Visualisation | Plotly, Matplotlib |
+| Business Software | Microsoft Office Suite, QuickBooks |
+
+---
+
+## Athletics & Interests
+
+::: {.callout-important icon=false}
+### ⚡ Beyond the Desk
+
+- **Competitive Trampoline** — Six years as a competitive athlete, multiple medal winner
+- **Snowboard Racing & American Football** — Competed during secondary school
+- **Photography & Travel** — Passionate about documenting places and cultures through a lens
+- **Reading** — Staying current with global news and a wide range of genres
+:::

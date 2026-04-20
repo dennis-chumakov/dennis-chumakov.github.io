@@ -1,0 +1,321 @@
+---
+title: "Employee Social Media Monitoring"
+description: "Primary research study on employee perceptions of workplace social media monitoring. Survey data from 64 respondents analysed using Python."
+date: 2026-03-01
+image: ../../images/dissertation.jpg
+categories:
+  - "Python"
+  - "Data Analysis"
+  - "Primary Research"
+---
+
+## Overview
+
+This dissertation examined a question at the intersection of workplace rights and
+digital privacy: **how do organisations monitor employees' personal social media
+activity, and how do employees perceive the fairness and legitimacy of these
+practices?**
+
+Primary research was conducted via an original survey distributed across Ireland,
+Canada, and internationally. After filtering for employment eligibility, **64 valid
+responses** were collected and analysed using Python.
+
+::: {.callout-note}
+## Research Question
+How do organisations monitor and respond to employees' personal social media
+activity, and how do employees perceive the fairness and legitimacy of these
+organisational practices?
+:::
+
+---
+
+## Research Journey
+
+The dissertation was completed across four sequential components:
+
+```{mermaid}
+flowchart LR
+    A[Research Proposal - Component 1] --> B[Literature Review - Component 2]
+    B --> C[Research Methodology - Component 3]
+    C --> D[Research Results - Component 4]
+    style A fill:#264653,color:#fff
+    style B fill:#264653,color:#fff
+    style C fill:#264653,color:#fff
+    style D fill:#2a9d8f,color:#fff
+```
+
+| Component | Description |
+|-----------|-------------|
+| **1 - Research Proposal** | Defined the research question, objectives, and justification for primary research |
+| **2 - Literature Review** | Reviewed existing academic literature on workplace monitoring, privacy, and legitimacy |
+| **3 - Research Methodology** | Designed the survey instrument, ethical framework, and data collection approach |
+| **4 - Research Results** | Collected and analysed 64 survey responses using Python |
+
+[View Research Results PDF](../../dissertation/dennis-chumakov-dissertation-results.pdf){target="_blank"}
+
+---
+
+## Methodology
+
+The survey instrument included:
+
+- **Demographic questions** - sector, tenure, management level
+- **Policy awareness questions** - whether a policy exists and is communicated
+- **Likert-scale questions (Q9-Q14)** - perceptions of monitoring, discipline, and behavioural impact
+- **Scenario questions (Q12-Q13)** - comparing appropriateness of discipline across two real-world scenarios
+- **Open-ended questions (Q16-Q18)** - qualitative themes around fairness, intervention, and improvement
+
+A **Wilcoxon signed-rank test** was used to assess whether the difference in
+disciplinary appropriateness between the two scenarios was statistically significant.[^1]
+
+[^1]: The Wilcoxon signed-rank test is a non-parametric test used when data does
+not meet the assumptions of normality - appropriate here given the ordinal Likert
+scale used.
+
+---
+
+## Analysis and Findings
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show setup and data loading"
+#| echo: true
+
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+from scipy.stats import wilcoxon
+import warnings
+warnings.filterwarnings('ignore')
+
+df = pd.read_csv('survey_sample.csv')
+
+# Filter valid respondents
+df = df[df.iloc[:, 6] != 'No'].copy()
+df = df.reset_index(drop=True)
+
+print(f"Dataset loaded: {len(df)} respondents")
+```
+
+### Respondent Demographics
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show demographics code"
+#| fig-cap: "Distribution of respondents by sector"
+
+sector_counts = df['sector'].value_counts().reset_index()
+sector_counts.columns = ['Sector', 'Count']
+
+fig1 = px.bar(sector_counts, x='Sector', y='Count',
+              title='Respondents by Sector',
+              color_discrete_sequence=['#264653'])
+fig1.update_layout(showlegend=False, plot_bgcolor='white',
+                   xaxis=dict(showgrid=False),
+                   yaxis=dict(showgrid=True, gridcolor='#f0f0f0'))
+fig1.show()
+```
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show tenure code"
+#| fig-cap: "Distribution of respondents by length of employment"
+
+tenure_order = ['Less than 1 year', '1-3 years', '4-7 years']
+tenure_counts = df['tenure'].value_counts().reindex(tenure_order).reset_index()
+tenure_counts.columns = ['Tenure', 'Count']
+
+fig2 = px.bar(tenure_counts, x='Tenure', y='Count',
+              title='Respondents by Length of Employment',
+              color_discrete_sequence=['#264653'])
+fig2.update_layout(showlegend=False, plot_bgcolor='white',
+                   xaxis=dict(showgrid=False),
+                   yaxis=dict(showgrid=True, gridcolor='#f0f0f0'))
+fig2.show()
+```
+
+---
+
+### Perceptions of Monitoring and Privacy
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show perceptions code"
+#| fig-cap: "Mean Likert scores for Q9 - perceptions of social media monitoring (1 = Strongly Disagree, 5 = Strongly Agree)"
+
+q9_labels = [
+    'Right to monitor public SM',
+    'Monitoring = invasion of privacy',
+    'Only intervene if affects org',
+    'Monitoring improves reputation',
+    'Creates culture of mistrust'
+]
+q9_cols = ['q9a_right_to_monitor_num','q9b_invasion_privacy_num',
+           'q9c_intervene_if_affects_org_num','q9d_improves_reputation_num',
+           'q9e_culture_mistrust_num']
+q9_means = [round(df[col].mean(), 2) for col in q9_cols]
+
+fig3 = go.Figure()
+fig3.add_trace(go.Bar(x=q9_labels, y=q9_means,
+                      marker_color='#264653',
+                      text=q9_means, textposition='outside'))
+fig3.add_hline(y=3, line_dash='dash', line_color='#e63946',
+               annotation_text='Neutral (3.0)', annotation_position='right')
+fig3.update_layout(title='Perceptions of Monitoring and Privacy (Q9)',
+                   yaxis=dict(range=[0, 5.5], title='Mean Score (1-5)',
+                              gridcolor='#f0f0f0'),
+                   xaxis=dict(title='Statement', showgrid=False),
+                   plot_bgcolor='white')
+fig3.show()
+```
+
+::: {.callout-tip}
+## Key Finding
+Respondents strongly agreed that monitoring creates a **culture of mistrust**
+(mean 3.97) and that monitoring constitutes an **invasion of privacy** (mean 3.97),
+while showing moderate agreement that employers should **only intervene when
+organisational impact is direct** (mean 4.05).
+:::
+
+---
+
+### Scenario Comparison - When is Discipline Appropriate?
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show scenario comparison code"
+#| fig-cap: "Comparison of disciplinary appropriateness scores across two scenarios - Wilcoxon signed-rank test confirms statistically significant difference (p < 0.0001)"
+
+stat, p_value = wilcoxon(df['q12_scenario1_num'], df['q13_scenario2_num'])
+
+scenario_labels = ['Scenario 1 - Political Opinion',
+                   'Scenario 2 - Offensive/Viral Post']
+scenario_means = [round(df['q12_scenario1_num'].mean(), 2),
+                  round(df['q13_scenario2_num'].mean(), 2)]
+
+fig5 = go.Figure()
+fig5.add_trace(go.Bar(x=scenario_labels, y=scenario_means,
+                      marker_color=['#2a9d8f', '#e76f51'],
+                      text=scenario_means, textposition='outside'))
+fig5.add_hline(y=3, line_dash='dash', line_color='#e63946',
+               annotation_text='Neutral (3.0)', annotation_position='right')
+fig5.add_annotation(x=0.5, y=5.1, xref='paper',
+                    text=f'Wilcoxon W={round(stat,1)}, p<0.0001***',
+                    showarrow=False, font=dict(color='darkred', size=11),
+                    bgcolor='lightyellow', bordercolor='darkred')
+fig5.update_layout(title='Disciplinary Appropriateness by Scenario (Q12 vs Q13)',
+                   yaxis=dict(range=[0, 5.5], title='Mean Appropriateness (1-5)',
+                              gridcolor='#f0f0f0'),
+                   xaxis=dict(showgrid=False),
+                   plot_bgcolor='white')
+fig5.show()
+```
+
+::: {.callout-important}
+## Statistical Finding
+The Wilcoxon signed-rank test confirmed a **statistically significant difference**
+between the two scenarios (p < 0.0001). Respondents rated discipline for an
+offensive/viral post (Scenario 2, mean 3.97) as significantly more appropriate
+than for a political opinion post (Scenario 1, mean 2.40) - suggesting that
+context and content type are central to perceptions of legitimacy.
+:::
+
+---
+
+### Behavioural Impact of Monitoring Awareness
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show behavioural impact code"
+#| fig-cap: "Mean scores for Q14 - how awareness of monitoring affects employee behaviour online"
+
+q14_labels = [
+    'Monitoring affects how I use SM',
+    'I avoid posting opinions online',
+    'I consider how posts reflect on employer',
+    'Monitoring reduces trust in management',
+    'I feel comfortable expressing opinions'
+]
+q14_cols = ['q14a_monitoring_affects_usage_num','q14b_avoid_opinions_num',
+            'q14c_consider_employer_reflection_num','q14d_reduces_trust_num',
+            'q14e_comfortable_expressing_num']
+q14_means = [round(df[col].mean(), 2) for col in q14_cols]
+
+fig6 = go.Figure()
+fig6.add_trace(go.Bar(x=q14_labels, y=q14_means,
+                      marker_color='#264653',
+                      text=q14_means, textposition='outside'))
+fig6.add_hline(y=3, line_dash='dash', line_color='#e63946',
+               annotation_text='Neutral (3.0)', annotation_position='right')
+fig6.update_layout(title='Behavioural Impact of Monitoring Awareness (Q14)',
+                   yaxis=dict(range=[0, 5.5], title='Mean Score (1-5)',
+                              gridcolor='#f0f0f0'),
+                   xaxis=dict(showgrid=False),
+                   plot_bgcolor='white')
+fig6.show()
+```
+
+---
+
+### Descriptive Statistics Summary
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show summary table code"
+
+all_cols = ['q9a_right_to_monitor_num','q9b_invasion_privacy_num',
+            'q9c_intervene_if_affects_org_num','q9d_improves_reputation_num',
+            'q9e_culture_mistrust_num','q10_appropriate_discipline_num',
+            'q11_discipline_proportionate_num','q12_scenario1_num',
+            'q13_scenario2_num','q14a_monitoring_affects_usage_num',
+            'q14b_avoid_opinions_num','q14c_consider_employer_reflection_num',
+            'q14d_reduces_trust_num','q14e_comfortable_expressing_num']
+
+labels = [
+    'Q9a: Right to monitor public SM',
+    'Q9b: Monitoring = invasion of privacy',
+    'Q9c: Only intervene if affects org',
+    'Q9d: Monitoring improves reputation',
+    'Q9e: Creates culture of mistrust',
+    'Q10: Discipline is appropriate',
+    'Q11: Discipline is proportionate',
+    'Q12: Scenario 1 - Political opinion',
+    'Q13: Scenario 2 - Offensive/viral post',
+    'Q14a: Monitoring affects usage',
+    'Q14b: Avoid posting opinions',
+    'Q14c: Consider employer reflection',
+    'Q14d: Monitoring reduces trust',
+    'Q14e: Comfortable expressing freely'
+]
+
+summary = pd.DataFrame({
+    'Question': labels,
+    'Mean': [round(df[c].mean(), 2) for c in all_cols],
+    'Std Dev': [round(df[c].std(), 2) for c in all_cols],
+    'Min': [df[c].min() for c in all_cols],
+    'Max': [df[c].max() for c in all_cols]
+})
+
+print(summary.to_string(index=False))
+```
+
+---
+
+## Reflections
+
+This project was my first experience conducting original primary research from
+design through to statistical analysis. Building the survey instrument, collecting
+responses across multiple countries, and then writing Python to clean, encode,
+and visualise the data gave me an end-to-end understanding of the research process
+that no secondary data project could replicate.
+
+The Wilcoxon test result was the most surprising finding - the scale of the
+difference between the two scenarios (mean gap of 1.57) suggested that employees
+draw a very clear line between political expression and harmful/offensive content
+when judging disciplinary legitimacy.
+
+---
+
+::: {.small-text}
+*Cover image via [Freepik](https://freepik.com)*
+:::

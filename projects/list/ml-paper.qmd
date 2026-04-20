@@ -1,0 +1,339 @@
+---
+title: "Stock Market Direction Prediction"
+description: "Can machine learning predict next-day SPY price direction using technical indicators? A comparative study of four classifiers across three iterative feature configurations."
+date: 2026-04-17
+image: ../../images/ml-paper.jpg
+categories:
+  - "Python"
+  - "Machine Learning"
+  - "Financial Data"
+---
+
+## Overview
+
+This research paper applied four supervised machine learning classifiers to predict
+the next-day price direction of the **SPY ETF** (S&P 500 tracker) using historical
+price-based technical indicators. The study was conducted across three iterative
+feature configurations, guided by prior literature and correlation analysis.
+
+::: {.callout-note}
+## Research Question
+How effectively can supervised machine learning classification algorithms predict
+next-day price direction of the SPY ETF using historical price-based technical
+indicators?
+:::
+
+The dataset contained **4,853 daily OHLCV observations** spanning 2005 to 2024,
+sourced from Kaggle. After preprocessing, 4,804 rows were used for modelling.
+A chronological 70/30 train/test split was applied — training on data encompassing
+the 2008 financial crisis, and testing on the COVID-19 shock and post-pandemic
+inflationary period.
+
+---
+
+## Research Pipeline
+
+The study was structured across three iterations, each refining the feature set
+based on correlation analysis and model performance:
+
+```{mermaid}
+flowchart LR
+    A[Iteration 1 - Baseline\n9 Features] --> B[Correlation Analysis\nMulticollinearity Check]
+    B --> C[Iteration 2 - Expanded\n11 Features]
+    C --> D[Iteration 3 - Refined\nMomentum-Only\n9 Features]
+    style A fill:#264653,color:#fff
+    style B fill:#6c757d,color:#fff
+    style C fill:#264653,color:#fff
+    style D fill:#2a9d8f,color:#fff
+```
+
+| Iteration | Feature Set | Key Change |
+|-----------|-------------|------------|
+| **Iteration 1** | SMA, RSI, MACD, STD, Volume, Lags | Baseline configuration |
+| **Iteration 2** | + ROC, Williams R, Stochastic, CCI, OBV | Expanded with momentum indicators |
+| **Iteration 3** | Momentum-only, volatility/volume removed | Refined after multicollinearity analysis |
+
+::: {.callout-tip}
+## Key Design Decision
+A **chronological** 70/30 split was used rather than random shuffling — random
+shuffling would introduce look-ahead bias by allowing the model to train on future
+observations, invalidating the out-of-sample evaluation.
+:::
+
+---
+
+## Model Performance Summary
+
+The table below summarises accuracy and AUC-ROC across all three iterations.
+The naive baseline was **54.4%** — the proportion of up days in the dataset.
+
+| Model | IT1 Acc | IT1 AUC | IT2 Acc | IT2 AUC | IT3 Acc | IT3 AUC |
+|-------|---------|---------|---------|---------|---------|---------|
+| Logistic Regression | 0.4868 | 0.4891 | 0.4882 | 0.4863 | **0.5139** | 0.4908 |
+| Random Forest | 0.4792 | 0.4890 | 0.4868 | 0.4890 | 0.4764 | 0.4844 |
+| Gradient Boosting | 0.4820 | **0.5106** | 0.4799 | 0.4936 | 0.5125 | 0.4984 |
+| XGBoost | 0.4827 | 0.5049 | 0.4792 | 0.4863 | 0.4806 | 0.4852 |
+
+::: {.callout-important}
+## Key Finding
+Every model performed **below the naive baseline of 54.4%** across all iterations.
+AUC-ROC values consistently ranged from 0.48 to 0.51 — near-random classification.
+This is consistent with **weak-form Efficient Market Hypothesis (EMH)**, suggesting
+that historical price data alone does not carry sufficient predictive signal for
+next-day SPY direction.
+:::
+
+---
+
+## Active Code - Iteration 3 Analysis
+
+The following code reproduces the full Iteration 3 pipeline — the refined
+momentum-only configuration that produced the strongest results.
+
+### Setup and Data Loading
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show setup and imports"
+#| echo: true
+
+import numpy as np
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from xgboost import XGBClassifier
+from sklearn.metrics import (accuracy_score, roc_auc_score, precision_score,
+                             recall_score, f1_score, confusion_matrix, roc_curve)
+import ta
+import warnings
+warnings.filterwarnings('ignore')
+
+# Load dataset
+df = pd.read_csv('SPY_dataset.csv')
+df['date'] = pd.to_datetime(df['date'])
+df.set_index('date', inplace=True)
+
+print(f"Dataset loaded: {df.shape[0]} rows, {df.shape[1]} columns")
+print(f"Date range: {df.index.min().date()} to {df.index.max().date()}")
+```
+
+### Feature Engineering
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show feature engineering code"
+
+# Trend indicators
+df['SMA_10'] = df['close'].rolling(window=10).mean()
+df['SMA_50'] = df['close'].rolling(window=50).mean()
+df['SMA_Ratio'] = df['SMA_10'] / df['SMA_50']
+
+# Momentum indicators
+exp1 = df['close'].ewm(span=12).mean()
+exp2 = df['close'].ewm(span=26).mean()
+df['MACD'] = exp1 - exp2
+df['ROC_14'] = ta.momentum.ROCIndicator(close=df['close'], window=14).roc()
+df['Stochastic_14'] = ta.momentum.StochasticOscillator(
+    high=df['high'], low=df['low'], close=df['close'], window=14).stoch()
+df['CCI_20'] = ta.trend.CCIIndicator(
+    high=df['high'], low=df['low'], close=df['close'], window=20).cci()
+df['OBV'] = ta.volume.OnBalanceVolumeIndicator(
+    close=df['close'], volume=df['volume']).on_balance_volume()
+
+# Lag features
+df['Lag_1_Return'] = df['change_percent'].shift(1)
+df['Lag_5_Return'] = df['change_percent'].shift(5)
+
+# Target variable - binary direction label
+df['Target'] = (df['close'].shift(-1) > df['close']).astype(int)
+
+# Drop NaN rows
+df.dropna(inplace=True)
+
+print(f"Shape after feature engineering: {df.shape}")
+print(f"Target distribution:\n{df['Target'].value_counts()}")
+print(f"Naive baseline: {df['Target'].mean()*100:.1f}%")
+```
+
+### SPY Price History and Train/Test Split
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show train/test split code"
+#| fig-cap: "SPY closing price 2005-2024 with chronological 70/30 train/test split"
+
+# Iteration 3 - momentum-only feature set
+feature_cols = ['SMA_50', 'SMA_Ratio', 'MACD', 'ROC_14', 'Stochastic_14',
+                'CCI_20', 'OBV', 'Lag_1_Return', 'Lag_5_Return']
+
+split_index = int(len(df) * 0.7)
+split_date = df.index[split_index]
+
+fig = go.Figure()
+fig.add_trace(go.Scatter(
+    x=df.index[:split_index], y=df['close'][:split_index],
+    mode='lines', name='Training Set',
+    line=dict(color='#264653', width=1)))
+fig.add_trace(go.Scatter(
+    x=df.index[split_index:], y=df['close'][split_index:],
+    mode='lines', name='Test Set',
+    line=dict(color='#2a9d8f', width=1)))
+fig.add_trace(go.Scatter(
+    x=[split_date, split_date], y=[df['close'].min(), df['close'].max()],
+    mode='lines', name=f'Split: {split_date.strftime("%Y-%m-%d")}',
+    line=dict(color='#e63946', dash='dash', width=1.5)))
+fig.update_layout(
+    title='SPY Closing Price 2005-2024 with Chronological Train/Test Split',
+    xaxis_title='Date', yaxis_title='Closing Price (USD)',
+    plot_bgcolor='white',
+    yaxis=dict(gridcolor='#f0f0f0'),
+    xaxis=dict(showgrid=False))
+fig.show()
+```
+
+### Model Training and Evaluation
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show model training code"
+
+x = df[feature_cols]
+y = df['Target']
+
+x_train = x.iloc[:split_index]
+x_test = x.iloc[split_index:]
+y_train = y.iloc[:split_index]
+y_test = y.iloc[split_index:]
+
+scaler = StandardScaler()
+x_train_scaled = scaler.fit_transform(x_train)
+x_test_scaled = scaler.transform(x_test)
+
+models = {
+    'Logistic Regression': LogisticRegression(max_iter=1000, random_state=42),
+    'Random Forest': RandomForestClassifier(n_estimators=200, max_depth=5, random_state=42),
+    'Gradient Boosting': GradientBoostingClassifier(n_estimators=200, learning_rate=0.05,
+                                                     max_depth=3, random_state=42),
+    'XGBoost': XGBClassifier(n_estimators=200, learning_rate=0.05, max_depth=3,
+                              random_state=42, eval_metric='logloss')
+}
+
+model_names, accuracy_scores, precision_scores = [], [], []
+recall_scores, f1_scores, roc_auc_scores = [], [], []
+confusion_matrices, proba_scores = [], []
+
+for name, model in models.items():
+    model.fit(x_train_scaled, y_train)
+    y_pred = model.predict(x_test_scaled)
+    y_proba = model.predict_proba(x_test_scaled)[:, 1]
+
+    model_names.append(name)
+    accuracy_scores.append(round(accuracy_score(y_test, y_pred), 4))
+    precision_scores.append(round(precision_score(y_test, y_pred), 4))
+    recall_scores.append(round(recall_score(y_test, y_pred), 4))
+    f1_scores.append(round(f1_score(y_test, y_pred), 4))
+    roc_auc_scores.append(round(roc_auc_score(y_test, y_proba), 4))
+    confusion_matrices.append(confusion_matrix(y_test, y_pred))
+    proba_scores.append(y_proba)
+    print(f"{name} trained successfully")
+
+results_df = pd.DataFrame({
+    'Model': model_names,
+    'Accuracy': accuracy_scores,
+    'Precision': precision_scores,
+    'Recall': recall_scores,
+    'F1-Score': f1_scores,
+    'ROC-AUC': roc_auc_scores
+})
+
+print(f"\nNaive baseline: {y_test.mean()*100:.1f}%")
+print(results_df.to_string(index=False))
+```
+
+### ROC Curves
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show ROC curve code"
+#| fig-cap: "ROC curves for all four classifiers - Iteration 3 momentum-only configuration"
+
+colors = ['#264653', '#2a9d8f', '#e76f51', '#e9c46a']
+
+fig = go.Figure()
+for i, (name, proba, auc) in enumerate(zip(model_names, proba_scores, roc_auc_scores)):
+    fpr, tpr, _ = roc_curve(y_test, proba)
+    fig.add_trace(go.Scatter(
+        x=fpr, y=tpr, mode='lines', name=f'{name} (AUC = {auc})',
+        line=dict(color=colors[i], width=2)))
+
+fig.add_trace(go.Scatter(
+    x=[0, 1], y=[0, 1], mode='lines', name='Random Classifier (AUC = 0.5)',
+    line=dict(color='grey', dash='dash')))
+
+fig.update_layout(
+    title='ROC Curve Comparison - Iteration 3',
+    xaxis_title='False Positive Rate',
+    yaxis_title='True Positive Rate',
+    plot_bgcolor='white',
+    yaxis=dict(gridcolor='#f0f0f0'),
+    xaxis=dict(showgrid=False))
+fig.show()
+```
+
+### Confusion Matrices
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show confusion matrix code"
+#| fig-cap: "Confusion matrices for all four classifiers - Iteration 3"
+
+fig = make_subplots(rows=2, cols=2,
+                    subplot_titles=model_names)
+
+positions = [(1,1), (1,2), (2,1), (2,2)]
+
+for i, (cm, pos) in enumerate(zip(confusion_matrices, positions)):
+    fig.add_trace(
+        go.Heatmap(z=cm, colorscale='Blues',
+                   text=cm, texttemplate='%{text}',
+                   showscale=False,
+                   xaxis=f'x{i+1}', yaxis=f'y{i+1}'),
+        row=pos[0], col=pos[1])
+
+fig.update_layout(
+    title_text='Confusion Matrices - Iteration 3',
+    height=600,
+    plot_bgcolor='white')
+fig.show()
+```
+
+---
+
+## Reflections
+
+This was the most technically demanding project of my degree. The iterative
+approach taught me that more features do not automatically mean better models
+and that understanding *why* a model fails is as valuable as optimising it to
+succeed.
+
+The near-random results were initially frustrating, but working through the
+Efficient Market Hypothesis literature reframed them entirely. A model that
+performs at 51% on SPY next-day prediction is not a failure — it is evidence
+that the market is doing its job. That conceptual shift, from "my model is
+broken" to "the market is efficient", was the most important thing I learned
+from this project.[^1]
+
+[^1]: The full paper, including literature review, methodology, and discussion,
+is available on request.
+
+---
+
+::: {.small-text}
+*Dataset: SPY Daily OHLCV Data 2005-2024, sourced from
+[Kaggle](https://www.kaggle.com). Cover image by brgfx via
+[Freepik](https://freepik.com)*
+:::

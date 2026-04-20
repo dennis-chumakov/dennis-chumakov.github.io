@@ -25,5 +25,14 @@
   },
   "reflection.qmd": {
     "reflection.html": "824164e1"
+  },
+  "projects/list/dissertation.qmd": {
+    "dissertation.html": "af8a88dd"
+  },
+  "projects/list/freshtrack.qmd": {
+    "freshtrack.html": "79c2d32d"
+  },
+  "projects/list/ml-paper.qmd": {
+    "ml-paper.html": "f25fb54d"
   }
 }

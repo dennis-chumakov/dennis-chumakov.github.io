@@ -1,6 +1,10 @@
 [
   {
     "listing": "/projects/index.html",
-    "items": []
+    "items": [
+      "/projects/list/dissertation.html",
+      "/projects/list/freshtrack.html",
+      "/projects/list/ml-paper.html"
+    ]
   }
 ]

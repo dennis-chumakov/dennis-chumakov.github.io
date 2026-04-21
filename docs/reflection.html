@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,12 +138,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -152,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
   
@@ -164,8 +164,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="looking-back" class="level2">
+<h2 class="anchored" data-anchor-id="looking-back">Looking Back</h2>
+<p>This module asked me to build something I had never built before: a fully deployed personal website, written in code, managed with version control, and published for anyone to find. Coming in, I had no experience with Quarto, SCSS, or Git. Leaving, I have a live portfolio that I am genuinely proud of.</p>
+<p>That shift did not happen all at once. It happened in small moments of things clicking. Understanding why a render was failing, figuring out why a style was not applying, realising that a commit message actually matters when you are debugging three days later.</p>
+<hr>
+</section>
+<section id="what-i-found-hard" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-found-hard">What I Found Hard</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>The Hardest Part
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The most challenging aspect was not any single language or tool. It was <strong>context switching between all of them at once</strong>. A single page on this site involves Quarto Markdown for structure, Python for active code chunks, SCSS for styling, YAML for configuration, and Git for version control. Keeping track of which language I was writing in, what syntax it expected, and remembering to render, preview, and commit at each stage took conscious effort throughout the entire project.</p>
+</div>
+</div>
+<p>Early on I made the classic mistake of making too many changes at once before rendering, which made errors much harder to trace. Learning to work in smaller increments - change one thing, render, check, commit - was probably the most practically useful habit I developed.</p>
+<hr>
+</section>
+<section id="what-surprised-me" class="level2">
+<h2 class="anchored" data-anchor-id="what-surprised-me">What Surprised Me</h2>
+<p>What surprised me most was how accessible the whole process turned out to be once the fundamentals were in place. Before starting, building and deploying a website from scratch felt like something that required a computer science background. In practice, once I understood the structure, how <code>_quarto.yml</code> wires everything together, how SCSS variables cascade through the design, how Git tracks every change, the rest followed naturally.</p>
+<p>I also did not expect to find it genuinely enjoyable. There is something satisfying about writing a few lines of Python and watching an interactive Plotly chart appear on a page that anyone in the world can visit.</p>
+<hr>
+</section>
+<section id="what-i-would-do-differently" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-would-do-differently">What I Would Do Differently</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Lesson Learned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Design before you build.</strong> If I were starting over, I would spend time at the beginning sketching out the structure and visual design I wanted: which pages, what content on each, what the colour palette and typography would be. Do this <strong>before</strong> writing a single line of code. I spent more time than necessary restructuring pages and adjusting layouts mid-build because I had not fully thought through the design upfront.</p>
+</div>
+</div>
+<p>A clear plan at the start would have made the build faster, the Git history cleaner, and the final result more cohesive from the beginning.</p>
+<hr>
+</section>
+<section id="skills-developed" class="level2">
+<h2 class="anchored" data-anchor-id="skills-developed">Skills Developed</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Technical Skills Checklist
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">Quarto — building and deploying a multi-page website</label></li>
+<li><label><input type="checkbox" checked="">Git and GitHub — version control, incremental commits, GitHub Pages deployment</label></li>
+<li><label><input type="checkbox" checked="">Python — data analysis, machine learning, interactive Plotly visualisations</label></li>
+<li><label><input type="checkbox" checked="">SCSS — custom styling with Sass variables, Google Fonts, responsive layout</label></li>
+<li><label><input type="checkbox" checked="">Markdown — rich content with callouts, tables, footnotes, Mermaid diagrams</label></li>
+<li><label><input type="checkbox" checked="">HTML — raw HTML blocks, contact forms, custom divs</label></li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="looking-forward" class="level2">
+<h2 class="anchored" data-anchor-id="looking-forward">Looking Forward</h2>
+<p>I am not fully certain where I will be a year from now, but I am certain these skills will be useful wherever I end up. Data literacy and the ability to build things digitally are no longer niche technical competencies. They are increasingly expected across business, operations, marketing, and strategy roles.</p>
+<p>Beyond the professional applications, what I find most interesting is the personal utility. The same skills that built this portfolio can build a website for a side business, a hobby blog, or a tool for tracking something I care about. That flexibility, the ability to build things for yourself without depending on someone else to do it, feels genuinely valuable in a way that goes beyond any specific job title or industry.</p>
+<p>This portfolio is the most concrete evidence I have of that. It is not a submitted assignment sitting in a folder somewhere. It is a live website that I built, that I own, and that I can keep developing long after this module ends.</p>
+<hr>
+</section>
+<section id="a-final-note-on-the-process" class="level2">
+<h2 class="anchored" data-anchor-id="a-final-note-on-the-process">A Final Note on the Process</h2>
+<p>The projects on this site - the dissertation on workplace social media monitoring, the machine learning paper on SPY price prediction, the FreshTRACK venture - were not built for this portfolio. They were built because the modules demanded them. What this module gave me was the ability to present them properly: to take real work, write active code around it, and publish it in a way that a future employer, collaborator, or client could actually engage with.</p>
+<p>That translation from academic work to professional presence is what I will take most from this module.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

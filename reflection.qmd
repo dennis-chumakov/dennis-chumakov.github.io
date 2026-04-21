@@ -1,3 +1,120 @@
 ---
 title: "Reflection"
+page-layout: article
 ---
+
+## Looking Back
+
+This module asked me to build something I had never built before: a fully
+deployed personal website, written in code, managed with version control, and
+published for anyone to find. Coming in, I had no experience with Quarto,
+SCSS, or Git. Leaving, I have a live portfolio that I am genuinely proud of.
+
+That shift did not happen all at once. It happened in small moments of things
+clicking. Understanding why a render was failing, figuring out why a style
+was not applying, realising that a commit message actually matters when you
+are debugging three days later.
+
+---
+
+## What I Found Hard
+
+::: {.callout-note}
+## The Hardest Part
+The most challenging aspect was not any single language or tool. It was
+**context switching between all of them at once**. A single page on this site
+involves Quarto Markdown for structure, Python for active code chunks, SCSS
+for styling, YAML for configuration, and Git for version control. Keeping
+track of which language I was writing in, what syntax it expected, and
+remembering to render, preview, and commit at each stage took conscious effort
+throughout the entire project.
+:::
+
+Early on I made the classic mistake of making too many changes at once before
+rendering, which made errors much harder to trace. Learning to work in smaller
+increments – change one thing, render, check, commit – was probably the most
+practically useful habit I developed.
+
+---
+
+## What Surprised Me
+
+What surprised me most was how accessible the whole process turned out to be
+once the fundamentals were in place. Before starting, building and deploying
+a website from scratch felt like something that required a computer science
+background. In practice, once I understood the structure, how `_quarto.yml`
+wires everything together, how SCSS variables cascade through the design, how
+Git tracks every change, the rest followed naturally.
+
+I also did not expect to find it genuinely enjoyable. There is something
+satisfying about writing a few lines of Python and watching an interactive
+Plotly chart appear on a page that anyone in the world can visit.
+
+---
+
+## What I Would Do Differently
+
+::: {.callout-tip}
+## Lesson Learned
+**Design before you build.** If I were starting over, I would spend time at
+the beginning sketching out the structure and visual design I wanted: which
+pages, what content on each, what the colour palette and typography would be.
+Do this **before** writing a single line of code. I spent more time than necessary
+restructuring pages and adjusting layouts mid-build because I had not fully
+thought through the design upfront.
+:::
+
+A clear plan at the start would have made the build faster, the Git history
+cleaner, and the final result more cohesive from the beginning.
+
+---
+
+## Skills Developed
+
+::: {.callout-tip icon=false}
+### Technical Skills Checklist
+
+- [x] Quarto — building and deploying a multi-page website
+- [x] Git and GitHub — version control, incremental commits, GitHub Pages deployment
+- [x] Python — data analysis, machine learning, interactive Plotly visualisations
+- [x] SCSS — custom styling with Sass variables, Google Fonts, responsive layout
+- [x] Markdown — rich content with callouts, tables, footnotes, Mermaid diagrams
+- [x] HTML — raw HTML blocks, contact forms, custom divs
+:::
+
+---
+
+## Looking Forward
+
+I am not fully certain where I will be a year from now, but I am certain
+these skills will be useful wherever I end up. Data literacy and the ability
+to build things digitally are no longer niche technical competencies. They
+are increasingly expected across business, operations, marketing, and
+strategy roles.
+
+Beyond the professional applications, what I find most interesting is the
+personal utility. The same skills that built this portfolio can build a
+website for a side business, a hobby blog, or a tool for tracking something
+I care about. That flexibility, the ability to build things for yourself
+without depending on someone else to do it, feels genuinely valuable in a
+way that goes beyond any specific job title or industry.
+
+This portfolio is the most concrete evidence I have of that. It is not a
+submitted assignment sitting in a folder somewhere. It is a live website
+that I built, that I own, and that I can keep developing long after this
+module ends.
+
+---
+
+## A Final Note on the Process
+
+The projects on this site – the dissertation on workplace social media
+monitoring, the machine learning paper on SPY price prediction, the FreshTRACK
+venture – were not built for this portfolio. They were built because the
+modules demanded them. What this module gave me was the ability to present
+them properly: to take real work, write active code around it, and publish it
+in a way that a future employer, collaborator, or client could actually engage
+with.
+
+That translation from academic work to professional presence is what I
+will take most from this module.

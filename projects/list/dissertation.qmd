@@ -1,7 +1,7 @@
 ---
 title: "Employee Social Media Monitoring"
 description: "Primary research study on employee perceptions of workplace social media monitoring. Survey data from 64 respondents analysed using Python."
-date: 2026-03-01
+date: 2026-04-14
 image: ../../images/dissertation.jpg
 categories:
   - "Python"

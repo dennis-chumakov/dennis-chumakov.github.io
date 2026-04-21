@@ -214,7 +214,70 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Stock Market Direction Prediction\n\n\n\nPython\n\nMachine Learning\n\nFinancial Data\n\n\n\nCan machine learning predict next-day SPY price direction using technical indicators? A comparative study of four classifiers across three iterative feature configurations.\n\n\n\nApr 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmployee Social Media Monitoring\n\n\n\nPython\n\nData Analysis\n\nPrimary Research\n\n\n\nPrimary research study on employee perceptions of workplace social media monitoring. Survey data from 64 respondents analysed using Python.\n\n\n\nMar 1, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Stock Market Direction Prediction\n\n\n\nPython\n\nMachine Learning\n\nFinancial Data\n\n\n\nCan machine learning predict next-day SPY price direction using technical indicators? A comparative study of four classifiers across three iterative feature configurations.\n\n\n\nApr 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmployee Social Media Monitoring\n\n\n\nPython\n\nData Analysis\n\nPrimary Research\n\n\n\nPrimary research study on employee perceptions of workplace social media monitoring. Survey data from 64 respondents analysed using Python.\n\n\n\nApr 14, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreshTRACK\n\n\n\nEntrepreneurship\n\nMarketing\n\nBusiness Strategy\n\n\n\nWe built a startup. Here’s everything from the first idea to the Dragon’s Den pitch.\n\n\n\nApr 15, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/list/freshtrack.html",
+    "href": "projects/list/freshtrack.html",
+    "title": "FreshTRACK",
+    "section": "",
+    "text": "FreshTRACK is an AI-powered fridge-management system that turns any conventional fridge into a smart fridge using in-fridge cameras and a mobile app. The system tracks fridge contents in real time, reduces household food waste, supports meal planning, and saves households time and money.\nThe venture was developed as part of the New Enterprise Development module at Dublin City University, where our team progressed from initial ideation through to a full investor-ready business plan and a live Dragon’s Den-style pitch before a panel of six investors.\n\n\n\n\n\n\nNoteThe Problem\n\n\n\n67% of people forget what is in their fridge (FreshTRACK Survey, 2025). Irish households waste an average of €700 per year on food.1\nFreshTRACK solves this with a one-time hardware purchase and a companion app — no subscription, no complexity."
+  },
+  {
+    "objectID": "projects/list/freshtrack.html#overview",
+    "href": "projects/list/freshtrack.html#overview",
+    "title": "FreshTRACK",
+    "section": "",
+    "text": "FreshTRACK is an AI-powered fridge-management system that turns any conventional fridge into a smart fridge using in-fridge cameras and a mobile app. The system tracks fridge contents in real time, reduces household food waste, supports meal planning, and saves households time and money.\nThe venture was developed as part of the New Enterprise Development module at Dublin City University, where our team progressed from initial ideation through to a full investor-ready business plan and a live Dragon’s Den-style pitch before a panel of six investors.\n\n\n\n\n\n\nNoteThe Problem\n\n\n\n67% of people forget what is in their fridge (FreshTRACK Survey, 2025). Irish households waste an average of €700 per year on food.1\nFreshTRACK solves this with a one-time hardware purchase and a companion app — no subscription, no complexity."
+  },
+  {
+    "objectID": "projects/list/freshtrack.html#the-product",
+    "href": "projects/list/freshtrack.html#the-product",
+    "title": "FreshTRACK",
+    "section": "The Product",
+    "text": "The Product\n\n\n\n\nFreshTRACK prototype — in-fridge camera unit and companion app"
+  },
+  {
+    "objectID": "projects/list/freshtrack.html#key-numbers",
+    "href": "projects/list/freshtrack.html#key-numbers",
+    "title": "FreshTRACK",
+    "section": "Key Numbers",
+    "text": "Key Numbers\n\n\n💰 Investment Ask\n€100,000 for 9.5% equity\n€60k product development €40k marketing\n\n\n📈 Market Opportunity\nTAM $2.83bn SAM $1.61bn SOM $4.8M (Europe)\n\n\n📊 Financial Projections\n30,000 units by FY30 58.5% CAGR over 4 years Profitable by 2028"
+  },
+  {
+    "objectID": "projects/list/freshtrack.html#market-sizing",
+    "href": "projects/list/freshtrack.html#market-sizing",
+    "title": "FreshTRACK",
+    "section": "Market Sizing",
+    "text": "Market Sizing\n\n\n\n\n\nflowchart TD\n    A[TAM - Total Addressable Market\\n$2.83bn Global Smart Fridge Market] --&gt; B[SAM - Serviceable Addressable Market\\n$1.61bn Europe Smart Home Segment]\n    B --&gt; C[SOM - Serviceable Obtainable Market\\n$4.8M Initial European Launch Target]\n    style A fill:#264653,color:#fff\n    style B fill:#2a9d8f,color:#fff\n    style C fill:#e76f51,color:#fff"
+  },
+  {
+    "objectID": "projects/list/freshtrack.html#venture-development-journey",
+    "href": "projects/list/freshtrack.html#venture-development-journey",
+    "title": "FreshTRACK",
+    "section": "Venture Development Journey",
+    "text": "Venture Development Journey\nThis project was built across six assignments, each representing a distinct stage of the startup development process:\n\n\n\n\n\n\nNote📋 Concept Paper\n\n\n\nIntroduced FreshTRACK as a solution to household food waste. Defined the core problem, proposed the product concept, mapped the customer journey, analysed competitors, and outlined the initial technical architecture and early financial logic.\nDownload Concept Paper\n\n\n\n\n\n\n\n\nNote🔬 Feasibility Report\n\n\n\nEvaluated FreshTRACK across product, market, organisational, legal, and financial feasibility. Included primary customer research via survey and focus groups across Ireland, Germany, Canada, and the USA. Used the Van Westendorp Pricing Model to validate the unit price of €121.57.\nDownload Feasibility Report\n\n\n\n\n\n\n\n\nNote📣 Marketing Strategy Report\n\n\n\nDefined the FreshTRACK brand and proposed a two-year marketing plan across five coordinated initiatives: organic social media, trade shows, influencer collaborations, corporate partnerships, and a poster campaign. Set campaign objectives, budgets, timelines, and success metrics.\nDownload Marketing Report\n\n\n\n\n\n\n\n\nNote🎤 Dragon’s Den Pitch\n\n\n\nTranslated the full business case into a 7-minute investor pitch before a panel of six investors, followed by a 13-minute Q&A. The pitch covered the problem, solution, customer journey, competitive landscape, business model, financials, and investment ask.\nDownload Pitch Deck\n\n\n\n\n\n\n\n\nNote📄 Business Plan\n\n\n\nThe most comprehensive deliverable — a full 45-page startup plan covering executive summary, market analysis, marketing and sales strategy, R&D, staffing, operations, financial projections, and funding requirements. The clearest evidence of taking a venture from concept to execution-ready plan.\nDownload Business Plan"
+  },
+  {
+    "objectID": "projects/list/freshtrack.html#financial-snapshot",
+    "href": "projects/list/freshtrack.html#financial-snapshot",
+    "title": "FreshTRACK",
+    "section": "Financial Snapshot",
+    "text": "Financial Snapshot\n\n\n\nMetric\nValue\n\n\n\n\nUnit Price\n€121.57 (excl. VAT)\n\n\nUnit Cost\n€85.09\n\n\nGross Margin at Launch\n30%\n\n\nGross Margin by FY30\n42.3%\n\n\nEBITDA Margin by FY30\n29.6%\n\n\nBreak-even\n2028\n\n\nUnits by FY30\n30,000\n\n\nRevenue CAGR\n58.5% over 4 years\n\n\n\n\n\n\n\n\n\nTipPrimary Research\n\n\n\nFreshTRACK’s pricing and market validation was based on 64 survey respondents and two focus groups across Ireland, Germany, Canada, and the USA. The Van Westendorp Pricing Model was applied, filtered to respondents aged 24+ spending €300+ per month on groceries."
+  },
+  {
+    "objectID": "projects/list/freshtrack.html#reflections",
+    "href": "projects/list/freshtrack.html#reflections",
+    "title": "FreshTRACK",
+    "section": "Reflections",
+    "text": "Reflections\nThis was the most applied and team-oriented project of my degree. Taking an idea from a blank page to a live investor pitch taught me things no classroom session could — how to pressure-test assumptions, how to tell a story with numbers, and how to disagree productively with teammates under deadline pressure.\nThe Dragon’s Den format was particularly valuable. Knowing that six real investors would challenge every number forced a level of rigour that I carried into every other project afterwards.\n\n\nCover image: FreshTRACK brand assets, Team 22, DCU New Enterprise Development 2026"
+  },
+  {
+    "objectID": "projects/list/freshtrack.html#footnotes",
+    "href": "projects/list/freshtrack.html#footnotes",
+    "title": "FreshTRACK",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nEPA. (2023). Food Waste Statistics. Available at: epa.ie↩︎"
   },
   {
     "objectID": "projects.html",

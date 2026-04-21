@@ -1,23 +1,329 @@
 ---
 title: "Photography"
+page-layout: full
 ---
 
-# Photography
-
-Outside of my academic and professional work, I enjoy photography and capturing moments from travel and everyday life.
-
-## Travel
-
-![](images\travel01.jpeg)
-
-![](images\travel02.PNG)
-
-![](images\travel03.jpeg)
+::: {.photography-intro}
+Living between Dublin and Canada for the past few years meant one thing — a lot of airports, a lot of new places, and always a camera nearby. What started as documenting trips turned into a genuine passion. These are some of my favourite shots from the places I have been lucky enough to explore.
+:::
 
 ---
 
-## Food & Cooking
+## 🍁 North America
 
-![](images\food01.jpeg)
+### Ontario
 
-![](images\food02.jpeg)
+```{=html}
+<div class="photo-grid">
+  <img src="photography/north-america/ontario/ontario-1.jpg" alt="Ontario photo">
+  <img src="photography/north-america/ontario/ontario-2.jpg" alt="Ontario photo">
+  <img src="photography/north-america/ontario/ontario-3.jpg" alt="Ontario photo">
+  <img src="photography/north-america/ontario/ontario-4.jpg" alt="Ontario photo">
+  <img src="photography/north-america/ontario/ontario-5.jpg" alt="Ontario photo">
+  <img src="photography/north-america/ontario/ontario-6.jpg" alt="Ontario photo">
+  <img src="photography/north-america/ontario/ontario-7.jpg" alt="Ontario photo">
+  <img src="photography/north-america/ontario/ontario-8.jpg" alt="Ontario photo">
+</div>
+```
+
+### Kelowna
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/north-america/kelowna/kelowna-1.jpg" alt="Kelowna photo">
+  <img src="photography/north-america/kelowna/kelowna-2.jpg" alt="Kelowna photo">
+  <img src="photography/north-america/kelowna/kelowna-3.jpg" alt="Kelowna photo">
+  <img src="photography/north-america/kelowna/kelowna-4.jpg" alt="Kelowna photo">
+</div>
+```
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/florida.png" alt="Boarding card for Florida">
+</div>
+```
+
+### Florida
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/north-america/florida/florida-1.jpg" alt="Florida photo">
+  <img src="photography/north-america/florida/florida-2.jpg" alt="Florida photo">
+  <img src="photography/north-america/florida/florida-3.jpg" alt="Florida photo">
+  <img src="photography/north-america/florida/florida-4.jpg" alt="Florida photo">
+  <img src="photography/north-america/florida/florida-5.jpg" alt="Florida photo">
+</div>
+```
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/dominican-republic.png" alt="Boarding card for Punta Cana">
+</div>
+```
+
+### Punta Cana
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/north-america/dominican-republic/dr-1.jpg" alt="Punta Cana photo">
+  <img src="photography/north-america/dominican-republic/dr-2.jpg" alt="Punta Cana photo">
+  <img src="photography/north-america/dominican-republic/dr-3.jpg" alt="Punta Cana photo">
+  <img src="photography/north-america/dominican-republic/dr-4.jpg" alt="Punta Cana photo">
+  <img src="photography/north-america/dominican-republic/dr-5.jpg" alt="Punta Cana photo">
+</div>
+```
+
+---
+
+## 🇮🇪 Ireland
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/dublin.png" alt="Boarding card for Dublin & Ireland">
+</div>
+```
+
+### Dublin & Ireland
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/ireland/dublin-1.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-10.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-11.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-12.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-13.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-14.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-15.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-16.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-17.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-18.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-19.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-2.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-20.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-3.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-4.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-5.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-6.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-7.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-8.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-9.jpg" alt="Dublin & Ireland photo">
+</div>
+```
+
+---
+
+## 🌍 Europe
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/netherlands.png" alt="Boarding card for Amsterdam">
+</div>
+```
+
+### Amsterdam
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/europe/netherlands/amsterdam-1.jpg" alt="Amsterdam photo">
+  <img src="photography/europe/netherlands/amsterdam-2.jpg" alt="Amsterdam photo">
+  <img src="photography/europe/netherlands/amsterdam-3.jpg" alt="Amsterdam photo">
+  <img src="photography/europe/netherlands/amsterdam-4.jpg" alt="Amsterdam photo">
+  <img src="photography/europe/netherlands/amsterdam-5.jpg" alt="Amsterdam photo">
+  <img src="photography/europe/netherlands/amsterdam-6.jpg" alt="Amsterdam photo">
+</div>
+```
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/denmark.png" alt="Boarding card for Copenhagen">
+</div>
+```
+
+### Copenhagen
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/europe/denmark/copenhagen-1.jpg" alt="Copenhagen photo">
+  <img src="photography/europe/denmark/copenhagen-2.jpg" alt="Copenhagen photo">
+  <img src="photography/europe/denmark/copenhagen-3.jpg" alt="Copenhagen photo">
+  <img src="photography/europe/denmark/copenhagen-4.jpg" alt="Copenhagen photo">
+  <img src="photography/europe/denmark/copenhagen-5.jpg" alt="Copenhagen photo">
+  <img src="photography/europe/denmark/copenhagen-6.jpg" alt="Copenhagen photo">
+</div>
+```
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/sweden.png" alt="Boarding card for Stockholm">
+</div>
+```
+
+### Stockholm
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/europe/sweden/stockholm-1.jpg" alt="Stockholm photo">
+  <img src="photography/europe/sweden/stockholm-2.jpg" alt="Stockholm photo">
+  <img src="photography/europe/sweden/stockholm-3.jpg" alt="Stockholm photo">
+  <img src="photography/europe/sweden/stockholm-4.jpg" alt="Stockholm photo">
+  <img src="photography/europe/sweden/stockholm-5.jpg" alt="Stockholm photo">
+  <img src="photography/europe/sweden/stockholm-6.jpg" alt="Stockholm photo">
+</div>
+```
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/uk.png" alt="Boarding card for Edinburgh & Glasgow">
+</div>
+```
+
+### Edinburgh & Glasgow
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/europe/uk/uk-1.jpg" alt="Edinburgh & Glasgow photo">
+  <img src="photography/europe/uk/uk-2.jpg" alt="Edinburgh & Glasgow photo">
+  <img src="photography/europe/uk/uk-3.jpg" alt="Edinburgh & Glasgow photo">
+  <img src="photography/europe/uk/uk-4.jpg" alt="Edinburgh & Glasgow photo">
+  <img src="photography/europe/uk/uk-5.jpg" alt="Edinburgh & Glasgow photo">
+  <img src="photography/europe/uk/uk-6.jpg" alt="Edinburgh & Glasgow photo">
+</div>
+```
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/germany.png" alt="Boarding card for Germany">
+</div>
+```
+
+### Germany
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/europe/germany/germany-1.jpg" alt="Germany photo">
+  <img src="photography/europe/germany/germany-2.jpg" alt="Germany photo">
+  <img src="photography/europe/germany/germany-3.jpg" alt="Germany photo">
+  <img src="photography/europe/germany/germany-4.jpg" alt="Germany photo">
+  <img src="photography/europe/germany/germany-5.jpg" alt="Germany photo">
+  <img src="photography/europe/germany/germany-6.jpg" alt="Germany photo">
+</div>
+```
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/spain.png" alt="Boarding card for Mallorca & Alicante">
+</div>
+```
+
+### Mallorca & Alicante
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/europe/spain/spain-1.jpg" alt="Mallorca & Alicante photo">
+  <img src="photography/europe/spain/spain-2.jpg" alt="Mallorca & Alicante photo">
+  <img src="photography/europe/spain/spain-3.jpg" alt="Mallorca & Alicante photo">
+  <img src="photography/europe/spain/spain-4.jpg" alt="Mallorca & Alicante photo">
+  <img src="photography/europe/spain/spain-5.jpg" alt="Mallorca & Alicante photo">
+  <img src="photography/europe/spain/spain-6.jpg" alt="Mallorca & Alicante photo">
+</div>
+```
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/france.png" alt="Boarding card for Nice & Paris">
+</div>
+```
+
+### Nice & Paris
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/europe/france/france-1.jpg" alt="Nice & Paris photo">
+  <img src="photography/europe/france/france-2.jpg" alt="Nice & Paris photo">
+  <img src="photography/europe/france/france-3.jpg" alt="Nice & Paris photo">
+  <img src="photography/europe/france/france-4.jpg" alt="Nice & Paris photo">
+  <img src="photography/europe/france/france-5.jpg" alt="Nice & Paris photo">
+  <img src="photography/europe/france/france-6.jpg" alt="Nice & Paris photo">
+  <img src="photography/europe/france/france-7.jpg" alt="Nice & Paris photo">
+  <img src="photography/europe/france/france-8.jpg" alt="Nice & Paris photo">
+  <img src="photography/europe/france/france-9.jpg" alt="Nice & Paris photo">
+</div>
+```
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/portugal.png" alt="Boarding card for Faro & Lisbon">
+</div>
+```
+
+### Faro & Lisbon
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/europe/portugal/portugal-1.jpg" alt="Faro & Lisbon photo">
+  <img src="photography/europe/portugal/portugal-2.jpg" alt="Faro & Lisbon photo">
+  <img src="photography/europe/portugal/portugal-3.jpg" alt="Faro & Lisbon photo">
+  <img src="photography/europe/portugal/portugal-4.jpg" alt="Faro & Lisbon photo">
+  <img src="photography/europe/portugal/portugal-5.jpg" alt="Faro & Lisbon photo">
+  <img src="photography/europe/portugal/portugal-6.jpg" alt="Faro & Lisbon photo">
+  <img src="photography/europe/portugal/portugal-7.jpg" alt="Faro & Lisbon photo">
+  <img src="photography/europe/portugal/portugal-8.jpg" alt="Faro & Lisbon photo">
+  <img src="photography/europe/portugal/portugal-9.jpg" alt="Faro & Lisbon photo">
+</div>
+```
+
+---
+
+## 🇮🇹 Italy Road Trip
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/italy.png" alt="Boarding card for Lake Como · Bormio · Dolomites · Venice · Parma">
+</div>
+```
+
+### Lake Como · Bormio · Dolomites · Venice · Parma
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/italy/italy-1.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-10.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-11.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-12.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-2.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-3.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-4.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-5.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-6.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-7.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-8.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+  <img src="photography/italy/italy-9.jpg" alt="Lake Como · Bormio · Dolomites · Venice · Parma photo">
+</div>
+```
+
+---
+
+## 🇲🇦 Morocco
+
+```{=html}
+<div class="boarding-card-container">
+  <img src="photography/boarding-cards/morocco.png" alt="Boarding card for Marrakesh">
+</div>
+```
+
+### Marrakesh
+
+```{=html}
+<div class="photo-grid">
+  <img src="photography/morocco/morocco-1.jpg" alt="Marrakesh photo">
+  <img src="photography/morocco/morocco-2.jpg" alt="Marrakesh photo">
+  <img src="photography/morocco/morocco-3.jpg" alt="Marrakesh photo">
+  <img src="photography/morocco/morocco-4.jpg" alt="Marrakesh photo">
+  <img src="photography/morocco/morocco-5.jpg" alt="Marrakesh photo">
+  <img src="photography/morocco/morocco-6.jpg" alt="Marrakesh photo">
+  <img src="photography/morocco/morocco-7.jpg" alt="Marrakesh photo">
+  <img src="photography/morocco/morocco-8.jpg" alt="Marrakesh photo">
+</div>
+```
+
+---

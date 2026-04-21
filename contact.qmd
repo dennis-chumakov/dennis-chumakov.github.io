@@ -1,3 +1,37 @@
 ---
 title: "Contact"
+page-layout: article
+format:
+  html:
+    html-math-method: plain
 ---
+
+If you'd like to learn more about my experience, projects, or want any travel
+tips, feel free to reach out below.
+
+---
+```{=html}
+<form action="https://formspree.io/f/xqewdvvn" method="POST">
+
+  <div class="mb-3">
+    <label for="name" class="form-label"><strong>Name</strong></label>
+    <input type="text" class="form-control" id="name" name="name"
+           placeholder="Your name" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label"><strong>Email</strong></label>
+    <input type="email" class="form-control" id="email" name="email"
+           placeholder="your@email.com" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label"><strong>Message</strong></label>
+    <textarea class="form-control" id="message" name="message"
+              rows="5" placeholder="Your message..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Send Message</button>
+
+</form>
+```

@@ -18,7 +18,7 @@
     "href": "reflection.html#what-i-found-hard",
     "title": "Reflection",
     "section": "What I Found Hard",
-    "text": "What I Found Hard\n\n\n\n\n\n\nNoteThe Hardest Part\n\n\n\nThe most challenging aspect was not any single language or tool. It was context switching between all of them at once. A single page on this site involves Quarto Markdown for structure, Python for active code chunks, SCSS for styling, YAML for configuration, and Git for version control. Keeping track of which language I was writing in, what syntax it expected, and remembering to render, preview, and commit at each stage took conscious effort throughout the entire project.\n\n\nEarly on I made the classic mistake of making too many changes at once before rendering, which made errors much harder to trace. Learning to work in smaller increments - change one thing, render, check, commit - was probably the most practically useful habit I developed."
+    "text": "What I Found Hard\n\n\n\n\n\n\nNoteThe Hardest Part\n\n\n\nThe most challenging aspect was not any single language or tool. It was context switching between all of them at once. A single page on this site involves Quarto Markdown for structure, Python for active code chunks, SCSS for styling, YAML for configuration, and Git for version control. Keeping track of which language I was writing in, what syntax it expected, and remembering to render, preview, and commit at each stage took conscious effort throughout the entire project.\n\n\nEarly on I made the classic mistake of making too many changes at once before rendering, which made errors much harder to trace. Learning to work in smaller increments – change one thing, render, check, commit – was probably the most practically useful habit I developed."
   },
   {
     "objectID": "reflection.html#what-surprised-me",
@@ -53,7 +53,7 @@
     "href": "reflection.html#a-final-note-on-the-process",
     "title": "Reflection",
     "section": "A Final Note on the Process",
-    "text": "A Final Note on the Process\nThe projects on this site - the dissertation on workplace social media monitoring, the machine learning paper on SPY price prediction, the FreshTRACK venture - were not built for this portfolio. They were built because the modules demanded them. What this module gave me was the ability to present them properly: to take real work, write active code around it, and publish it in a way that a future employer, collaborator, or client could actually engage with.\nThat translation from academic work to professional presence is what I will take most from this module."
+    "text": "A Final Note on the Process\nThe projects on this site – the dissertation on workplace social media monitoring, the machine learning paper on SPY price prediction, the FreshTRACK venture – were not built for this portfolio. They were built because the modules demanded them. What this module gave me was the ability to present them properly: to take real work, write active code around it, and publish it in a way that a future employer, collaborator, or client could actually engage with.\nThat translation from academic work to professional presence is what I will take most from this module."
   },
   {
     "objectID": "projects/list/ml-paper.html",
@@ -270,7 +270,7 @@
     "href": "index.html",
     "title": "Dennis Chumakov",
     "section": "",
-    "text": "I’m a dual-degree business student finishing up at Dublin City University and Brock University, with a focus on data analytics, workflow automation, and applied problem-solving.\nFrom machine learning models to building a startup from the ground up — this portfolio captures the work and experiences that have defined my time in college.\nWhen I’m not buried in data, I’m usually behind a camera somewhere new.\n\n\n\n🎓 Education\nDual degree across Ireland and Canada, combining Global Business with Business Administration.\n\n\n📊 Skills\nPython · Quarto · Git · Data Analysis · Machine Learning · SCSS\n\n\n📷 Beyond the Desk\nTraveller and photographer — always looking for the next shot."
+    "text": "Business · Data · Analytics\n\n\nI’m a dual-degree business student finishing up at Dublin City University and Brock University, with a focus on data analytics, workflow automation, and applied problem-solving.\nFrom machine learning models to building a startup from the ground up — this portfolio captures the work and experiences that have defined my time in college.\nWhen I’m not buried in data, I’m usually behind a camera somewhere new.\n\n\n\n🎓 Education\nDual degree across Ireland and Canada, combining Global Business with Business Administration.\n\n\n📊 Skills\nPython · Quarto · Git · Data Analysis · Machine Learning · SCSS\n\n\n📷 Beyond the Desk\nTraveller and photographer — always looking for the next shot."
   },
   {
     "objectID": "projects/index.html",

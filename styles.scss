@@ -76,18 +76,48 @@ h1, h2, h3, h4, h5, h6,
   width: 100%;
 }
 
-//CENTER MY NAME UNDER PICTURE ON LANDING PAGE: 
-.about-entity {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
+
+// Hide title blocks globally
+.quarto-title-block,
+#title-block-header {
+  display: none !important;
+}
+
+//Restore and centre on landing page only 
+.quarto-about-jolla #title-block-header,
+.quarto-about-jolla .quarto-title-block {
+  display: block !important;
   text-align: center !important;
 }
-.about-entity .about-subtitle {
+
+.quarto-about-jolla h1.title,
+.quarto-about-jolla p.subtitle {
   text-align: center !important;
-  width: 100% !important;
 }
-.about-entity .about-title {
-  text-align: center !important;
-  width: 100% !important;
+
+//Fix the Gap between title and subtitle on landing page 
+.quarto-about-jolla #title-block-header {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.quarto-about-jolla .quarto-title {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.quarto-about-jolla .quarto-title-meta {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.quarto-about-jolla h1.title {
+  margin-bottom: 0.25rem !important;
+  padding: 0 !important;
+}
+
+.quarto-about-jolla p.subtitle {
+  margin-top: 0 !important;
+  padding: 0 !important;
 }

@@ -13,6 +13,9 @@ about:
       text: GitHub
       href: https://github.com/dennis-chumakov
       target: _blank
+title-block-style: none
+---
+
 ---
 
 I'm a dual-degree business student finishing up at **Dublin City University** 

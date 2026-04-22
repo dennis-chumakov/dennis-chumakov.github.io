@@ -7,15 +7,15 @@ page-layout: article
 
 I'm a dual-degree business student wrapping up five years split between 
 **Brock University** in St. Catharines, Ontario, Canada and **Dublin City University** 
-in Dublin, Ireland. The degree is unusual by design. I completed three years in Canada and two years in Ireland, with internships in each. It has shaped how I think about problems, people, and places more than any single course has.
+in Dublin, Ireland. The degree is unusual by design. I completed three years in Canada and two years in Ireland, with internships in both countries. It has shaped how I think about problems, people, and places more than any single course has.
 
 My academic focus sits at the intersection of business and data: how you collect 
 it, make sense of it, and turn it into decisions that actually matter. Outside the 
-classroom, I'm a photographer and traveller who believes the best way to understand 
-something is to go and see it yourself.[^1]
+classroom, I'm a photogrophare and traveller with a passion for learning about new cultures.
+I believe that the best way to understand something is to go and see it yourself. [^1]
 
 [^1]: The photography page on this site is a small record of that: a collection of  
-my favourite photos from my travels.
+my favourite photos from home and my travels abroad.
 
 ---
 
@@ -58,14 +58,14 @@ timeline
 
 ::: {.callout-note icon=false}
 ### 🎓 Dublin City University — Global Business
-**BSc Global Business** · 2024–2026 · Dublin, Ireland  
-Modules include Innovation Economics, New Enterprise Development, 
-Workflow & Data Management, and Business Ethics.
+**BA Global Business** · 2024–2026 · Dublin, Ireland  
+Modules include Machine Learning and Advanced Python, New Enterprise Development, 
+Business Strategy, Innovation Economics, Workflow & Data Management, and Business Ethics.
 :::
 
 ::: {.callout-note icon=false}
 ### 🎓 Brock University — Business Administration
-**BBA Business Administration** · 2021–2026 · St. Catharines, Ontario, Canada  
+**BBA (Hons) Business Administration** · 2021–2026 · St. Catharines, Ontario, Canada  
 Goodman School of Business. Focus on operations, data analytics, 
 and strategic management.
 :::
@@ -76,15 +76,15 @@ and strategic management.
 
 Beyond the academic work, a few things keep me grounded:
 
-- 📷 **Photography** — I shoot wherever I travel, mostly landscapes and street. 
+- 📷 **Photography** – I shoot wherever I travel, mostly landscapes and street. 
 You can see some of it on the [Photography](/photography.html) page.
-- 🍳 **Cooking** — feeding people is one of my favourite things to do.
-- ✈️ **Travel** — the dual-degree provided me with numerous opportunities for spontaneous travel, fuelling my passion. 
+- 🍳 **Cooking** – feeding people is one of my favourite things to do.
+- ✈️ **Travel** – the dual-degree provided me with numerous opportunities for spontaneous travel, fuelling my passion. 
 
 ---
 
 ::: {.callout-tip}
 ## Currently Open To
 Graduate roles and opportunities in **data analytics**, **business intelligence**, 
-or **operations** — particularly where analytical thinking meets real business impact.
+or **operations** – particularly where analytical thinking meets real business impact.
 :::

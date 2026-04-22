@@ -16,7 +16,7 @@ page-layout: article
 :::
 
 ::: {.callout-note icon=false}
-### 🚗 Fleet Assistant (Operations) — Budds' Chevrolet
+### 🚗 Fleet Assistant (Operations) – Budds' Chevrolet
 **January 2024 – August 2024** · Oakville, Ontario, Canada
 
 - Built a digital documentation system in Excel for off-site storage, improving vehicle access efficiency
@@ -25,7 +25,7 @@ page-layout: article
 :::
 
 ::: {.callout-note icon=false}
-### 🏊 Shop Clerk — Pressure Clean Pools
+### 🏊 Shop Clerk – Pressure Clean Pools
 **April 2022 – October 2023** · Oakville, Ontario, Canada
 
 - Delivered customer service resulting in measurable repeat bookings
@@ -33,7 +33,7 @@ page-layout: article
 :::
 
 ::: {.callout-note icon=false}
-### 🛒 Customer Service Representative — Canadian Tire
+### 🛒 Customer Service Representative – Canadian Tire
 **May 2020 – March 2022** · Oakville, Ontario, Canada
 
 - Resolved escalated customer concerns, resulting in positive feedback survey results
@@ -49,7 +49,7 @@ page-layout: article
 | Honours BBA | Brock University, Canada | 2021–2026 | 1.1 |
 | BA Global Business Studies | Dublin City University, Ireland | 2021–2026 | 1.1 |
 
-> Dual degree completed across two continents — internship placements in both Canada and Ireland.
+> Dual degree completed across two continents – internship placements in both Canada and Ireland.
 
 ---
 
@@ -58,12 +58,12 @@ page-layout: article
 ::: {.callout-tip icon=false}
 ### 🏆 Honours & Recognition
 
-- **Beta Gamma Sigma** — Top 10% of students in AACSB-accredited business programmes *(June 2024)*
-- **Golden Key International Honour Society** — Top 15% of students by invitation *(September 2023)*
-- **Dean's Honour List** — Year Two *(May 2023)*
-- **Dean's Honour List** — Year One *(May 2022)*
-- **Brock Scholars Entry Award** — $16,000 over 4 years based on maintaining an 80% average *(September 2021)*
-- **Ontario Scholars Award** — 80%+ academic average *(June 2021)*
+- **Beta Gamma Sigma** – Top 10% of students in AACSB-accredited business programmes *(June 2024)*
+- **Golden Key International Honour Society** – Top 15% of students by invitation *(September 2023)*
+- **Dean's Honour List** – Year Two *(May 2023)*
+- **Dean's Honour List** – Year One *(May 2022)*
+- **Brock Scholars Entry Award** – $16,000 over 4 years based on maintaining an 80% average *(September 2021)*
+- **Ontario Scholars Award** – 80%+ academic average *(June 2021)*
 :::
 
 ---
@@ -99,8 +99,8 @@ Raised awareness and promoted local food drives through community outreach effor
 ::: {.callout-important icon=false}
 ### ⚡ Beyond the Desk
 
-- **Competitive Trampoline** — Six years as a competitive athlete, multiple medal winner
-- **Snowboard Racing & American Football** — Competed during secondary school
-- **Photography & Travel** — Passionate about documenting places and cultures through a lens
-- **Reading** — Staying current with global news and a wide range of genres
+- **Competitive Trampoline** – Six years as a competitive athlete, multiple medal winner
+- **Snowboard Racing & American Football** – Competed during secondary school
+- **Photography & Travel** – Passionate about documenting places and cultures through a lens
+- **Reading** – Staying current with global news and a wide range of genres
 :::

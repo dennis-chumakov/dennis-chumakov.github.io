@@ -22,11 +22,11 @@ I'm a dual-degree business student finishing up at **Dublin City University**
 and **Brock University**, with a focus on data analytics, workflow automation, 
 and applied problem-solving.
 
-From machine learning models to building a startup from the ground up — 
+From machine learning models to building a startup from the ground up, 
 this portfolio captures the work and experiences that have defined my 
 time in college.
 
-When I'm not buried in data, I'm usually behind a camera somewhere new.
+When I'm not buried in work, I'm usually travelling somewhere new and taking photos.
 
 ---
 
@@ -45,7 +45,7 @@ Python · Quarto · Git · Data Analysis · Machine Learning · SCSS
 
 ::: {.g-col-12 .g-col-md-4 .card .text-center .p-4}
 ### 📷 Beyond the Desk
-Traveller and photographer — always looking for the next shot.
+Traveller and photographer, always looking for the next shot.
 :::
 
 ::::

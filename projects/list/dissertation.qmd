@@ -1,6 +1,6 @@
 ---
 title: "Employee Social Media Monitoring"
-description: "Primary research study on employee perceptions of workplace social media monitoring. Survey data from 64 respondents analysed using Python."
+description: "Undergraduate dissertation on employee perceptions of workplace social media monitoring. Survey data from 63 respondents analysed using Python."
 date: 2026-04-14
 image: ../../images/dissertation.jpg
 categories:
@@ -46,10 +46,10 @@ flowchart LR
 
 | Component | Description |
 |-----------|-------------|
-| **1 - Research Proposal** | Defined the research question, objectives, and justification for primary research |
-| **2 - Literature Review** | Reviewed existing academic literature on workplace monitoring, privacy, and legitimacy |
-| **3 - Research Methodology** | Designed the survey instrument, ethical framework, and data collection approach |
-| **4 - Research Results** | Collected and analysed 64 survey responses using Python |
+| **1 – Research Proposal** | Defined the research question, objectives, and justification for primary research |
+| **2 – Literature Review** | Reviewed existing academic literature on workplace monitoring, privacy, and legitimacy |
+| **3 – Research Methodology** | Designed the survey instrument, ethical framework, and data collection approach |
+| **4 – Research Results** | Collected and analysed 64 survey responses using Python |
 
 [View Research Results PDF](../../dissertation/dennis-chumakov-dissertation-results.pdf){target="_blank"}
 
@@ -59,17 +59,17 @@ flowchart LR
 
 The survey instrument included:
 
-- **Demographic questions** - sector, tenure, management level
-- **Policy awareness questions** - whether a policy exists and is communicated
-- **Likert-scale questions (Q9-Q14)** - perceptions of monitoring, discipline, and behavioural impact
-- **Scenario questions (Q12-Q13)** - comparing appropriateness of discipline across two real-world scenarios
-- **Open-ended questions (Q16-Q18)** - qualitative themes around fairness, intervention, and improvement
+- **Demographic questions** – sector, tenure, management level
+- **Policy awareness questions** – whether a policy exists and is communicated
+- **Likert-scale questions (Q9-Q14)** – perceptions of monitoring, discipline, and behavioural impact
+- **Scenario questions (Q12-Q13)** – comparing appropriateness of discipline across two real-world scenarios
+- **Open-ended questions (Q16-Q18)** – qualitative themes around fairness, intervention, and improvement
 
 A **Wilcoxon signed-rank test** was used to assess whether the difference in
 disciplinary appropriateness between the two scenarios was statistically significant.[^1]
 
 [^1]: The Wilcoxon signed-rank test is a non-parametric test used when data does
-not meet the assumptions of normality - appropriate here given the ordinal Likert
+not meet the assumptions of normality. Appropriate here given the ordinal Likert
 scale used.
 
 ---
@@ -216,7 +216,7 @@ fig5.show()
 The Wilcoxon signed-rank test confirmed a **statistically significant difference**
 between the two scenarios (p < 0.0001). Respondents rated discipline for an
 offensive/viral post (Scenario 2, mean 3.97) as significantly more appropriate
-than for a political opinion post (Scenario 1, mean 2.40) - suggesting that
+than for a political opinion post (Scenario 1, mean 2.40). This suggests that
 context and content type are central to perceptions of legitimacy.
 :::
 
@@ -309,7 +309,7 @@ responses across multiple countries, and then writing Python to clean, encode,
 and visualise the data gave me an end-to-end understanding of the research process
 that no secondary data project could replicate.
 
-The Wilcoxon test result was the most surprising finding - the scale of the
+The Wilcoxon test result was the most surprising finding. The scale of the
 difference between the two scenarios (mean gap of 1.57) suggested that employees
 draw a very clear line between political expression and harmful/offensive content
 when judging disciplinary legitimacy.

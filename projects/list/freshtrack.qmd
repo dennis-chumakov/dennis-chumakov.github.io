@@ -26,8 +26,8 @@ panel of six investors.
 **67%** of people forget what is in their fridge (FreshTRACK Survey, 2025).
 Irish households waste an average of **€700 per year** on food.^[EPA. (2023). *Food Waste Statistics*. Available at: [epa.ie](https://www.epa.ie/our-services/monitoring--assessment/waste/national-waste-statistics/food/)]
 
-FreshTRACK solves this with a one-time hardware purchase and a companion app —
-no subscription, no complexity.
+FreshTRACK solves this with a one-time hardware purchase and a companion app.
+No subscription. No complexity.
 :::
 
 ---
@@ -103,7 +103,7 @@ logic.
 Evaluated FreshTRACK across product, market, organisational, legal, and financial
 feasibility. Included primary customer research via survey and focus groups across
 Ireland, Germany, Canada, and the USA. Used the Van Westendorp Pricing Model to
-validate the unit price of **€121.57**.
+validate the unit price of **€121.57** excl. VAT.
 
 [Download Feasibility Report](../../freshtrack/freshtrack-feasibility-report.pdf){target="_blank"}
 :::
@@ -130,7 +130,7 @@ and investment ask.
 
 ::: {.callout-note icon=false}
 ### 📄 Business Plan
-The most comprehensive deliverable — a full 45-page startup plan covering
+The most comprehensive deliverable: a full 45-page startup plan covering
 executive summary, market analysis, marketing and sales strategy, R&D, staffing,
 operations, financial projections, and funding requirements. The clearest evidence
 of taking a venture from concept to execution-ready plan.
@@ -167,7 +167,7 @@ spending €300+ per month on groceries.
 
 This was the most applied and team-oriented project of my degree. Taking an idea
 from a blank page to a live investor pitch taught me things no classroom session
-could — how to pressure-test assumptions, how to tell a story with numbers, and
+could – how to pressure-test assumptions, how to tell a story with numbers, and
 how to disagree productively with teammates under deadline pressure.
 
 The Dragon's Den format was particularly valuable. Knowing that six real investors

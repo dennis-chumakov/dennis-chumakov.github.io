@@ -39,7 +39,7 @@
     "href": "reflection.html#skills-developed",
     "title": "Reflection",
     "section": "Skills Developed",
-    "text": "Skills Developed\n\n\n\n\n\n\nTipTechnical Skills Checklist\n\n\n\n\nQuarto — building and deploying a multi-page website\nGit and GitHub — version control, incremental commits, GitHub Pages deployment\nPython — data analysis, machine learning, interactive Plotly visualisations\nSCSS — custom styling with Sass variables, Google Fonts, responsive layout\nMarkdown — rich content with callouts, tables, footnotes, Mermaid diagrams\nHTML — raw HTML blocks, contact forms, custom divs"
+    "text": "Skills Developed\n\n\n\n\n\n\nTipTechnical Skills Checklist\n\n\n\n\nQuarto – building and deploying a multi-page website\nGit and GitHub – version control, incremental commits, GitHub Pages deployment\nPython – data analysis, machine learning, interactive Plotly visualisations\nSCSS – custom styling with Sass variables, Google Fonts, responsive layout\nMarkdown – rich content with callouts, tables, footnotes, Mermaid diagrams\nHTML – raw HTML blocks, contact forms, custom divs"
   },
   {
     "objectID": "reflection.html#looking-forward",
@@ -56,277 +56,18 @@
     "text": "A Final Note on the Process\nThe projects on this site – the dissertation on workplace social media monitoring, the machine learning paper on SPY price prediction, the FreshTRACK venture – were not built for this portfolio. They were built because the modules demanded them. What this module gave me was the ability to present them properly: to take real work, write active code around it, and publish it in a way that a future employer, collaborator, or client could actually engage with.\nThat translation from academic work to professional presence is what I will take most from this module."
   },
   {
-    "objectID": "projects/list/ml-paper.html",
-    "href": "projects/list/ml-paper.html",
-    "title": "Stock Market Direction Prediction",
-    "section": "",
-    "text": "This research paper applied four supervised machine learning classifiers to predict the next-day price direction of the SPY ETF (S&P 500 tracker) using historical price-based technical indicators. The study was conducted across three iterative feature configurations, guided by prior literature and correlation analysis.\n\n\n\n\n\n\nNoteResearch Question\n\n\n\nHow effectively can supervised machine learning classification algorithms predict next-day price direction of the SPY ETF using historical price-based technical indicators?\n\n\nThe dataset contained 4,853 daily OHLCV observations spanning 2005 to 2024, sourced from Kaggle. After preprocessing, 4,804 rows were used for modelling. A chronological 70/30 train/test split was applied — training on data encompassing the 2008 financial crisis, and testing on the COVID-19 shock and post-pandemic inflationary period."
-  },
-  {
-    "objectID": "projects/list/ml-paper.html#overview",
-    "href": "projects/list/ml-paper.html#overview",
-    "title": "Stock Market Direction Prediction",
-    "section": "",
-    "text": "This research paper applied four supervised machine learning classifiers to predict the next-day price direction of the SPY ETF (S&P 500 tracker) using historical price-based technical indicators. The study was conducted across three iterative feature configurations, guided by prior literature and correlation analysis.\n\n\n\n\n\n\nNoteResearch Question\n\n\n\nHow effectively can supervised machine learning classification algorithms predict next-day price direction of the SPY ETF using historical price-based technical indicators?\n\n\nThe dataset contained 4,853 daily OHLCV observations spanning 2005 to 2024, sourced from Kaggle. After preprocessing, 4,804 rows were used for modelling. A chronological 70/30 train/test split was applied — training on data encompassing the 2008 financial crisis, and testing on the COVID-19 shock and post-pandemic inflationary period."
-  },
-  {
-    "objectID": "projects/list/ml-paper.html#research-pipeline",
-    "href": "projects/list/ml-paper.html#research-pipeline",
-    "title": "Stock Market Direction Prediction",
-    "section": "Research Pipeline",
-    "text": "Research Pipeline\nThe study was structured across three iterations, each refining the feature set based on correlation analysis and model performance:\n\n\n\n\n\nflowchart LR\n    A[Iteration 1 - Baseline\\n9 Features] --&gt; B[Correlation Analysis\\nMulticollinearity Check]\n    B --&gt; C[Iteration 2 - Expanded\\n11 Features]\n    C --&gt; D[Iteration 3 - Refined\\nMomentum-Only\\n9 Features]\n    style A fill:#264653,color:#fff\n    style B fill:#6c757d,color:#fff\n    style C fill:#264653,color:#fff\n    style D fill:#2a9d8f,color:#fff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIteration\nFeature Set\nKey Change\n\n\n\n\nIteration 1\nSMA, RSI, MACD, STD, Volume, Lags\nBaseline configuration\n\n\nIteration 2\n+ ROC, Williams R, Stochastic, CCI, OBV\nExpanded with momentum indicators\n\n\nIteration 3\nMomentum-only, volatility/volume removed\nRefined after multicollinearity analysis\n\n\n\n\n\n\n\n\n\nTipKey Design Decision\n\n\n\nA chronological 70/30 split was used rather than random shuffling — random shuffling would introduce look-ahead bias by allowing the model to train on future observations, invalidating the out-of-sample evaluation."
-  },
-  {
-    "objectID": "projects/list/ml-paper.html#model-performance-summary",
-    "href": "projects/list/ml-paper.html#model-performance-summary",
-    "title": "Stock Market Direction Prediction",
-    "section": "Model Performance Summary",
-    "text": "Model Performance Summary\nThe table below summarises accuracy and AUC-ROC across all three iterations. The naive baseline was 54.4% — the proportion of up days in the dataset.\n\n\n\n\n\n\n\n\n\n\n\n\nModel\nIT1 Acc\nIT1 AUC\nIT2 Acc\nIT2 AUC\nIT3 Acc\nIT3 AUC\n\n\n\n\nLogistic Regression\n0.4868\n0.4891\n0.4882\n0.4863\n0.5139\n0.4908\n\n\nRandom Forest\n0.4792\n0.4890\n0.4868\n0.4890\n0.4764\n0.4844\n\n\nGradient Boosting\n0.4820\n0.5106\n0.4799\n0.4936\n0.5125\n0.4984\n\n\nXGBoost\n0.4827\n0.5049\n0.4792\n0.4863\n0.4806\n0.4852\n\n\n\n\n\n\n\n\n\nImportantKey Finding\n\n\n\nEvery model performed below the naive baseline of 54.4% across all iterations. AUC-ROC values consistently ranged from 0.48 to 0.51 — near-random classification. This is consistent with weak-form Efficient Market Hypothesis (EMH), suggesting that historical price data alone does not carry sufficient predictive signal for next-day SPY direction."
-  },
-  {
-    "objectID": "projects/list/ml-paper.html#active-code---iteration-3-analysis",
-    "href": "projects/list/ml-paper.html#active-code---iteration-3-analysis",
-    "title": "Stock Market Direction Prediction",
-    "section": "Active Code - Iteration 3 Analysis",
-    "text": "Active Code - Iteration 3 Analysis\nThe following code reproduces the full Iteration 3 pipeline — the refined momentum-only configuration that produced the strongest results.\n\nSetup and Data Loading\n\n\nShow setup and imports\nimport numpy as np\nimport pandas as pd\nimport plotly.express as px\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier\nfrom xgboost import XGBClassifier\nfrom sklearn.metrics import (accuracy_score, roc_auc_score, precision_score,\n                             recall_score, f1_score, confusion_matrix, roc_curve)\nimport ta\nimport warnings\nwarnings.filterwarnings('ignore')\n\n# Load dataset\ndf = pd.read_csv('SPY_dataset.csv')\ndf['date'] = pd.to_datetime(df['date'])\ndf.set_index('date', inplace=True)\n\nprint(f\"Dataset loaded: {df.shape[0]} rows, {df.shape[1]} columns\")\nprint(f\"Date range: {df.index.min().date()} to {df.index.max().date()}\")\n\n\nDataset loaded: 4853 rows, 8 columns\nDate range: 2005-01-03 to 2024-04-15\n\n\n\n\nFeature Engineering\n\n\nShow feature engineering code\n# Trend indicators\ndf['SMA_10'] = df['close'].rolling(window=10).mean()\ndf['SMA_50'] = df['close'].rolling(window=50).mean()\ndf['SMA_Ratio'] = df['SMA_10'] / df['SMA_50']\n\n# Momentum indicators\nexp1 = df['close'].ewm(span=12).mean()\nexp2 = df['close'].ewm(span=26).mean()\ndf['MACD'] = exp1 - exp2\ndf['ROC_14'] = ta.momentum.ROCIndicator(close=df['close'], window=14).roc()\ndf['Stochastic_14'] = ta.momentum.StochasticOscillator(\n    high=df['high'], low=df['low'], close=df['close'], window=14).stoch()\ndf['CCI_20'] = ta.trend.CCIIndicator(\n    high=df['high'], low=df['low'], close=df['close'], window=20).cci()\ndf['OBV'] = ta.volume.OnBalanceVolumeIndicator(\n    close=df['close'], volume=df['volume']).on_balance_volume()\n\n# Lag features\ndf['Lag_1_Return'] = df['change_percent'].shift(1)\ndf['Lag_5_Return'] = df['change_percent'].shift(5)\n\n# Target variable - binary direction label\ndf['Target'] = (df['close'].shift(-1) &gt; df['close']).astype(int)\n\n# Drop NaN rows\ndf.dropna(inplace=True)\n\nprint(f\"Shape after feature engineering: {df.shape}\")\nprint(f\"Target distribution:\\n{df['Target'].value_counts()}\")\nprint(f\"Naive baseline: {df['Target'].mean()*100:.1f}%\")\n\n\nShape after feature engineering: (4804, 19)\nTarget distribution:\nTarget\n1    2611\n0    2193\nName: count, dtype: int64\nNaive baseline: 54.4%\n\n\n\n\nSPY Price History and Train/Test Split\n\n\nShow train/test split code\n# Iteration 3 - momentum-only feature set\nfeature_cols = ['SMA_50', 'SMA_Ratio', 'MACD', 'ROC_14', 'Stochastic_14',\n                'CCI_20', 'OBV', 'Lag_1_Return', 'Lag_5_Return']\n\nsplit_index = int(len(df) * 0.7)\nsplit_date = df.index[split_index]\n\nfig = go.Figure()\nfig.add_trace(go.Scatter(\n    x=df.index[:split_index], y=df['close'][:split_index],\n    mode='lines', name='Training Set',\n    line=dict(color='#264653', width=1)))\nfig.add_trace(go.Scatter(\n    x=df.index[split_index:], y=df['close'][split_index:],\n    mode='lines', name='Test Set',\n    line=dict(color='#2a9d8f', width=1)))\nfig.add_trace(go.Scatter(\n    x=[split_date, split_date], y=[df['close'].min(), df['close'].max()],\n    mode='lines', name=f'Split: {split_date.strftime(\"%Y-%m-%d\")}',\n    line=dict(color='#e63946', dash='dash', width=1.5)))\nfig.update_layout(\n    title='SPY Closing Price 2005-2024 with Chronological Train/Test Split',\n    xaxis_title='Date', yaxis_title='Closing Price (USD)',\n    plot_bgcolor='white',\n    yaxis=dict(gridcolor='#f0f0f0'),\n    xaxis=dict(showgrid=False))\nfig.show()\n\n\n                            \n                                            \nSPY closing price 2005-2024 with chronological 70/30 train/test split\n\n\n\n\nModel Training and Evaluation\n\n\nShow model training code\nx = df[feature_cols]\ny = df['Target']\n\nx_train = x.iloc[:split_index]\nx_test = x.iloc[split_index:]\ny_train = y.iloc[:split_index]\ny_test = y.iloc[split_index:]\n\nscaler = StandardScaler()\nx_train_scaled = scaler.fit_transform(x_train)\nx_test_scaled = scaler.transform(x_test)\n\nmodels = {\n    'Logistic Regression': LogisticRegression(max_iter=1000, random_state=42),\n    'Random Forest': RandomForestClassifier(n_estimators=200, max_depth=5, random_state=42),\n    'Gradient Boosting': GradientBoostingClassifier(n_estimators=200, learning_rate=0.05,\n                                                     max_depth=3, random_state=42),\n    'XGBoost': XGBClassifier(n_estimators=200, learning_rate=0.05, max_depth=3,\n                              random_state=42, eval_metric='logloss')\n}\n\nmodel_names, accuracy_scores, precision_scores = [], [], []\nrecall_scores, f1_scores, roc_auc_scores = [], [], []\nconfusion_matrices, proba_scores = [], []\n\nfor name, model in models.items():\n    model.fit(x_train_scaled, y_train)\n    y_pred = model.predict(x_test_scaled)\n    y_proba = model.predict_proba(x_test_scaled)[:, 1]\n\n    model_names.append(name)\n    accuracy_scores.append(round(accuracy_score(y_test, y_pred), 4))\n    precision_scores.append(round(precision_score(y_test, y_pred), 4))\n    recall_scores.append(round(recall_score(y_test, y_pred), 4))\n    f1_scores.append(round(f1_score(y_test, y_pred), 4))\n    roc_auc_scores.append(round(roc_auc_score(y_test, y_proba), 4))\n    confusion_matrices.append(confusion_matrix(y_test, y_pred))\n    proba_scores.append(y_proba)\n    print(f\"{name} trained successfully\")\n\nresults_df = pd.DataFrame({\n    'Model': model_names,\n    'Accuracy': accuracy_scores,\n    'Precision': precision_scores,\n    'Recall': recall_scores,\n    'F1-Score': f1_scores,\n    'ROC-AUC': roc_auc_scores\n})\n\nprint(f\"\\nNaive baseline: {y_test.mean()*100:.1f}%\")\nprint(results_df.to_string(index=False))\n\n\nLogistic Regression trained successfully\nRandom Forest trained successfully\nGradient Boosting trained successfully\nXGBoost trained successfully\n\nNaive baseline: 54.1%\n              Model  Accuracy  Precision  Recall  F1-Score  ROC-AUC\nLogistic Regression    0.5139     0.5414  0.6628    0.5960   0.4908\n      Random Forest    0.4764     0.5239  0.3513    0.4206   0.4844\n  Gradient Boosting    0.5125     0.5463  0.5821    0.5636   0.4984\n            XGBoost    0.4806     0.5271  0.3859    0.4456   0.4852\n\n\n\n\nROC Curves\n\n\nShow ROC curve code\ncolors = ['#264653', '#2a9d8f', '#e76f51', '#e9c46a']\n\nfig = go.Figure()\nfor i, (name, proba, auc) in enumerate(zip(model_names, proba_scores, roc_auc_scores)):\n    fpr, tpr, _ = roc_curve(y_test, proba)\n    fig.add_trace(go.Scatter(\n        x=fpr, y=tpr, mode='lines', name=f'{name} (AUC = {auc})',\n        line=dict(color=colors[i], width=2)))\n\nfig.add_trace(go.Scatter(\n    x=[0, 1], y=[0, 1], mode='lines', name='Random Classifier (AUC = 0.5)',\n    line=dict(color='grey', dash='dash')))\n\nfig.update_layout(\n    title='ROC Curve Comparison - Iteration 3',\n    xaxis_title='False Positive Rate',\n    yaxis_title='True Positive Rate',\n    plot_bgcolor='white',\n    yaxis=dict(gridcolor='#f0f0f0'),\n    xaxis=dict(showgrid=False))\nfig.show()\n\n\n                            \n                                            \nROC curves for all four classifiers - Iteration 3 momentum-only configuration\n\n\n\n\nConfusion Matrices\n\n\nShow confusion matrix code\nfig = make_subplots(rows=2, cols=2,\n                    subplot_titles=model_names)\n\npositions = [(1,1), (1,2), (2,1), (2,2)]\n\nfor i, (cm, pos) in enumerate(zip(confusion_matrices, positions)):\n    fig.add_trace(\n        go.Heatmap(z=cm, colorscale='Blues',\n                   text=cm, texttemplate='%{text}',\n                   showscale=False,\n                   xaxis=f'x{i+1}', yaxis=f'y{i+1}'),\n        row=pos[0], col=pos[1])\n\nfig.update_layout(\n    title_text='Confusion Matrices - Iteration 3',\n    height=600,\n    plot_bgcolor='white')\nfig.show()\n\n\n                            \n                                            \nConfusion matrices for all four classifiers - Iteration 3"
-  },
-  {
-    "objectID": "projects/list/ml-paper.html#reflections",
-    "href": "projects/list/ml-paper.html#reflections",
-    "title": "Stock Market Direction Prediction",
-    "section": "Reflections",
-    "text": "Reflections\nThis was the most technically demanding project of my degree. The iterative approach taught me that more features do not automatically mean better models and that understanding why a model fails is as valuable as optimising it to succeed.\nThe near-random results were initially frustrating, but working through the Efficient Market Hypothesis literature reframed them entirely. A model that performs at 51% on SPY next-day prediction is not a failure — it is evidence that the market is doing its job. That conceptual shift, from “my model is broken” to “the market is efficient”, was the most important thing I learned from this project.1\n\n\nDataset: SPY Daily OHLCV Data 2005-2024, sourced from Kaggle. Cover image by brgfx via Freepik"
-  },
-  {
-    "objectID": "projects/list/ml-paper.html#footnotes",
-    "href": "projects/list/ml-paper.html#footnotes",
-    "title": "Stock Market Direction Prediction",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThe full paper, including literature review, methodology, and discussion, is available on request.↩︎"
-  },
-  {
-    "objectID": "projects/list/dissertation.html",
-    "href": "projects/list/dissertation.html",
-    "title": "Employee Social Media Monitoring",
-    "section": "",
-    "text": "This dissertation examined a question at the intersection of workplace rights and digital privacy: how do organisations monitor employees’ personal social media activity, and how do employees perceive the fairness and legitimacy of these practices?\nPrimary research was conducted via an original survey distributed across Ireland, Canada, and internationally. After filtering for employment eligibility, 64 valid responses were collected and analysed using Python.\n\n\n\n\n\n\nNoteResearch Question\n\n\n\nHow do organisations monitor and respond to employees’ personal social media activity, and how do employees perceive the fairness and legitimacy of these organisational practices?"
-  },
-  {
-    "objectID": "projects/list/dissertation.html#overview",
-    "href": "projects/list/dissertation.html#overview",
-    "title": "Employee Social Media Monitoring",
-    "section": "",
-    "text": "This dissertation examined a question at the intersection of workplace rights and digital privacy: how do organisations monitor employees’ personal social media activity, and how do employees perceive the fairness and legitimacy of these practices?\nPrimary research was conducted via an original survey distributed across Ireland, Canada, and internationally. After filtering for employment eligibility, 64 valid responses were collected and analysed using Python.\n\n\n\n\n\n\nNoteResearch Question\n\n\n\nHow do organisations monitor and respond to employees’ personal social media activity, and how do employees perceive the fairness and legitimacy of these organisational practices?"
-  },
-  {
-    "objectID": "projects/list/dissertation.html#research-journey",
-    "href": "projects/list/dissertation.html#research-journey",
-    "title": "Employee Social Media Monitoring",
-    "section": "Research Journey",
-    "text": "Research Journey\nThe dissertation was completed across four sequential components:\n\n\n\n\n\nflowchart LR\n    A[Research Proposal - Component 1] --&gt; B[Literature Review - Component 2]\n    B --&gt; C[Research Methodology - Component 3]\n    C --&gt; D[Research Results - Component 4]\n    style A fill:#264653,color:#fff\n    style B fill:#264653,color:#fff\n    style C fill:#264653,color:#fff\n    style D fill:#2a9d8f,color:#fff\n\n\n\n\n\n\n\n\n\n\n\n\n\nComponent\nDescription\n\n\n\n\n1 - Research Proposal\nDefined the research question, objectives, and justification for primary research\n\n\n2 - Literature Review\nReviewed existing academic literature on workplace monitoring, privacy, and legitimacy\n\n\n3 - Research Methodology\nDesigned the survey instrument, ethical framework, and data collection approach\n\n\n4 - Research Results\nCollected and analysed 64 survey responses using Python\n\n\n\nView Research Results PDF"
-  },
-  {
-    "objectID": "projects/list/dissertation.html#methodology",
-    "href": "projects/list/dissertation.html#methodology",
-    "title": "Employee Social Media Monitoring",
-    "section": "Methodology",
-    "text": "Methodology\nThe survey instrument included:\n\nDemographic questions - sector, tenure, management level\nPolicy awareness questions - whether a policy exists and is communicated\nLikert-scale questions (Q9-Q14) - perceptions of monitoring, discipline, and behavioural impact\nScenario questions (Q12-Q13) - comparing appropriateness of discipline across two real-world scenarios\nOpen-ended questions (Q16-Q18) - qualitative themes around fairness, intervention, and improvement\n\nA Wilcoxon signed-rank test was used to assess whether the difference in disciplinary appropriateness between the two scenarios was statistically significant.1"
-  },
-  {
-    "objectID": "projects/list/dissertation.html#analysis-and-findings",
-    "href": "projects/list/dissertation.html#analysis-and-findings",
-    "title": "Employee Social Media Monitoring",
-    "section": "Analysis and Findings",
-    "text": "Analysis and Findings\n\n\nShow setup and data loading\nimport pandas as pd\nimport plotly.express as px\nimport plotly.graph_objects as go\nfrom scipy.stats import wilcoxon\nimport warnings\nwarnings.filterwarnings('ignore')\n\ndf = pd.read_csv('survey_sample.csv')\n\n# Filter valid respondents\ndf = df[df.iloc[:, 6] != 'No'].copy()\ndf = df.reset_index(drop=True)\n\nprint(f\"Dataset loaded: {len(df)} respondents\")\n\n\nDataset loaded: 63 respondents\n\n\n\nRespondent Demographics\n\n\nShow demographics code\nsector_counts = df['sector'].value_counts().reset_index()\nsector_counts.columns = ['Sector', 'Count']\n\nfig1 = px.bar(sector_counts, x='Sector', y='Count',\n              title='Respondents by Sector',\n              color_discrete_sequence=['#264653'])\nfig1.update_layout(showlegend=False, plot_bgcolor='white',\n                   xaxis=dict(showgrid=False),\n                   yaxis=dict(showgrid=True, gridcolor='#f0f0f0'))\nfig1.show()\n\n\n                            \n                                            \nDistribution of respondents by sector\n\n\n\n\nShow tenure code\ntenure_order = ['Less than 1 year', '1-3 years', '4-7 years']\ntenure_counts = df['tenure'].value_counts().reindex(tenure_order).reset_index()\ntenure_counts.columns = ['Tenure', 'Count']\n\nfig2 = px.bar(tenure_counts, x='Tenure', y='Count',\n              title='Respondents by Length of Employment',\n              color_discrete_sequence=['#264653'])\nfig2.update_layout(showlegend=False, plot_bgcolor='white',\n                   xaxis=dict(showgrid=False),\n                   yaxis=dict(showgrid=True, gridcolor='#f0f0f0'))\nfig2.show()\n\n\n                            \n                                            \nDistribution of respondents by length of employment\n\n\n\n\n\nPerceptions of Monitoring and Privacy\n\n\nShow perceptions code\nq9_labels = [\n    'Right to monitor public SM',\n    'Monitoring = invasion of privacy',\n    'Only intervene if affects org',\n    'Monitoring improves reputation',\n    'Creates culture of mistrust'\n]\nq9_cols = ['q9a_right_to_monitor_num','q9b_invasion_privacy_num',\n           'q9c_intervene_if_affects_org_num','q9d_improves_reputation_num',\n           'q9e_culture_mistrust_num']\nq9_means = [round(df[col].mean(), 2) for col in q9_cols]\n\nfig3 = go.Figure()\nfig3.add_trace(go.Bar(x=q9_labels, y=q9_means,\n                      marker_color='#264653',\n                      text=q9_means, textposition='outside'))\nfig3.add_hline(y=3, line_dash='dash', line_color='#e63946',\n               annotation_text='Neutral (3.0)', annotation_position='right')\nfig3.update_layout(title='Perceptions of Monitoring and Privacy (Q9)',\n                   yaxis=dict(range=[0, 5.5], title='Mean Score (1-5)',\n                              gridcolor='#f0f0f0'),\n                   xaxis=dict(title='Statement', showgrid=False),\n                   plot_bgcolor='white')\nfig3.show()\n\n\n                            \n                                            \nMean Likert scores for Q9 - perceptions of social media monitoring (1 = Strongly Disagree, 5 = Strongly Agree)\n\n\n\n\n\n\n\n\nTipKey Finding\n\n\n\nRespondents strongly agreed that monitoring creates a culture of mistrust (mean 3.97) and that monitoring constitutes an invasion of privacy (mean 3.97), while showing moderate agreement that employers should only intervene when organisational impact is direct (mean 4.05).\n\n\n\n\n\nScenario Comparison - When is Discipline Appropriate?\n\n\nShow scenario comparison code\nstat, p_value = wilcoxon(df['q12_scenario1_num'], df['q13_scenario2_num'])\n\nscenario_labels = ['Scenario 1 - Political Opinion',\n                   'Scenario 2 - Offensive/Viral Post']\nscenario_means = [round(df['q12_scenario1_num'].mean(), 2),\n                  round(df['q13_scenario2_num'].mean(), 2)]\n\nfig5 = go.Figure()\nfig5.add_trace(go.Bar(x=scenario_labels, y=scenario_means,\n                      marker_color=['#2a9d8f', '#e76f51'],\n                      text=scenario_means, textposition='outside'))\nfig5.add_hline(y=3, line_dash='dash', line_color='#e63946',\n               annotation_text='Neutral (3.0)', annotation_position='right')\nfig5.add_annotation(x=0.5, y=5.1, xref='paper',\n                    text=f'Wilcoxon W={round(stat,1)}, p&lt;0.0001***',\n                    showarrow=False, font=dict(color='darkred', size=11),\n                    bgcolor='lightyellow', bordercolor='darkred')\nfig5.update_layout(title='Disciplinary Appropriateness by Scenario (Q12 vs Q13)',\n                   yaxis=dict(range=[0, 5.5], title='Mean Appropriateness (1-5)',\n                              gridcolor='#f0f0f0'),\n                   xaxis=dict(showgrid=False),\n                   plot_bgcolor='white')\nfig5.show()\n\n\n                            \n                                            \nComparison of disciplinary appropriateness scores across two scenarios - Wilcoxon signed-rank test confirms statistically significant difference (p &lt; 0.0001)\n\n\n\n\n\n\n\n\nImportantStatistical Finding\n\n\n\nThe Wilcoxon signed-rank test confirmed a statistically significant difference between the two scenarios (p &lt; 0.0001). Respondents rated discipline for an offensive/viral post (Scenario 2, mean 3.97) as significantly more appropriate than for a political opinion post (Scenario 1, mean 2.40) - suggesting that context and content type are central to perceptions of legitimacy.\n\n\n\n\n\nBehavioural Impact of Monitoring Awareness\n\n\nShow behavioural impact code\nq14_labels = [\n    'Monitoring affects how I use SM',\n    'I avoid posting opinions online',\n    'I consider how posts reflect on employer',\n    'Monitoring reduces trust in management',\n    'I feel comfortable expressing opinions'\n]\nq14_cols = ['q14a_monitoring_affects_usage_num','q14b_avoid_opinions_num',\n            'q14c_consider_employer_reflection_num','q14d_reduces_trust_num',\n            'q14e_comfortable_expressing_num']\nq14_means = [round(df[col].mean(), 2) for col in q14_cols]\n\nfig6 = go.Figure()\nfig6.add_trace(go.Bar(x=q14_labels, y=q14_means,\n                      marker_color='#264653',\n                      text=q14_means, textposition='outside'))\nfig6.add_hline(y=3, line_dash='dash', line_color='#e63946',\n               annotation_text='Neutral (3.0)', annotation_position='right')\nfig6.update_layout(title='Behavioural Impact of Monitoring Awareness (Q14)',\n                   yaxis=dict(range=[0, 5.5], title='Mean Score (1-5)',\n                              gridcolor='#f0f0f0'),\n                   xaxis=dict(showgrid=False),\n                   plot_bgcolor='white')\nfig6.show()\n\n\n                            \n                                            \nMean scores for Q14 - how awareness of monitoring affects employee behaviour online\n\n\n\n\n\nDescriptive Statistics Summary\n\n\nShow summary table code\nall_cols = ['q9a_right_to_monitor_num','q9b_invasion_privacy_num',\n            'q9c_intervene_if_affects_org_num','q9d_improves_reputation_num',\n            'q9e_culture_mistrust_num','q10_appropriate_discipline_num',\n            'q11_discipline_proportionate_num','q12_scenario1_num',\n            'q13_scenario2_num','q14a_monitoring_affects_usage_num',\n            'q14b_avoid_opinions_num','q14c_consider_employer_reflection_num',\n            'q14d_reduces_trust_num','q14e_comfortable_expressing_num']\n\nlabels = [\n    'Q9a: Right to monitor public SM',\n    'Q9b: Monitoring = invasion of privacy',\n    'Q9c: Only intervene if affects org',\n    'Q9d: Monitoring improves reputation',\n    'Q9e: Creates culture of mistrust',\n    'Q10: Discipline is appropriate',\n    'Q11: Discipline is proportionate',\n    'Q12: Scenario 1 - Political opinion',\n    'Q13: Scenario 2 - Offensive/viral post',\n    'Q14a: Monitoring affects usage',\n    'Q14b: Avoid posting opinions',\n    'Q14c: Consider employer reflection',\n    'Q14d: Monitoring reduces trust',\n    'Q14e: Comfortable expressing freely'\n]\n\nsummary = pd.DataFrame({\n    'Question': labels,\n    'Mean': [round(df[c].mean(), 2) for c in all_cols],\n    'Std Dev': [round(df[c].std(), 2) for c in all_cols],\n    'Min': [df[c].min() for c in all_cols],\n    'Max': [df[c].max() for c in all_cols]\n})\n\nprint(summary.to_string(index=False))\n\n\n                              Question  Mean  Std Dev  Min  Max\n       Q9a: Right to monitor public SM  2.62     1.08    1    4\n Q9b: Monitoring = invasion of privacy  3.48     1.15    1    5\n    Q9c: Only intervene if affects org  4.00     0.97    1    5\n   Q9d: Monitoring improves reputation  2.94     1.05    1    5\n      Q9e: Creates culture of mistrust  3.73     0.85    2    5\n        Q10: Discipline is appropriate  3.00     1.05    1    5\n      Q11: Discipline is proportionate  3.24     0.78    1    5\n   Q12: Scenario 1 - Political opinion  2.37     1.22    1    5\nQ13: Scenario 2 - Offensive/viral post  3.81     1.34    1    5\n        Q14a: Monitoring affects usage  3.87     1.02    1    5\n          Q14b: Avoid posting opinions  3.32     1.20    1    5\n    Q14c: Consider employer reflection  2.94     1.29    1    5\n        Q14d: Monitoring reduces trust  3.68     1.01    1    5\n   Q14e: Comfortable expressing freely  3.05     1.05    1    5"
-  },
-  {
-    "objectID": "projects/list/dissertation.html#reflections",
-    "href": "projects/list/dissertation.html#reflections",
-    "title": "Employee Social Media Monitoring",
-    "section": "Reflections",
-    "text": "Reflections\nThis project was my first experience conducting original primary research from design through to statistical analysis. Building the survey instrument, collecting responses across multiple countries, and then writing Python to clean, encode, and visualise the data gave me an end-to-end understanding of the research process that no secondary data project could replicate.\nThe Wilcoxon test result was the most surprising finding - the scale of the difference between the two scenarios (mean gap of 1.57) suggested that employees draw a very clear line between political expression and harmful/offensive content when judging disciplinary legitimacy.\n\n\nCover image via Freepik"
-  },
-  {
-    "objectID": "projects/list/dissertation.html#footnotes",
-    "href": "projects/list/dissertation.html#footnotes",
-    "title": "Employee Social Media Monitoring",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThe Wilcoxon signed-rank test is a non-parametric test used when data does not meet the assumptions of normality - appropriate here given the ordinal Likert scale used.↩︎"
-  },
-  {
-    "objectID": "photography.html",
-    "href": "photography.html",
-    "title": "Photography",
-    "section": "",
-    "text": "Living between Dublin and Canada for the past few years meant one thing — a lot of airports, a lot of new places, and always a camera nearby. What started as documenting trips turned into a genuine passion. These are some of my favourite shots from the places I have been lucky enough to explore."
-  },
-  {
-    "objectID": "photography.html#north-america",
-    "href": "photography.html#north-america",
-    "title": "Photography",
-    "section": "🍁 North America",
-    "text": "🍁 North America\n\nOntario\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\nKelowna\n\n  \n  \n  \n  \n\n\n  \n\n\n\nFlorida\n\n  \n  \n  \n  \n  \n\n\n  \n\n\n\nPunta Cana"
-  },
-  {
-    "objectID": "photography.html#ireland",
-    "href": "photography.html#ireland",
-    "title": "Photography",
-    "section": "🇮🇪 Ireland",
-    "text": "🇮🇪 Ireland\n\n  \n\n\nDublin & Ireland"
-  },
-  {
-    "objectID": "photography.html#europe",
-    "href": "photography.html#europe",
-    "title": "Photography",
-    "section": "🌍 Europe",
-    "text": "🌍 Europe\n\n  \n\n\nAmsterdam\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nCopenhagen\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nStockholm\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nEdinburgh & Glasgow\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nGermany\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nMallorca & Alicante\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nNice & Paris\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nFaro & Lisbon"
-  },
-  {
-    "objectID": "photography.html#italy-road-trip",
-    "href": "photography.html#italy-road-trip",
-    "title": "Photography",
-    "section": "🇮🇹 Italy Road Trip",
-    "text": "🇮🇹 Italy Road Trip\n\n  \n\n\nLake Como · Bormio · Dolomites · Venice · Parma"
-  },
-  {
-    "objectID": "photography.html#morocco",
-    "href": "photography.html#morocco",
-    "title": "Photography",
-    "section": "🇲🇦 Morocco",
-    "text": "🇲🇦 Morocco\n\n  \n\n\nMarrakesh"
-  },
-  {
-    "objectID": "experience.html",
-    "href": "experience.html",
-    "title": "Experience",
-    "section": "",
-    "text": "Note🏢 HR Business Partner Intern — An Post\n\n\n\nJanuary 2025 – August 2025 · Dublin, Ireland\n\nDeveloped Excel dashboards that contributed to a 4% reduction in absence rates over six months\nPrepared monthly reports and presentation decks for retail management highlighting key absenteeism trends\nConducted 20+ meetings with managers across Group Technology Solutions to standardise on-call frameworks\nHelped design a structured exit interview process covering tenure, onboarding, and team culture\n\n\n\n\n\n\n\n\n\nNote🚗 Fleet Assistant (Operations) — Budds’ Chevrolet\n\n\n\nJanuary 2024 – August 2024 · Oakville, Ontario, Canada\n\nBuilt a digital documentation system in Excel for off-site storage, improving vehicle access efficiency\nMaintained 100% accuracy in data entry and filing, enabling smooth audits\nStreamlined inventory tracking and eliminated discrepancies across vehicle records\n\n\n\n\n\n\n\n\n\nNote🏊 Shop Clerk — Pressure Clean Pools\n\n\n\nApril 2022 – October 2023 · Oakville, Ontario, Canada\n\nDelivered customer service resulting in measurable repeat bookings\nProcessed invoices and payments using QuickBooks with full accuracy and data security\n\n\n\n\n\n\n\n\n\nNote🛒 Customer Service Representative — Canadian Tire\n\n\n\nMay 2020 – March 2022 · Oakville, Ontario, Canada\n\nResolved escalated customer concerns, resulting in positive feedback survey results\nCo-ordinated cash handling and customer service training for new staff"
-  },
-  {
-    "objectID": "experience.html#work-experience",
-    "href": "experience.html#work-experience",
-    "title": "Experience",
-    "section": "",
-    "text": "Note🏢 HR Business Partner Intern — An Post\n\n\n\nJanuary 2025 – August 2025 · Dublin, Ireland\n\nDeveloped Excel dashboards that contributed to a 4% reduction in absence rates over six months\nPrepared monthly reports and presentation decks for retail management highlighting key absenteeism trends\nConducted 20+ meetings with managers across Group Technology Solutions to standardise on-call frameworks\nHelped design a structured exit interview process covering tenure, onboarding, and team culture\n\n\n\n\n\n\n\n\n\nNote🚗 Fleet Assistant (Operations) — Budds’ Chevrolet\n\n\n\nJanuary 2024 – August 2024 · Oakville, Ontario, Canada\n\nBuilt a digital documentation system in Excel for off-site storage, improving vehicle access efficiency\nMaintained 100% accuracy in data entry and filing, enabling smooth audits\nStreamlined inventory tracking and eliminated discrepancies across vehicle records\n\n\n\n\n\n\n\n\n\nNote🏊 Shop Clerk — Pressure Clean Pools\n\n\n\nApril 2022 – October 2023 · Oakville, Ontario, Canada\n\nDelivered customer service resulting in measurable repeat bookings\nProcessed invoices and payments using QuickBooks with full accuracy and data security\n\n\n\n\n\n\n\n\n\nNote🛒 Customer Service Representative — Canadian Tire\n\n\n\nMay 2020 – March 2022 · Oakville, Ontario, Canada\n\nResolved escalated customer concerns, resulting in positive feedback survey results\nCo-ordinated cash handling and customer service training for new staff"
-  },
-  {
-    "objectID": "experience.html#education",
-    "href": "experience.html#education",
-    "title": "Experience",
-    "section": "Education",
-    "text": "Education\n\n\n\n\n\n\n\n\n\nDegree\nInstitution\nYears\nResult\n\n\n\n\nHonours BBA\nBrock University, Canada\n2021–2026\n1.1\n\n\nBA Global Business Studies\nDublin City University, Ireland\n2021–2026\n1.1\n\n\n\n\nDual degree completed across two continents — internship placements in both Canada and Ireland."
-  },
-  {
-    "objectID": "experience.html#awards-achievements",
-    "href": "experience.html#awards-achievements",
-    "title": "Experience",
-    "section": "Awards & Achievements",
-    "text": "Awards & Achievements\n\n\n\n\n\n\nTip🏆 Honours & Recognition\n\n\n\n\nBeta Gamma Sigma — Top 10% of students in AACSB-accredited business programmes (June 2024)\nGolden Key International Honour Society — Top 15% of students by invitation (September 2023)\nDean’s Honour List — Year Two (May 2023)\nDean’s Honour List — Year One (May 2022)\nBrock Scholars Entry Award — $16,000 over 4 years based on maintaining an 80% average (September 2021)\nOntario Scholars Award — 80%+ academic average (June 2021)"
-  },
-  {
-    "objectID": "experience.html#voluntary-work",
-    "href": "experience.html#voluntary-work",
-    "title": "Experience",
-    "section": "Voluntary Work",
-    "text": "Voluntary Work\n\n\n\n\n\n\nCaution🤝 Community Involvement\n\n\n\nGlobal Aid Club · St. Ignatius of Loyola Catholic Secondary School, Oakville\nDeveloped and executed fundraising events and donation collections for local and international charities.\nKerr Street Mission · Oakville, Ontario\nRaised awareness and promoted local food drives through community outreach efforts."
-  },
-  {
-    "objectID": "experience.html#technical-skills",
-    "href": "experience.html#technical-skills",
-    "title": "Experience",
-    "section": "Technical Skills",
-    "text": "Technical Skills\n\n\n\n\n\n\n\nCategory\nSkills\n\n\n\n\nData & Analytics\nPython, Pandas, Excel (Advanced), Power BI\n\n\nDevelopment\nQuarto, Git, GitHub Pages, SCSS\n\n\nMachine Learning\nScikit-learn, classification models, model evaluation\n\n\nVisualisation\nPlotly, Matplotlib\n\n\nBusiness Software\nMicrosoft Office Suite, QuickBooks"
-  },
-  {
-    "objectID": "experience.html#athletics-interests",
-    "href": "experience.html#athletics-interests",
-    "title": "Experience",
-    "section": "Athletics & Interests",
-    "text": "Athletics & Interests\n\n\n\n\n\n\nImportant⚡ Beyond the Desk\n\n\n\n\nCompetitive Trampoline — Six years as a competitive athlete, multiple medal winner\nSnowboard Racing & American Football — Competed during secondary school\nPhotography & Travel — Passionate about documenting places and cultures through a lens\nReading — Staying current with global news and a wide range of genres"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "I’m a dual-degree business student wrapping up five years split between Brock University in St. Catharines, Ontario, Canada and Dublin City University in Dublin, Ireland. The degree is unusual by design. I completed three years in Canada and two years in Ireland, with internships in each. It has shaped how I think about problems, people, and places more than any single course has.\nMy academic focus sits at the intersection of business and data: how you collect it, make sense of it, and turn it into decisions that actually matter. Outside the classroom, I’m a photographer and traveller who believes the best way to understand something is to go and see it yourself.1"
-  },
-  {
-    "objectID": "about.html#who-i-am",
-    "href": "about.html#who-i-am",
-    "title": "About Me",
-    "section": "",
-    "text": "I’m a dual-degree business student wrapping up five years split between Brock University in St. Catharines, Ontario, Canada and Dublin City University in Dublin, Ireland. The degree is unusual by design. I completed three years in Canada and two years in Ireland, with internships in each. It has shaped how I think about problems, people, and places more than any single course has.\nMy academic focus sits at the intersection of business and data: how you collect it, make sense of it, and turn it into decisions that actually matter. Outside the classroom, I’m a photographer and traveller who believes the best way to understand something is to go and see it yourself.1"
-  },
-  {
-    "objectID": "about.html#my-journey",
-    "href": "about.html#my-journey",
-    "title": "About Me",
-    "section": "My Journey",
-    "text": "My Journey\n\n\n\n\n\ntimeline\n    title Academic & Professional Journey\n    2021 : Started BBA at Brock University\n         : St. Catharines, Ontario, Canada\n    2022 : First internship experience\n         : Developed a passion for the automotive industry and operations \n    2024 : Transferred to DCU for Global Business\n         : Dublin, Ireland\n    2025 : Second internship experience\n         : Developed Excel and Power BI skills\n         : Found my passion for data analytics\n    2025/2026 : Final Year of College \n         : FreshTRACK Startup — New Enterprise Development \n         : Machine Learning research paper\n         : Undergraduate Dissertation\n         : ePortfolio and graduation"
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n\n\n\n\n\n\n\nArea\nTools & Technologies\n\n\n\n\nData Analysis\nPython, Pandas, Excel, Power BI\n\n\nMachine Learning\nScikit-learn, classification models, model evaluation\n\n\nWeb & Workflow\nQuarto, Git, GitHub Pages, SCSS\n\n\nVisualisation\nPlotly, Matplotlib, Seaborn\n\n\nBusiness\nStrategy, marketing, operations, sales"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\n\n\n\n\n\n\nNote🎓 Dublin City University — Global Business\n\n\n\nBSc Global Business · 2024–2026 · Dublin, Ireland\nModules include Innovation Economics, New Enterprise Development, Workflow & Data Management, and Business Ethics.\n\n\n\n\n\n\n\n\nNote🎓 Brock University — Business Administration\n\n\n\nBBA Business Administration · 2021–2026 · St. Catharines, Ontario, Canada\nGoodman School of Business. Focus on operations, data analytics, and strategic management."
-  },
-  {
-    "objectID": "about.html#interests",
-    "href": "about.html#interests",
-    "title": "About Me",
-    "section": "Interests",
-    "text": "Interests\nBeyond the academic work, a few things keep me grounded:\n\n📷 Photography — I shoot wherever I travel, mostly landscapes and street. You can see some of it on the Photography page.\n🍳 Cooking — feeding people is one of my favourite things to do.\n✈️ Travel — the dual-degree provided me with numerous opportunities for spontaneous travel, fuelling my passion.\n\n\n\n\n\n\n\n\nTipCurrently Open To\n\n\n\nGraduate roles and opportunities in data analytics, business intelligence, or operations — particularly where analytical thinking meets real business impact."
-  },
-  {
-    "objectID": "about.html#footnotes",
-    "href": "about.html#footnotes",
-    "title": "About Me",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThe photography page on this site is a small record of that: a collection of\nmy favourite photos from my travels.↩︎"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "If you’d like to learn more about my experience, projects, or want any travel tips, feel free to reach out below.\n\n\n\n  \n    Name\n    \n  \n\n  \n    Email\n    \n  \n\n  \n    Message\n    \n  \n\n  Send Message"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Dennis Chumakov",
-    "section": "",
-    "text": "Business · Data · Analytics\n\n\nI’m a dual-degree business student finishing up at Dublin City University and Brock University, with a focus on data analytics, workflow automation, and applied problem-solving.\nFrom machine learning models to building a startup from the ground up — this portfolio captures the work and experiences that have defined my time in college.\nWhen I’m not buried in data, I’m usually behind a camera somewhere new.\n\n\n\n🎓 Education\nDual degree across Ireland and Canada, combining Global Business with Business Administration.\n\n\n📊 Skills\nPython · Quarto · Git · Data Analysis · Machine Learning · SCSS\n\n\n📷 Beyond the Desk\nTraveller and photographer — always looking for the next shot."
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Stock Market Direction Prediction\n\n\n\nPython\n\nMachine Learning\n\nFinancial Data\n\n\n\nCan machine learning predict next-day SPY price direction using technical indicators? A comparative study of four classifiers across three iterative feature configurations.\n\n\n\nApr 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmployee Social Media Monitoring\n\n\n\nPython\n\nData Analysis\n\nPrimary Research\n\n\n\nPrimary research study on employee perceptions of workplace social media monitoring. Survey data from 64 respondents analysed using Python.\n\n\n\nApr 14, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreshTRACK\n\n\n\nEntrepreneurship\n\nMarketing\n\nBusiness Strategy\n\n\n\nWe built a startup. Here’s everything from the first idea to the Dragon’s Den pitch.\n\n\n\nApr 15, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "projects/list/freshtrack.html",
     "href": "projects/list/freshtrack.html",
     "title": "FreshTRACK",
     "section": "",
-    "text": "FreshTRACK is an AI-powered fridge-management system that turns any conventional fridge into a smart fridge using in-fridge cameras and a mobile app. The system tracks fridge contents in real time, reduces household food waste, supports meal planning, and saves households time and money.\nThe venture was developed as part of the New Enterprise Development module at Dublin City University, where our team progressed from initial ideation through to a full investor-ready business plan and a live Dragon’s Den-style pitch before a panel of six investors.\n\n\n\n\n\n\nNoteThe Problem\n\n\n\n67% of people forget what is in their fridge (FreshTRACK Survey, 2025). Irish households waste an average of €700 per year on food.1\nFreshTRACK solves this with a one-time hardware purchase and a companion app — no subscription, no complexity."
+    "text": "FreshTRACK is an AI-powered fridge-management system that turns any conventional fridge into a smart fridge using in-fridge cameras and a mobile app. The system tracks fridge contents in real time, reduces household food waste, supports meal planning, and saves households time and money.\nThe venture was developed as part of the New Enterprise Development module at Dublin City University, where our team progressed from initial ideation through to a full investor-ready business plan and a live Dragon’s Den-style pitch before a panel of six investors.\n\n\n\n\n\n\nNoteThe Problem\n\n\n\n67% of people forget what is in their fridge (FreshTRACK Survey, 2025). Irish households waste an average of €700 per year on food.1\nFreshTRACK solves this with a one-time hardware purchase and a companion app. No subscription. No complexity."
   },
   {
     "objectID": "projects/list/freshtrack.html#overview",
     "href": "projects/list/freshtrack.html#overview",
     "title": "FreshTRACK",
     "section": "",
-    "text": "FreshTRACK is an AI-powered fridge-management system that turns any conventional fridge into a smart fridge using in-fridge cameras and a mobile app. The system tracks fridge contents in real time, reduces household food waste, supports meal planning, and saves households time and money.\nThe venture was developed as part of the New Enterprise Development module at Dublin City University, where our team progressed from initial ideation through to a full investor-ready business plan and a live Dragon’s Den-style pitch before a panel of six investors.\n\n\n\n\n\n\nNoteThe Problem\n\n\n\n67% of people forget what is in their fridge (FreshTRACK Survey, 2025). Irish households waste an average of €700 per year on food.1\nFreshTRACK solves this with a one-time hardware purchase and a companion app — no subscription, no complexity."
+    "text": "FreshTRACK is an AI-powered fridge-management system that turns any conventional fridge into a smart fridge using in-fridge cameras and a mobile app. The system tracks fridge contents in real time, reduces household food waste, supports meal planning, and saves households time and money.\nThe venture was developed as part of the New Enterprise Development module at Dublin City University, where our team progressed from initial ideation through to a full investor-ready business plan and a live Dragon’s Den-style pitch before a panel of six investors.\n\n\n\n\n\n\nNoteThe Problem\n\n\n\n67% of people forget what is in their fridge (FreshTRACK Survey, 2025). Irish households waste an average of €700 per year on food.1\nFreshTRACK solves this with a one-time hardware purchase and a companion app. No subscription. No complexity."
   },
   {
     "objectID": "projects/list/freshtrack.html#the-product",
@@ -354,7 +95,7 @@
     "href": "projects/list/freshtrack.html#venture-development-journey",
     "title": "FreshTRACK",
     "section": "Venture Development Journey",
-    "text": "Venture Development Journey\nThis project was built across six assignments, each representing a distinct stage of the startup development process:\n\n\n\n\n\n\nNote📋 Concept Paper\n\n\n\nIntroduced FreshTRACK as a solution to household food waste. Defined the core problem, proposed the product concept, mapped the customer journey, analysed competitors, and outlined the initial technical architecture and early financial logic.\nDownload Concept Paper\n\n\n\n\n\n\n\n\nNote🔬 Feasibility Report\n\n\n\nEvaluated FreshTRACK across product, market, organisational, legal, and financial feasibility. Included primary customer research via survey and focus groups across Ireland, Germany, Canada, and the USA. Used the Van Westendorp Pricing Model to validate the unit price of €121.57.\nDownload Feasibility Report\n\n\n\n\n\n\n\n\nNote📣 Marketing Strategy Report\n\n\n\nDefined the FreshTRACK brand and proposed a two-year marketing plan across five coordinated initiatives: organic social media, trade shows, influencer collaborations, corporate partnerships, and a poster campaign. Set campaign objectives, budgets, timelines, and success metrics.\nDownload Marketing Report\n\n\n\n\n\n\n\n\nNote🎤 Dragon’s Den Pitch\n\n\n\nTranslated the full business case into a 7-minute investor pitch before a panel of six investors, followed by a 13-minute Q&A. The pitch covered the problem, solution, customer journey, competitive landscape, business model, financials, and investment ask.\nDownload Pitch Deck\n\n\n\n\n\n\n\n\nNote📄 Business Plan\n\n\n\nThe most comprehensive deliverable — a full 45-page startup plan covering executive summary, market analysis, marketing and sales strategy, R&D, staffing, operations, financial projections, and funding requirements. The clearest evidence of taking a venture from concept to execution-ready plan.\nDownload Business Plan"
+    "text": "Venture Development Journey\nThis project was built across six assignments, each representing a distinct stage of the startup development process:\n\n\n\n\n\n\nNote📋 Concept Paper\n\n\n\nIntroduced FreshTRACK as a solution to household food waste. Defined the core problem, proposed the product concept, mapped the customer journey, analysed competitors, and outlined the initial technical architecture and early financial logic.\nDownload Concept Paper\n\n\n\n\n\n\n\n\nNote🔬 Feasibility Report\n\n\n\nEvaluated FreshTRACK across product, market, organisational, legal, and financial feasibility. Included primary customer research via survey and focus groups across Ireland, Germany, Canada, and the USA. Used the Van Westendorp Pricing Model to validate the unit price of €121.57 excl. VAT.\nDownload Feasibility Report\n\n\n\n\n\n\n\n\nNote📣 Marketing Strategy Report\n\n\n\nDefined the FreshTRACK brand and proposed a two-year marketing plan across five coordinated initiatives: organic social media, trade shows, influencer collaborations, corporate partnerships, and a poster campaign. Set campaign objectives, budgets, timelines, and success metrics.\nDownload Marketing Report\n\n\n\n\n\n\n\n\nNote🎤 Dragon’s Den Pitch\n\n\n\nTranslated the full business case into a 7-minute investor pitch before a panel of six investors, followed by a 13-minute Q&A. The pitch covered the problem, solution, customer journey, competitive landscape, business model, financials, and investment ask.\nDownload Pitch Deck\n\n\n\n\n\n\n\n\nNote📄 Business Plan\n\n\n\nThe most comprehensive deliverable: a full 45-page startup plan covering executive summary, market analysis, marketing and sales strategy, R&D, staffing, operations, financial projections, and funding requirements. The clearest evidence of taking a venture from concept to execution-ready plan.\nDownload Business Plan"
   },
   {
     "objectID": "projects/list/freshtrack.html#financial-snapshot",
@@ -368,7 +109,7 @@
     "href": "projects/list/freshtrack.html#reflections",
     "title": "FreshTRACK",
     "section": "Reflections",
-    "text": "Reflections\nThis was the most applied and team-oriented project of my degree. Taking an idea from a blank page to a live investor pitch taught me things no classroom session could — how to pressure-test assumptions, how to tell a story with numbers, and how to disagree productively with teammates under deadline pressure.\nThe Dragon’s Den format was particularly valuable. Knowing that six real investors would challenge every number forced a level of rigour that I carried into every other project afterwards.\n\n\nCover image: FreshTRACK brand assets, Team 22, DCU New Enterprise Development 2026"
+    "text": "Reflections\nThis was the most applied and team-oriented project of my degree. Taking an idea from a blank page to a live investor pitch taught me things no classroom session could – how to pressure-test assumptions, how to tell a story with numbers, and how to disagree productively with teammates under deadline pressure.\nThe Dragon’s Den format was particularly valuable. Knowing that six real investors would challenge every number forced a level of rigour that I carried into every other project afterwards.\n\n\nCover image: FreshTRACK brand assets, Team 22, DCU New Enterprise Development 2026"
   },
   {
     "objectID": "projects/list/freshtrack.html#footnotes",
@@ -378,24 +119,262 @@
     "text": "Footnotes\n\n\nEPA. (2023). Food Waste Statistics. Available at: epa.ie↩︎"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Below are selected academic projects that demonstrate my skills in data analysis, research, and business problem-solving."
+    "text": "Stock Market Direction Prediction\n\n\n\nPython\n\nMachine Learning\n\nFinancial Data\n\n\n\nCan machine learning predict next-day SPY price direction using technical indicators? A comparative study of four classifiers across three iterative feature configurations.\n\n\n\nApr 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmployee Social Media Monitoring\n\n\n\nPython\n\nData Analysis\n\nPrimary Research\n\n\n\nUndergraduate dissertation on employee perceptions of workplace social media monitoring. Survey data from 63 respondents analysed using Python.\n\n\n\nApr 14, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreshTRACK\n\n\n\nEntrepreneurship\n\nMarketing\n\nBusiness Strategy\n\n\n\nWe built a startup. Here’s everything from the first idea to the Dragon’s Den pitch.\n\n\n\nApr 15, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects.html#data-analysis-dashboard",
-    "href": "projects.html#data-analysis-dashboard",
-    "title": "Projects",
-    "section": "Data Analysis Dashboard",
-    "text": "Data Analysis Dashboard\n\n\n\nDashboard Example\n\n\nTools used: Excel, Power BI\nThis project involved analysing a dataset and creating an interactive dashboard to identify key trends and communicate insights clearly to non-technical audiences.\nKey elements of the project included:\n\nData cleaning and preparation\n\nBuilding interactive visualisations\n\nIdentifying patterns and insights in the data\n\nPresenting findings through a clear dashboard design"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Dennis Chumakov",
+    "section": "",
+    "text": "Business · Data · Analytics\n\n\nI’m a dual-degree business student finishing up at Dublin City University and Brock University, with a focus on data analytics, workflow automation, and applied problem-solving.\nFrom machine learning models to building a startup from the ground up, this portfolio captures the work and experiences that have defined my time in college.\nWhen I’m not buried in work, I’m usually travelling somewhere new and taking photos.\n\n\n\n🎓 Education\nDual degree across Ireland and Canada, combining Global Business with Business Administration.\n\n\n📊 Skills\nPython · Quarto · Git · Data Analysis · Machine Learning · SCSS\n\n\n📷 Beyond the Desk\nTraveller and photographer, always looking for the next shot."
   },
   {
-    "objectID": "projects.html#business-strategy-analysis",
-    "href": "projects.html#business-strategy-analysis",
-    "title": "Projects",
-    "section": "Business Strategy Analysis",
-    "text": "Business Strategy Analysis\n\n\n\nStrategy Project\n\n\nTools used: Research, strategic frameworks\nThis project focused on analysing a company’s competitive strategy and market positioning using common business strategy frameworks.\nKey elements included:\n\nIndustry and market analysis\n\nStrategic framework application\n\nBusiness recommendations"
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "If you’d like to learn more about my experience, projects, or want any travel tips, feel free to reach out below.\n\n\n\n  \n    Name\n    \n  \n\n  \n    Email\n    \n  \n\n  \n    Message\n    \n  \n\n  Send Message"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a dual-degree business student wrapping up five years split between Brock University in St. Catharines, Ontario, Canada and Dublin City University in Dublin, Ireland. The degree is unusual by design. I completed three years in Canada and two years in Ireland, with internships in both countries. It has shaped how I think about problems, people, and places more than any single course has.\nMy academic focus sits at the intersection of business and data: how you collect it, make sense of it, and turn it into decisions that actually matter. Outside the classroom, I’m a photogrophare and traveller with a passion for learning about new cultures. I believe that the best way to understand something is to go and see it yourself. 1"
+  },
+  {
+    "objectID": "about.html#who-i-am",
+    "href": "about.html#who-i-am",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a dual-degree business student wrapping up five years split between Brock University in St. Catharines, Ontario, Canada and Dublin City University in Dublin, Ireland. The degree is unusual by design. I completed three years in Canada and two years in Ireland, with internships in both countries. It has shaped how I think about problems, people, and places more than any single course has.\nMy academic focus sits at the intersection of business and data: how you collect it, make sense of it, and turn it into decisions that actually matter. Outside the classroom, I’m a photogrophare and traveller with a passion for learning about new cultures. I believe that the best way to understand something is to go and see it yourself. 1"
+  },
+  {
+    "objectID": "about.html#my-journey",
+    "href": "about.html#my-journey",
+    "title": "About Me",
+    "section": "My Journey",
+    "text": "My Journey\n\n\n\n\n\ntimeline\n    title Academic & Professional Journey\n    2021 : Started BBA at Brock University\n         : St. Catharines, Ontario, Canada\n    2022 : First internship experience\n         : Developed a passion for the automotive industry and operations \n    2024 : Transferred to DCU for Global Business\n         : Dublin, Ireland\n    2025 : Second internship experience\n         : Developed Excel and Power BI skills\n         : Found my passion for data analytics\n    2025/2026 : Final Year of College \n         : FreshTRACK Startup — New Enterprise Development \n         : Machine Learning research paper\n         : Undergraduate Dissertation\n         : ePortfolio and graduation"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\n\n\n\n\n\n\nArea\nTools & Technologies\n\n\n\n\nData Analysis\nPython, Pandas, Excel, Power BI\n\n\nMachine Learning\nScikit-learn, classification models, model evaluation\n\n\nWeb & Workflow\nQuarto, Git, GitHub Pages, SCSS\n\n\nVisualisation\nPlotly, Matplotlib, Seaborn\n\n\nBusiness\nStrategy, marketing, operations, sales"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\nNote🎓 Dublin City University — Global Business\n\n\n\nBA Global Business · 2024–2026 · Dublin, Ireland\nModules include Machine Learning and Advanced Python, New Enterprise Development, Business Strategy, Innovation Economics, Workflow & Data Management, and Business Ethics.\n\n\n\n\n\n\n\n\nNote🎓 Brock University — Business Administration\n\n\n\nBBA (Hons) Business Administration · 2021–2026 · St. Catharines, Ontario, Canada\nGoodman School of Business. Focus on operations, data analytics, and strategic management."
+  },
+  {
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "About Me",
+    "section": "Interests",
+    "text": "Interests\nBeyond the academic work, a few things keep me grounded:\n\n📷 Photography – I shoot wherever I travel, mostly landscapes and street. You can see some of it on the Photography page.\n🍳 Cooking – feeding people is one of my favourite things to do.\n✈️ Travel – the dual-degree provided me with numerous opportunities for spontaneous travel, fuelling my passion.\n\n\n\n\n\n\n\n\nTipCurrently Open To\n\n\n\nGraduate roles and opportunities in data analytics, business intelligence, or operations – particularly where analytical thinking meets real business impact."
+  },
+  {
+    "objectID": "about.html#footnotes",
+    "href": "about.html#footnotes",
+    "title": "About Me",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe photography page on this site is a small record of that: a collection of\nmy favourite photos from home and my travels abroad.↩︎"
+  },
+  {
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Experience",
+    "section": "",
+    "text": "Note🏢 HR Business Partner Intern — An Post\n\n\n\nJanuary 2025 – August 2025 · Dublin, Ireland\n\nDeveloped Excel dashboards that contributed to a 4% reduction in absence rates over six months\nPrepared monthly reports and presentation decks for retail management highlighting key absenteeism trends\nConducted 20+ meetings with managers across Group Technology Solutions to standardise on-call frameworks\nHelped design a structured exit interview process covering tenure, onboarding, and team culture\n\n\n\n\n\n\n\n\n\nNote🚗 Fleet Assistant (Operations) – Budds’ Chevrolet\n\n\n\nJanuary 2024 – August 2024 · Oakville, Ontario, Canada\n\nBuilt a digital documentation system in Excel for off-site storage, improving vehicle access efficiency\nMaintained 100% accuracy in data entry and filing, enabling smooth audits\nStreamlined inventory tracking and eliminated discrepancies across vehicle records\n\n\n\n\n\n\n\n\n\nNote🏊 Shop Clerk – Pressure Clean Pools\n\n\n\nApril 2022 – October 2023 · Oakville, Ontario, Canada\n\nDelivered customer service resulting in measurable repeat bookings\nProcessed invoices and payments using QuickBooks with full accuracy and data security\n\n\n\n\n\n\n\n\n\nNote🛒 Customer Service Representative – Canadian Tire\n\n\n\nMay 2020 – March 2022 · Oakville, Ontario, Canada\n\nResolved escalated customer concerns, resulting in positive feedback survey results\nCo-ordinated cash handling and customer service training for new staff"
+  },
+  {
+    "objectID": "experience.html#work-experience",
+    "href": "experience.html#work-experience",
+    "title": "Experience",
+    "section": "",
+    "text": "Note🏢 HR Business Partner Intern — An Post\n\n\n\nJanuary 2025 – August 2025 · Dublin, Ireland\n\nDeveloped Excel dashboards that contributed to a 4% reduction in absence rates over six months\nPrepared monthly reports and presentation decks for retail management highlighting key absenteeism trends\nConducted 20+ meetings with managers across Group Technology Solutions to standardise on-call frameworks\nHelped design a structured exit interview process covering tenure, onboarding, and team culture\n\n\n\n\n\n\n\n\n\nNote🚗 Fleet Assistant (Operations) – Budds’ Chevrolet\n\n\n\nJanuary 2024 – August 2024 · Oakville, Ontario, Canada\n\nBuilt a digital documentation system in Excel for off-site storage, improving vehicle access efficiency\nMaintained 100% accuracy in data entry and filing, enabling smooth audits\nStreamlined inventory tracking and eliminated discrepancies across vehicle records\n\n\n\n\n\n\n\n\n\nNote🏊 Shop Clerk – Pressure Clean Pools\n\n\n\nApril 2022 – October 2023 · Oakville, Ontario, Canada\n\nDelivered customer service resulting in measurable repeat bookings\nProcessed invoices and payments using QuickBooks with full accuracy and data security\n\n\n\n\n\n\n\n\n\nNote🛒 Customer Service Representative – Canadian Tire\n\n\n\nMay 2020 – March 2022 · Oakville, Ontario, Canada\n\nResolved escalated customer concerns, resulting in positive feedback survey results\nCo-ordinated cash handling and customer service training for new staff"
+  },
+  {
+    "objectID": "experience.html#education",
+    "href": "experience.html#education",
+    "title": "Experience",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\n\n\n\nDegree\nInstitution\nYears\nResult\n\n\n\n\nHonours BBA\nBrock University, Canada\n2021–2026\n1.1\n\n\nBA Global Business Studies\nDublin City University, Ireland\n2021–2026\n1.1\n\n\n\n\nDual degree completed across two continents – internship placements in both Canada and Ireland."
+  },
+  {
+    "objectID": "experience.html#awards-achievements",
+    "href": "experience.html#awards-achievements",
+    "title": "Experience",
+    "section": "Awards & Achievements",
+    "text": "Awards & Achievements\n\n\n\n\n\n\nTip🏆 Honours & Recognition\n\n\n\n\nBeta Gamma Sigma – Top 10% of students in AACSB-accredited business programmes (June 2024)\nGolden Key International Honour Society – Top 15% of students by invitation (September 2023)\nDean’s Honour List – Year Two (May 2023)\nDean’s Honour List – Year One (May 2022)\nBrock Scholars Entry Award – $16,000 over 4 years based on maintaining an 80% average (September 2021)\nOntario Scholars Award – 80%+ academic average (June 2021)"
+  },
+  {
+    "objectID": "experience.html#voluntary-work",
+    "href": "experience.html#voluntary-work",
+    "title": "Experience",
+    "section": "Voluntary Work",
+    "text": "Voluntary Work\n\n\n\n\n\n\nCaution🤝 Community Involvement\n\n\n\nGlobal Aid Club · St. Ignatius of Loyola Catholic Secondary School, Oakville\nDeveloped and executed fundraising events and donation collections for local and international charities.\nKerr Street Mission · Oakville, Ontario\nRaised awareness and promoted local food drives through community outreach efforts."
+  },
+  {
+    "objectID": "experience.html#technical-skills",
+    "href": "experience.html#technical-skills",
+    "title": "Experience",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\n\n\n\n\n\n\nCategory\nSkills\n\n\n\n\nData & Analytics\nPython, Pandas, Excel (Advanced), Power BI\n\n\nDevelopment\nQuarto, Git, GitHub Pages, SCSS\n\n\nMachine Learning\nScikit-learn, classification models, model evaluation\n\n\nVisualisation\nPlotly, Matplotlib\n\n\nBusiness Software\nMicrosoft Office Suite, QuickBooks"
+  },
+  {
+    "objectID": "experience.html#athletics-interests",
+    "href": "experience.html#athletics-interests",
+    "title": "Experience",
+    "section": "Athletics & Interests",
+    "text": "Athletics & Interests\n\n\n\n\n\n\nImportant⚡ Beyond the Desk\n\n\n\n\nCompetitive Trampoline – Six years as a competitive athlete, multiple medal winner\nSnowboard Racing & American Football – Competed during secondary school\nPhotography & Travel – Passionate about documenting places and cultures through a lens\nReading – Staying current with global news and a wide range of genres"
+  },
+  {
+    "objectID": "photography.html",
+    "href": "photography.html",
+    "title": "Photography",
+    "section": "",
+    "text": "Living in Dublin for the past few years meant one thing. A lot of airports, a lot of new places, and always taking photos. What started as documenting trips turned into a genuine passion. These are some of my favourite shots from the places I have been lucky enough to explore."
+  },
+  {
+    "objectID": "photography.html#north-america",
+    "href": "photography.html#north-america",
+    "title": "Photography",
+    "section": "🍁 North America",
+    "text": "🍁 North America\n\nOntario (Home)\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\nKelowna\n\n  \n  \n  \n  \n\n\n  \n\n\n\nFlorida\n\n  \n  \n  \n  \n  \n\n\n  \n\n\n\nPunta Cana"
+  },
+  {
+    "objectID": "photography.html#ireland",
+    "href": "photography.html#ireland",
+    "title": "Photography",
+    "section": "Ireland",
+    "text": "Ireland\n\n  \n\n\nDublin & Ireland"
+  },
+  {
+    "objectID": "photography.html#europe",
+    "href": "photography.html#europe",
+    "title": "Photography",
+    "section": "🌍 Europe",
+    "text": "🌍 Europe\n\n  \n\n\nAmsterdam\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nCopenhagen\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nStockholm\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nEdinburgh & Glasgow\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nGermany\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nMallorca & Alicante\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nNice & Paris\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nFaro & Lisbon"
+  },
+  {
+    "objectID": "photography.html#italy-road-trip",
+    "href": "photography.html#italy-road-trip",
+    "title": "Photography",
+    "section": "🇮🇹 Italy Road Trip",
+    "text": "🇮🇹 Italy Road Trip\n\n  \n\n\nLake Como · Bormio · Dolomites · Venice · Parma"
+  },
+  {
+    "objectID": "photography.html#morocco",
+    "href": "photography.html#morocco",
+    "title": "Photography",
+    "section": "🇲🇦 Morocco",
+    "text": "🇲🇦 Morocco\n\n  \n\n\nMarrakesh"
+  },
+  {
+    "objectID": "projects/list/dissertation.html",
+    "href": "projects/list/dissertation.html",
+    "title": "Employee Social Media Monitoring",
+    "section": "",
+    "text": "This dissertation examined a question at the intersection of workplace rights and digital privacy: how do organisations monitor employees’ personal social media activity, and how do employees perceive the fairness and legitimacy of these practices?\nPrimary research was conducted via an original survey distributed across Ireland, Canada, and internationally. After filtering for employment eligibility, 64 valid responses were collected and analysed using Python.\n\n\n\n\n\n\nNoteResearch Question\n\n\n\nHow do organisations monitor and respond to employees’ personal social media activity, and how do employees perceive the fairness and legitimacy of these organisational practices?"
+  },
+  {
+    "objectID": "projects/list/dissertation.html#overview",
+    "href": "projects/list/dissertation.html#overview",
+    "title": "Employee Social Media Monitoring",
+    "section": "",
+    "text": "This dissertation examined a question at the intersection of workplace rights and digital privacy: how do organisations monitor employees’ personal social media activity, and how do employees perceive the fairness and legitimacy of these practices?\nPrimary research was conducted via an original survey distributed across Ireland, Canada, and internationally. After filtering for employment eligibility, 64 valid responses were collected and analysed using Python.\n\n\n\n\n\n\nNoteResearch Question\n\n\n\nHow do organisations monitor and respond to employees’ personal social media activity, and how do employees perceive the fairness and legitimacy of these organisational practices?"
+  },
+  {
+    "objectID": "projects/list/dissertation.html#research-journey",
+    "href": "projects/list/dissertation.html#research-journey",
+    "title": "Employee Social Media Monitoring",
+    "section": "Research Journey",
+    "text": "Research Journey\nThe dissertation was completed across four sequential components:\n\n\n\n\n\nflowchart LR\n    A[Research Proposal - Component 1] --&gt; B[Literature Review - Component 2]\n    B --&gt; C[Research Methodology - Component 3]\n    C --&gt; D[Research Results - Component 4]\n    style A fill:#264653,color:#fff\n    style B fill:#264653,color:#fff\n    style C fill:#264653,color:#fff\n    style D fill:#2a9d8f,color:#fff\n\n\n\n\n\n\n\n\n\n\n\n\n\nComponent\nDescription\n\n\n\n\n1 – Research Proposal\nDefined the research question, objectives, and justification for primary research\n\n\n2 – Literature Review\nReviewed existing academic literature on workplace monitoring, privacy, and legitimacy\n\n\n3 – Research Methodology\nDesigned the survey instrument, ethical framework, and data collection approach\n\n\n4 – Research Results\nCollected and analysed 64 survey responses using Python\n\n\n\nView Research Results PDF"
+  },
+  {
+    "objectID": "projects/list/dissertation.html#methodology",
+    "href": "projects/list/dissertation.html#methodology",
+    "title": "Employee Social Media Monitoring",
+    "section": "Methodology",
+    "text": "Methodology\nThe survey instrument included:\n\nDemographic questions – sector, tenure, management level\nPolicy awareness questions – whether a policy exists and is communicated\nLikert-scale questions (Q9-Q14) – perceptions of monitoring, discipline, and behavioural impact\nScenario questions (Q12-Q13) – comparing appropriateness of discipline across two real-world scenarios\nOpen-ended questions (Q16-Q18) – qualitative themes around fairness, intervention, and improvement\n\nA Wilcoxon signed-rank test was used to assess whether the difference in disciplinary appropriateness between the two scenarios was statistically significant.1"
+  },
+  {
+    "objectID": "projects/list/dissertation.html#analysis-and-findings",
+    "href": "projects/list/dissertation.html#analysis-and-findings",
+    "title": "Employee Social Media Monitoring",
+    "section": "Analysis and Findings",
+    "text": "Analysis and Findings\n\n\nShow setup and data loading\nimport pandas as pd\nimport plotly.express as px\nimport plotly.graph_objects as go\nfrom scipy.stats import wilcoxon\nimport warnings\nwarnings.filterwarnings('ignore')\n\ndf = pd.read_csv('survey_sample.csv')\n\n# Filter valid respondents\ndf = df[df.iloc[:, 6] != 'No'].copy()\ndf = df.reset_index(drop=True)\n\nprint(f\"Dataset loaded: {len(df)} respondents\")\n\n\nDataset loaded: 63 respondents\n\n\n\nRespondent Demographics\n\n\nShow demographics code\nsector_counts = df['sector'].value_counts().reset_index()\nsector_counts.columns = ['Sector', 'Count']\n\nfig1 = px.bar(sector_counts, x='Sector', y='Count',\n              title='Respondents by Sector',\n              color_discrete_sequence=['#264653'])\nfig1.update_layout(showlegend=False, plot_bgcolor='white',\n                   xaxis=dict(showgrid=False),\n                   yaxis=dict(showgrid=True, gridcolor='#f0f0f0'))\nfig1.show()\n\n\n                            \n                                            \nDistribution of respondents by sector\n\n\n\n\nShow tenure code\ntenure_order = ['Less than 1 year', '1-3 years', '4-7 years']\ntenure_counts = df['tenure'].value_counts().reindex(tenure_order).reset_index()\ntenure_counts.columns = ['Tenure', 'Count']\n\nfig2 = px.bar(tenure_counts, x='Tenure', y='Count',\n              title='Respondents by Length of Employment',\n              color_discrete_sequence=['#264653'])\nfig2.update_layout(showlegend=False, plot_bgcolor='white',\n                   xaxis=dict(showgrid=False),\n                   yaxis=dict(showgrid=True, gridcolor='#f0f0f0'))\nfig2.show()\n\n\n                            \n                                            \nDistribution of respondents by length of employment\n\n\n\n\n\nPerceptions of Monitoring and Privacy\n\n\nShow perceptions code\nq9_labels = [\n    'Right to monitor public SM',\n    'Monitoring = invasion of privacy',\n    'Only intervene if affects org',\n    'Monitoring improves reputation',\n    'Creates culture of mistrust'\n]\nq9_cols = ['q9a_right_to_monitor_num','q9b_invasion_privacy_num',\n           'q9c_intervene_if_affects_org_num','q9d_improves_reputation_num',\n           'q9e_culture_mistrust_num']\nq9_means = [round(df[col].mean(), 2) for col in q9_cols]\n\nfig3 = go.Figure()\nfig3.add_trace(go.Bar(x=q9_labels, y=q9_means,\n                      marker_color='#264653',\n                      text=q9_means, textposition='outside'))\nfig3.add_hline(y=3, line_dash='dash', line_color='#e63946',\n               annotation_text='Neutral (3.0)', annotation_position='right')\nfig3.update_layout(title='Perceptions of Monitoring and Privacy (Q9)',\n                   yaxis=dict(range=[0, 5.5], title='Mean Score (1-5)',\n                              gridcolor='#f0f0f0'),\n                   xaxis=dict(title='Statement', showgrid=False),\n                   plot_bgcolor='white')\nfig3.show()\n\n\n                            \n                                            \nMean Likert scores for Q9 - perceptions of social media monitoring (1 = Strongly Disagree, 5 = Strongly Agree)\n\n\n\n\n\n\n\n\nTipKey Finding\n\n\n\nRespondents strongly agreed that monitoring creates a culture of mistrust (mean 3.97) and that monitoring constitutes an invasion of privacy (mean 3.97), while showing moderate agreement that employers should only intervene when organisational impact is direct (mean 4.05).\n\n\n\n\n\nScenario Comparison - When is Discipline Appropriate?\n\n\nShow scenario comparison code\nstat, p_value = wilcoxon(df['q12_scenario1_num'], df['q13_scenario2_num'])\n\nscenario_labels = ['Scenario 1 - Political Opinion',\n                   'Scenario 2 - Offensive/Viral Post']\nscenario_means = [round(df['q12_scenario1_num'].mean(), 2),\n                  round(df['q13_scenario2_num'].mean(), 2)]\n\nfig5 = go.Figure()\nfig5.add_trace(go.Bar(x=scenario_labels, y=scenario_means,\n                      marker_color=['#2a9d8f', '#e76f51'],\n                      text=scenario_means, textposition='outside'))\nfig5.add_hline(y=3, line_dash='dash', line_color='#e63946',\n               annotation_text='Neutral (3.0)', annotation_position='right')\nfig5.add_annotation(x=0.5, y=5.1, xref='paper',\n                    text=f'Wilcoxon W={round(stat,1)}, p&lt;0.0001***',\n                    showarrow=False, font=dict(color='darkred', size=11),\n                    bgcolor='lightyellow', bordercolor='darkred')\nfig5.update_layout(title='Disciplinary Appropriateness by Scenario (Q12 vs Q13)',\n                   yaxis=dict(range=[0, 5.5], title='Mean Appropriateness (1-5)',\n                              gridcolor='#f0f0f0'),\n                   xaxis=dict(showgrid=False),\n                   plot_bgcolor='white')\nfig5.show()\n\n\n                            \n                                            \nComparison of disciplinary appropriateness scores across two scenarios - Wilcoxon signed-rank test confirms statistically significant difference (p &lt; 0.0001)\n\n\n\n\n\n\n\n\nImportantStatistical Finding\n\n\n\nThe Wilcoxon signed-rank test confirmed a statistically significant difference between the two scenarios (p &lt; 0.0001). Respondents rated discipline for an offensive/viral post (Scenario 2, mean 3.97) as significantly more appropriate than for a political opinion post (Scenario 1, mean 2.40). This suggests that context and content type are central to perceptions of legitimacy.\n\n\n\n\n\nBehavioural Impact of Monitoring Awareness\n\n\nShow behavioural impact code\nq14_labels = [\n    'Monitoring affects how I use SM',\n    'I avoid posting opinions online',\n    'I consider how posts reflect on employer',\n    'Monitoring reduces trust in management',\n    'I feel comfortable expressing opinions'\n]\nq14_cols = ['q14a_monitoring_affects_usage_num','q14b_avoid_opinions_num',\n            'q14c_consider_employer_reflection_num','q14d_reduces_trust_num',\n            'q14e_comfortable_expressing_num']\nq14_means = [round(df[col].mean(), 2) for col in q14_cols]\n\nfig6 = go.Figure()\nfig6.add_trace(go.Bar(x=q14_labels, y=q14_means,\n                      marker_color='#264653',\n                      text=q14_means, textposition='outside'))\nfig6.add_hline(y=3, line_dash='dash', line_color='#e63946',\n               annotation_text='Neutral (3.0)', annotation_position='right')\nfig6.update_layout(title='Behavioural Impact of Monitoring Awareness (Q14)',\n                   yaxis=dict(range=[0, 5.5], title='Mean Score (1-5)',\n                              gridcolor='#f0f0f0'),\n                   xaxis=dict(showgrid=False),\n                   plot_bgcolor='white')\nfig6.show()\n\n\n                            \n                                            \nMean scores for Q14 - how awareness of monitoring affects employee behaviour online\n\n\n\n\n\nDescriptive Statistics Summary\n\n\nShow summary table code\nall_cols = ['q9a_right_to_monitor_num','q9b_invasion_privacy_num',\n            'q9c_intervene_if_affects_org_num','q9d_improves_reputation_num',\n            'q9e_culture_mistrust_num','q10_appropriate_discipline_num',\n            'q11_discipline_proportionate_num','q12_scenario1_num',\n            'q13_scenario2_num','q14a_monitoring_affects_usage_num',\n            'q14b_avoid_opinions_num','q14c_consider_employer_reflection_num',\n            'q14d_reduces_trust_num','q14e_comfortable_expressing_num']\n\nlabels = [\n    'Q9a: Right to monitor public SM',\n    'Q9b: Monitoring = invasion of privacy',\n    'Q9c: Only intervene if affects org',\n    'Q9d: Monitoring improves reputation',\n    'Q9e: Creates culture of mistrust',\n    'Q10: Discipline is appropriate',\n    'Q11: Discipline is proportionate',\n    'Q12: Scenario 1 - Political opinion',\n    'Q13: Scenario 2 - Offensive/viral post',\n    'Q14a: Monitoring affects usage',\n    'Q14b: Avoid posting opinions',\n    'Q14c: Consider employer reflection',\n    'Q14d: Monitoring reduces trust',\n    'Q14e: Comfortable expressing freely'\n]\n\nsummary = pd.DataFrame({\n    'Question': labels,\n    'Mean': [round(df[c].mean(), 2) for c in all_cols],\n    'Std Dev': [round(df[c].std(), 2) for c in all_cols],\n    'Min': [df[c].min() for c in all_cols],\n    'Max': [df[c].max() for c in all_cols]\n})\n\nprint(summary.to_string(index=False))\n\n\n                              Question  Mean  Std Dev  Min  Max\n       Q9a: Right to monitor public SM  2.62     1.08    1    4\n Q9b: Monitoring = invasion of privacy  3.48     1.15    1    5\n    Q9c: Only intervene if affects org  4.00     0.97    1    5\n   Q9d: Monitoring improves reputation  2.94     1.05    1    5\n      Q9e: Creates culture of mistrust  3.73     0.85    2    5\n        Q10: Discipline is appropriate  3.00     1.05    1    5\n      Q11: Discipline is proportionate  3.24     0.78    1    5\n   Q12: Scenario 1 - Political opinion  2.37     1.22    1    5\nQ13: Scenario 2 - Offensive/viral post  3.81     1.34    1    5\n        Q14a: Monitoring affects usage  3.87     1.02    1    5\n          Q14b: Avoid posting opinions  3.32     1.20    1    5\n    Q14c: Consider employer reflection  2.94     1.29    1    5\n        Q14d: Monitoring reduces trust  3.68     1.01    1    5\n   Q14e: Comfortable expressing freely  3.05     1.05    1    5"
+  },
+  {
+    "objectID": "projects/list/dissertation.html#reflections",
+    "href": "projects/list/dissertation.html#reflections",
+    "title": "Employee Social Media Monitoring",
+    "section": "Reflections",
+    "text": "Reflections\nThis project was my first experience conducting original primary research from design through to statistical analysis. Building the survey instrument, collecting responses across multiple countries, and then writing Python to clean, encode, and visualise the data gave me an end-to-end understanding of the research process that no secondary data project could replicate.\nThe Wilcoxon test result was the most surprising finding. The scale of the difference between the two scenarios (mean gap of 1.57) suggested that employees draw a very clear line between political expression and harmful/offensive content when judging disciplinary legitimacy.\n\n\nCover image via Freepik"
+  },
+  {
+    "objectID": "projects/list/dissertation.html#footnotes",
+    "href": "projects/list/dissertation.html#footnotes",
+    "title": "Employee Social Media Monitoring",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe Wilcoxon signed-rank test is a non-parametric test used when data does not meet the assumptions of normality. Appropriate here given the ordinal Likert scale used.↩︎"
+  },
+  {
+    "objectID": "projects/list/ml-paper.html",
+    "href": "projects/list/ml-paper.html",
+    "title": "Stock Market Direction Prediction",
+    "section": "",
+    "text": "This research paper applied four supervised machine learning classifiers to predict the next-day price direction of the SPY ETF (S&P 500 tracker) using historical price-based technical indicators. The study was conducted across three iterative feature configurations, guided by prior literature and correlation analysis.\n\n\n\n\n\n\nNoteResearch Question\n\n\n\nHow effectively can supervised machine learning classification algorithms predict next-day price direction of the SPY ETF using historical price-based technical indicators?\n\n\nThe dataset contained 4,853 daily OHLCV observations spanning 2005 to 2024, sourced from Kaggle. After preprocessing, 4,804 rows were used for modelling. A chronological 70/30 train/test split was applied, training on data encompassing the 2008 financial crisis, and testing on the COVID-19 shock and post-pandemic inflationary period."
+  },
+  {
+    "objectID": "projects/list/ml-paper.html#overview",
+    "href": "projects/list/ml-paper.html#overview",
+    "title": "Stock Market Direction Prediction",
+    "section": "",
+    "text": "This research paper applied four supervised machine learning classifiers to predict the next-day price direction of the SPY ETF (S&P 500 tracker) using historical price-based technical indicators. The study was conducted across three iterative feature configurations, guided by prior literature and correlation analysis.\n\n\n\n\n\n\nNoteResearch Question\n\n\n\nHow effectively can supervised machine learning classification algorithms predict next-day price direction of the SPY ETF using historical price-based technical indicators?\n\n\nThe dataset contained 4,853 daily OHLCV observations spanning 2005 to 2024, sourced from Kaggle. After preprocessing, 4,804 rows were used for modelling. A chronological 70/30 train/test split was applied, training on data encompassing the 2008 financial crisis, and testing on the COVID-19 shock and post-pandemic inflationary period."
+  },
+  {
+    "objectID": "projects/list/ml-paper.html#research-pipeline",
+    "href": "projects/list/ml-paper.html#research-pipeline",
+    "title": "Stock Market Direction Prediction",
+    "section": "Research Pipeline",
+    "text": "Research Pipeline\nThe study was structured across three iterations, each refining the feature set based on correlation analysis and model performance:\n\n\n\n\n\nflowchart LR\n    A[Iteration 1 - Baseline\\n9 Features] --&gt; B[Correlation Analysis\\nMulticollinearity Check]\n    B --&gt; C[Iteration 2 - Expanded\\n11 Features]\n    C --&gt; D[Iteration 3 - Refined\\nMomentum-Only\\n9 Features]\n    style A fill:#264653,color:#fff\n    style B fill:#6c757d,color:#fff\n    style C fill:#264653,color:#fff\n    style D fill:#2a9d8f,color:#fff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIteration\nFeature Set\nKey Change\n\n\n\n\nIteration 1\nSMA, RSI, MACD, STD, Volume, Lags\nBaseline configuration\n\n\nIteration 2\n+ ROC, Williams R, Stochastic, CCI, OBV\nExpanded with momentum indicators\n\n\nIteration 3\nMomentum-only, volatility/volume removed\nRefined after multicollinearity analysis\n\n\n\n\n\n\n\n\n\nTipKey Design Decision\n\n\n\nA chronological 70/30 split was used rather than random shuffling — random shuffling would introduce look-ahead bias by allowing the model to train on future observations, invalidating the out-of-sample evaluation."
+  },
+  {
+    "objectID": "projects/list/ml-paper.html#model-performance-summary",
+    "href": "projects/list/ml-paper.html#model-performance-summary",
+    "title": "Stock Market Direction Prediction",
+    "section": "Model Performance Summary",
+    "text": "Model Performance Summary\nThe table below summarises accuracy and AUC-ROC across all three iterations. The naive baseline was 54.4% – the proportion of up days in the dataset.\n\n\n\n\n\n\n\n\n\n\n\n\nModel\nIT1 Acc\nIT1 AUC\nIT2 Acc\nIT2 AUC\nIT3 Acc\nIT3 AUC\n\n\n\n\nLogistic Regression\n0.4868\n0.4891\n0.4882\n0.4863\n0.5139\n0.4908\n\n\nRandom Forest\n0.4792\n0.4890\n0.4868\n0.4890\n0.4764\n0.4844\n\n\nGradient Boosting\n0.4820\n0.5106\n0.4799\n0.4936\n0.5125\n0.4984\n\n\nXGBoost\n0.4827\n0.5049\n0.4792\n0.4863\n0.4806\n0.4852\n\n\n\n\n\n\n\n\n\nImportantKey Finding\n\n\n\nEvery model performed below the naive baseline of 54.4% across all iterations. AUC-ROC values consistently ranged from 0.48 to 0.51 – near-random classification. This is consistent with weak-form Efficient Market Hypothesis (EMH), suggesting that historical price data alone does not carry sufficient predictive signal for next-day SPY direction."
+  },
+  {
+    "objectID": "projects/list/ml-paper.html#active-code-iteration-3-analysis",
+    "href": "projects/list/ml-paper.html#active-code-iteration-3-analysis",
+    "title": "Stock Market Direction Prediction",
+    "section": "Active Code – Iteration 3 Analysis",
+    "text": "Active Code – Iteration 3 Analysis\nThe following code reproduces the full Iteration 3 pipeline. The refined momentum-only configuration that produced the strongest results.\n\nSetup and Data Loading\n\n\nShow setup and imports\nimport numpy as np\nimport pandas as pd\nimport plotly.express as px\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier\nfrom xgboost import XGBClassifier\nfrom sklearn.metrics import (accuracy_score, roc_auc_score, precision_score,\n                             recall_score, f1_score, confusion_matrix, roc_curve)\nimport ta\nimport warnings\nwarnings.filterwarnings('ignore')\n\n# Load dataset\ndf = pd.read_csv('SPY_dataset.csv')\ndf['date'] = pd.to_datetime(df['date'])\ndf.set_index('date', inplace=True)\n\nprint(f\"Dataset loaded: {df.shape[0]} rows, {df.shape[1]} columns\")\nprint(f\"Date range: {df.index.min().date()} to {df.index.max().date()}\")\n\n\nDataset loaded: 4853 rows, 8 columns\nDate range: 2005-01-03 to 2024-04-15\n\n\n\n\nFeature Engineering\n\n\nShow feature engineering code\n# Trend indicators\ndf['SMA_10'] = df['close'].rolling(window=10).mean()\ndf['SMA_50'] = df['close'].rolling(window=50).mean()\ndf['SMA_Ratio'] = df['SMA_10'] / df['SMA_50']\n\n# Momentum indicators\nexp1 = df['close'].ewm(span=12).mean()\nexp2 = df['close'].ewm(span=26).mean()\ndf['MACD'] = exp1 - exp2\ndf['ROC_14'] = ta.momentum.ROCIndicator(close=df['close'], window=14).roc()\ndf['Stochastic_14'] = ta.momentum.StochasticOscillator(\n    high=df['high'], low=df['low'], close=df['close'], window=14).stoch()\ndf['CCI_20'] = ta.trend.CCIIndicator(\n    high=df['high'], low=df['low'], close=df['close'], window=20).cci()\ndf['OBV'] = ta.volume.OnBalanceVolumeIndicator(\n    close=df['close'], volume=df['volume']).on_balance_volume()\n\n# Lag features\ndf['Lag_1_Return'] = df['change_percent'].shift(1)\ndf['Lag_5_Return'] = df['change_percent'].shift(5)\n\n# Target variable - binary direction label\ndf['Target'] = (df['close'].shift(-1) &gt; df['close']).astype(int)\n\n# Drop NaN rows\ndf.dropna(inplace=True)\n\nprint(f\"Shape after feature engineering: {df.shape}\")\nprint(f\"Target distribution:\\n{df['Target'].value_counts()}\")\nprint(f\"Naive baseline: {df['Target'].mean()*100:.1f}%\")\n\n\nShape after feature engineering: (4804, 19)\nTarget distribution:\nTarget\n1    2611\n0    2193\nName: count, dtype: int64\nNaive baseline: 54.4%\n\n\n\n\nSPY Price History and Train/Test Split\n\n\nShow train/test split code\n# Iteration 3 - momentum-only feature set\nfeature_cols = ['SMA_50', 'SMA_Ratio', 'MACD', 'ROC_14', 'Stochastic_14',\n                'CCI_20', 'OBV', 'Lag_1_Return', 'Lag_5_Return']\n\nsplit_index = int(len(df) * 0.7)\nsplit_date = df.index[split_index]\n\nfig = go.Figure()\nfig.add_trace(go.Scatter(\n    x=df.index[:split_index], y=df['close'][:split_index],\n    mode='lines', name='Training Set',\n    line=dict(color='#264653', width=1)))\nfig.add_trace(go.Scatter(\n    x=df.index[split_index:], y=df['close'][split_index:],\n    mode='lines', name='Test Set',\n    line=dict(color='#2a9d8f', width=1)))\nfig.add_trace(go.Scatter(\n    x=[split_date, split_date], y=[df['close'].min(), df['close'].max()],\n    mode='lines', name=f'Split: {split_date.strftime(\"%Y-%m-%d\")}',\n    line=dict(color='#e63946', dash='dash', width=1.5)))\nfig.update_layout(\n    title='SPY Closing Price 2005-2024 with Chronological Train/Test Split',\n    xaxis_title='Date', yaxis_title='Closing Price (USD)',\n    plot_bgcolor='white',\n    yaxis=dict(gridcolor='#f0f0f0'),\n    xaxis=dict(showgrid=False))\nfig.show()\n\n\n                            \n                                            \nSPY closing price 2005-2024 with chronological 70/30 train/test split\n\n\n\n\nModel Training and Evaluation\n\n\nShow model training code\nx = df[feature_cols]\ny = df['Target']\n\nx_train = x.iloc[:split_index]\nx_test = x.iloc[split_index:]\ny_train = y.iloc[:split_index]\ny_test = y.iloc[split_index:]\n\nscaler = StandardScaler()\nx_train_scaled = scaler.fit_transform(x_train)\nx_test_scaled = scaler.transform(x_test)\n\nmodels = {\n    'Logistic Regression': LogisticRegression(max_iter=1000, random_state=42),\n    'Random Forest': RandomForestClassifier(n_estimators=200, max_depth=5, random_state=42),\n    'Gradient Boosting': GradientBoostingClassifier(n_estimators=200, learning_rate=0.05,\n                                                     max_depth=3, random_state=42),\n    'XGBoost': XGBClassifier(n_estimators=200, learning_rate=0.05, max_depth=3,\n                              random_state=42, eval_metric='logloss')\n}\n\nmodel_names, accuracy_scores, precision_scores = [], [], []\nrecall_scores, f1_scores, roc_auc_scores = [], [], []\nconfusion_matrices, proba_scores = [], []\n\nfor name, model in models.items():\n    model.fit(x_train_scaled, y_train)\n    y_pred = model.predict(x_test_scaled)\n    y_proba = model.predict_proba(x_test_scaled)[:, 1]\n\n    model_names.append(name)\n    accuracy_scores.append(round(accuracy_score(y_test, y_pred), 4))\n    precision_scores.append(round(precision_score(y_test, y_pred), 4))\n    recall_scores.append(round(recall_score(y_test, y_pred), 4))\n    f1_scores.append(round(f1_score(y_test, y_pred), 4))\n    roc_auc_scores.append(round(roc_auc_score(y_test, y_proba), 4))\n    confusion_matrices.append(confusion_matrix(y_test, y_pred))\n    proba_scores.append(y_proba)\n    print(f\"{name} trained successfully\")\n\nresults_df = pd.DataFrame({\n    'Model': model_names,\n    'Accuracy': accuracy_scores,\n    'Precision': precision_scores,\n    'Recall': recall_scores,\n    'F1-Score': f1_scores,\n    'ROC-AUC': roc_auc_scores\n})\n\nprint(f\"\\nNaive baseline: {y_test.mean()*100:.1f}%\")\nprint(results_df.to_string(index=False))\n\n\nLogistic Regression trained successfully\nRandom Forest trained successfully\nGradient Boosting trained successfully\nXGBoost trained successfully\n\nNaive baseline: 54.1%\n              Model  Accuracy  Precision  Recall  F1-Score  ROC-AUC\nLogistic Regression    0.5139     0.5414  0.6628    0.5960   0.4908\n      Random Forest    0.4764     0.5239  0.3513    0.4206   0.4844\n  Gradient Boosting    0.5125     0.5463  0.5821    0.5636   0.4984\n            XGBoost    0.4806     0.5271  0.3859    0.4456   0.4852\n\n\n\n\nROC Curves\n\n\nShow ROC curve code\ncolors = ['#264653', '#2a9d8f', '#e76f51', '#e9c46a']\n\nfig = go.Figure()\nfor i, (name, proba, auc) in enumerate(zip(model_names, proba_scores, roc_auc_scores)):\n    fpr, tpr, _ = roc_curve(y_test, proba)\n    fig.add_trace(go.Scatter(\n        x=fpr, y=tpr, mode='lines', name=f'{name} (AUC = {auc})',\n        line=dict(color=colors[i], width=2)))\n\nfig.add_trace(go.Scatter(\n    x=[0, 1], y=[0, 1], mode='lines', name='Random Classifier (AUC = 0.5)',\n    line=dict(color='grey', dash='dash')))\n\nfig.update_layout(\n    title='ROC Curve Comparison - Iteration 3',\n    xaxis_title='False Positive Rate',\n    yaxis_title='True Positive Rate',\n    plot_bgcolor='white',\n    yaxis=dict(gridcolor='#f0f0f0'),\n    xaxis=dict(showgrid=False))\nfig.show()\n\n\n                            \n                                            \nROC curves for all four classifiers - Iteration 3 momentum-only configuration\n\n\n\n\nConfusion Matrices\n\n\nShow confusion matrix code\nfig = make_subplots(rows=2, cols=2,\n                    subplot_titles=model_names)\n\npositions = [(1,1), (1,2), (2,1), (2,2)]\n\nfor i, (cm, pos) in enumerate(zip(confusion_matrices, positions)):\n    fig.add_trace(\n        go.Heatmap(z=cm, colorscale='Blues',\n                   text=cm, texttemplate='%{text}',\n                   showscale=False,\n                   xaxis=f'x{i+1}', yaxis=f'y{i+1}'),\n        row=pos[0], col=pos[1])\n\nfig.update_layout(\n    title_text='Confusion Matrices - Iteration 3',\n    height=600,\n    plot_bgcolor='white')\nfig.show()\n\n\n                            \n                                            \nConfusion matrices for all four classifiers - Iteration 3"
+  },
+  {
+    "objectID": "projects/list/ml-paper.html#reflections",
+    "href": "projects/list/ml-paper.html#reflections",
+    "title": "Stock Market Direction Prediction",
+    "section": "Reflections",
+    "text": "Reflections\nThis was the most technically demanding project of my degree. The iterative approach taught me that more features do not automatically mean better models and that understanding why a model fails is as valuable as optimising it to succeed.\nThe near-random results were initially frustrating, but working through the Efficient Market Hypothesis literature reframed them entirely. A model that performs at 51% on SPY next-day prediction is not a failure. It is evidence that the market is doing its job. That conceptual shift, from “my model is broken” to “the market is efficient”, was the most important thing I learned from this project.1\n\n\nDataset: SPY Daily OHLCV Data 2005-2024, sourced from Kaggle. Cover image by brgfx via Freepik"
+  },
+  {
+    "objectID": "projects/list/ml-paper.html#footnotes",
+    "href": "projects/list/ml-paper.html#footnotes",
+    "title": "Stock Market Direction Prediction",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe full paper, including literature review, methodology, and discussion, is available on request.↩︎"
   }
 ]

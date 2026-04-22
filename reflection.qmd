@@ -74,12 +74,12 @@ cleaner, and the final result more cohesive from the beginning.
 ::: {.callout-tip icon=false}
 ### Technical Skills Checklist
 
-- [x] Quarto — building and deploying a multi-page website
-- [x] Git and GitHub — version control, incremental commits, GitHub Pages deployment
-- [x] Python — data analysis, machine learning, interactive Plotly visualisations
-- [x] SCSS — custom styling with Sass variables, Google Fonts, responsive layout
-- [x] Markdown — rich content with callouts, tables, footnotes, Mermaid diagrams
-- [x] HTML — raw HTML blocks, contact forms, custom divs
+- [x] Quarto – building and deploying a multi-page website
+- [x] Git and GitHub – version control, incremental commits, GitHub Pages deployment
+- [x] Python – data analysis, machine learning, interactive Plotly visualisations
+- [x] SCSS – custom styling with Sass variables, Google Fonts, responsive layout
+- [x] Markdown – rich content with callouts, tables, footnotes, Mermaid diagrams
+- [x] HTML – raw HTML blocks, contact forms, custom divs
 :::
 
 ---

@@ -4,14 +4,14 @@ page-layout: full
 ---
 
 ::: {.photography-intro}
-Living between Dublin and Canada for the past few years meant one thing — a lot of airports, a lot of new places, and always a camera nearby. What started as documenting trips turned into a genuine passion. These are some of my favourite shots from the places I have been lucky enough to explore.
+Living in Dublin for the past few years meant one thing. A lot of airports, a lot of new places, and always taking photos. What started as documenting trips turned into a genuine passion. These are some of my favourite shots from the places I have been lucky enough to explore.
 :::
 
 ---
 
 ## 🍁 North America
 
-### Ontario
+### Ontario (Home)
 
 ```{=html}
 <div class="photo-grid">
@@ -75,8 +75,7 @@ Living between Dublin and Canada for the past few years meant one thing — a lo
 
 ---
 
-## 🇮🇪 Ireland
-
+## Ireland 
 ```{=html}
 <div class="boarding-card-container">
   <img src="photography/boarding-cards/dublin.png" alt="Boarding card for Dublin & Ireland">

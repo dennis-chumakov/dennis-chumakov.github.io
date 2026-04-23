@@ -70,19 +70,6 @@ Profitable by **2028**
 
 ---
 
-## Market Sizing
-
-```{mermaid}
-flowchart TD
-    A[TAM - Total Addressable Market\n$2.83bn Global Smart Fridge Market] --> B[SAM - Serviceable Addressable Market\n$1.61bn Europe Smart Home Segment]
-    B --> C[SOM - Serviceable Obtainable Market\n$4.8M Initial European Launch Target]
-    style A fill:#264653,color:#fff
-    style B fill:#2a9d8f,color:#fff
-    style C fill:#e76f51,color:#fff
-```
-
----
-
 ## Venture Development Journey
 
 This project was built across six assignments, each representing a distinct stage

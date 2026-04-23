@@ -41,6 +41,15 @@ format:
       - styles.scss
     toc: false
     page-layout: full
+    mermaid:
+      theme: neutral
+      themeVariables:
+        primaryColor: "#264653"
+        primaryTextColor: "#ffffff"
+        primaryBorderColor: "#264653"
+        lineColor: "#264653"
+        secondaryColor: "#2a9d8f"
+        tertiaryColor: "#f5f5f5"
 
 
 

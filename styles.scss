@@ -1,8 +1,4 @@
 /*-- scss:defaults --*/
-
-// ============================================================
-// GOOGLE FONT
-// ============================================================
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
 
 // ============================================================
@@ -17,18 +13,24 @@ $teal:           #2a9d8f;
 $coral:          #e76f51;
 $gold:           #e9c46a;
 $muted:          #6c757d;
+$forest-green:   #3d5a40;
+$warm-brown:     #8b5e3c;
+$cream:          #f5f0e8;
 
 // ============================================================
 // THEME VARIABLES — LIGHT MODE (DEFAULT)
 // ============================================================
-$navbar-bg:                  $sage-green;
-$navbar-fg:                  $dark-brown;
-$body-bg:                    $sage-gray;
-$body-color:                 #2b2b2b;
-$link-color:                 $charcoal;
-$navbar-light-color:         $dark-brown;
+$navbar-bg:                  $forest-green;
+$navbar-fg:                  $cream;
+$body-bg:                    #ffffff;
+$body-color:                 #1a1a1a;
+$link-color:                 $forest-green;
+$navbar-light-color:         $cream;
 $navbar-light-hover-color:   $white;
 $navbar-light-active-color:  $white;
+$btn-primary-bg:             $warm-brown;
+$btn-primary-border:         $warm-brown;
+$btn-primary-color:          $white;
 
 /*-- scss:rules --*/
 
@@ -45,6 +47,53 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Google Sans Flex", sans-serif;
   font-weight: 600;
   letter-spacing: -0.01em;
+}
+
+// ============================================================
+// NAVBAR
+// ============================================================
+.navbar {
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+.navbar-brand img {
+  max-height: 70px;
+  width: auto;
+}
+
+.navbar .nav-link,
+.navbar-nav .nav-link,
+.navbar .nav-link:not(.active) {
+  position: relative;
+  color: $cream !important;
+  transition: color 0.25s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: $white;
+    transition: width 0.25s ease;
+  }
+
+  &:hover {
+    color: $white !important;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &.active {
+    color: $white !important;
+
+    &::after {
+      width: 100%;
+    }
+  }
 }
 
 // ============================================================

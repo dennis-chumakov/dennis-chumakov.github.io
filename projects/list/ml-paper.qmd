@@ -38,9 +38,9 @@ based on correlation analysis and model performance:
 
 ```{mermaid}
 flowchart LR
-    A[Iteration 1 - Baseline\n9 Features] --> B[Correlation Analysis\nMulticollinearity Check]
-    B --> C[Iteration 2 - Expanded\n11 Features]
-    C --> D[Iteration 3 - Refined\nMomentum-Only\n9 Features]
+    A[Iteration 1 - Baseline] --> B[Correlation Analysis]
+    B --> C[Iteration 2 - Expanded]
+    C --> D[Iteration 3 - Refined]
     style A fill:#264653,color:#fff
     style B fill:#6c757d,color:#fff
     style C fill:#264653,color:#fff

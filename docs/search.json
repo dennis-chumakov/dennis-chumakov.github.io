@@ -84,13 +84,6 @@
     "text": "Key Numbers\n\n\n💰 Investment Ask\n€100,000 for 9.5% equity\n€60k product development €40k marketing\n\n\n📈 Market Opportunity\nTAM $2.83bn SAM $1.61bn SOM $4.8M (Europe)\n\n\n📊 Financial Projections\n30,000 units by FY30 58.5% CAGR over 4 years Profitable by 2028"
   },
   {
-    "objectID": "projects/list/freshtrack.html#market-sizing",
-    "href": "projects/list/freshtrack.html#market-sizing",
-    "title": "FreshTRACK",
-    "section": "Market Sizing",
-    "text": "Market Sizing\n\n\n\n\n\nflowchart TD\n    A[TAM - Total Addressable Market\\n$2.83bn Global Smart Fridge Market] --&gt; B[SAM - Serviceable Addressable Market\\n$1.61bn Europe Smart Home Segment]\n    B --&gt; C[SOM - Serviceable Obtainable Market\\n$4.8M Initial European Launch Target]\n    style A fill:#264653,color:#fff\n    style B fill:#2a9d8f,color:#fff\n    style C fill:#e76f51,color:#fff"
-  },
-  {
     "objectID": "projects/list/freshtrack.html#venture-development-journey",
     "href": "projects/list/freshtrack.html#venture-development-journey",
     "title": "FreshTRACK",
@@ -242,42 +235,42 @@
     "href": "photography.html",
     "title": "Photography",
     "section": "",
-    "text": "Living in Dublin for the past few years meant one thing. A lot of airports, a lot of new places, and always taking photos. What started as documenting trips turned into a genuine passion. These are some of my favourite shots from the places I have been lucky enough to explore."
+    "text": "Living between Dublin and Canada for the past few years meant one thing — a lot of airports, a lot of new places, and always a camera nearby. What started as documenting trips turned into a genuine passion. These are some of my favourite shots from the places I have been lucky enough to explore."
   },
   {
     "objectID": "photography.html#north-america",
     "href": "photography.html#north-america",
     "title": "Photography",
     "section": "🍁 North America",
-    "text": "🍁 North America\n\nOntario (Home)\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\nKelowna\n\n  \n  \n  \n  \n\n\n  \n\n\n\nFlorida\n\n  \n  \n  \n  \n  \n\n\n  \n\n\n\nPunta Cana"
+    "text": "🍁 North America\n\n  Ontario\n  Canada\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  Kelowna\n  British Columbia · Canada\n\n\n  \n  \n  \n  \n\n\n  Florida\n  United States\n  \n    \n  \n\n\n  \n  \n  \n  \n  \n\n\n  Punta Cana\n  Dominican Republic"
   },
   {
     "objectID": "photography.html#ireland",
     "href": "photography.html#ireland",
     "title": "Photography",
-    "section": "Ireland",
-    "text": "Ireland\n\n  \n\n\nDublin & Ireland"
+    "section": "🇮🇪 Ireland",
+    "text": "🇮🇪 Ireland\n\n  Home Base · 2023-2025"
   },
   {
     "objectID": "photography.html#europe",
     "href": "photography.html#europe",
     "title": "Photography",
     "section": "🌍 Europe",
-    "text": "🌍 Europe\n\n  \n\n\nAmsterdam\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nCopenhagen\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nStockholm\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nEdinburgh & Glasgow\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nGermany\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nMallorca & Alicante\n\n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nNice & Paris\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n\n\n\nFaro & Lisbon"
+    "text": "🌍 Europe\n\n  Amsterdam\n  Netherlands\n  \n    \n  \n\n\n  \n  \n  \n  \n  \n  \n\n\n  Copenhagen\n  Denmark\n  \n    \n  \n\n\n  \n  \n  \n  \n  \n  \n\n\n  Stockholm\n  Sweden\n  \n    \n  \n\n\n  \n  \n  \n  \n  \n  \n\n\n  Edinburgh & Glasgow\n  United Kingdom\n  \n    \n  \n\n\n  \n  \n  \n  \n  \n  \n\n\n  Germany\n  Deutschland\n  \n    \n  \n\n\n  \n  \n  \n  \n  \n  \n\n\n  Mallorca & Alicante\n  Spain\n  \n    \n  \n\n\n  \n  \n  \n  \n  \n  \n\n\n  Nice & Paris\n  France\n  \n    \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  Faro & Lisbon\n  Portugal"
   },
   {
     "objectID": "photography.html#italy-road-trip",
     "href": "photography.html#italy-road-trip",
     "title": "Photography",
     "section": "🇮🇹 Italy Road Trip",
-    "text": "🇮🇹 Italy Road Trip\n\n  \n\n\nLake Como · Bormio · Dolomites · Venice · Parma"
+    "text": "🇮🇹 Italy Road Trip\n\n  Lake Como · Bormio · Dolomites · Venice · Parma\n  Italy · Summer 2024"
   },
   {
     "objectID": "photography.html#morocco",
     "href": "photography.html#morocco",
     "title": "Photography",
     "section": "🇲🇦 Morocco",
-    "text": "🇲🇦 Morocco\n\n  \n\n\nMarrakesh"
+    "text": "🇲🇦 Morocco\n\n  Marrakesh\n  Morocco"
   },
   {
     "objectID": "projects/list/dissertation.html",

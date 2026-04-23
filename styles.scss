@@ -164,4 +164,29 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.7;
 }
 
+// for regional headings 
+.photography-page h2 {
+  font-size: 2.5rem !important;
+  margin-top: 3rem !important;
+}
 
+//New rules for Photography page 
+.destination-header {
+  margin: 2rem 0 1rem 0;
+}
+
+.destination-title {
+  font-size: 1.8rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.25rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.destination-subtitle {
+  color: #6c757d !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 1rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+}

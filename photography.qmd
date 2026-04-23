@@ -4,14 +4,22 @@ page-layout: full
 ---
 
 ::: {.photography-intro}
-Living in Dublin for the past few years meant one thing. A lot of airports, a lot of new places, and always taking photos. What started as documenting trips turned into a genuine passion. These are some of my favourite shots from the places I have been lucky enough to explore.
+Living between Dublin and Canada for the past few years meant one thing.
+A lot of airports, a lot of new places, and always snapping photos. What
+started as documenting trips turned into a genuine passion. These are some
+of my favourite shots from the places I have been lucky enough to explore.
 :::
 
 ---
 
 ## 🍁 North America
 
-### Ontario (Home)
+```{=html}
+<div class="destination-header">
+  <h3 class="destination-title">Ontario</h3>
+  <p class="destination-subtitle">Canada</p>
+</div>
+```
 
 ```{=html}
 <div class="photo-grid">
@@ -26,7 +34,12 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 </div>
 ```
 
-### Kelowna
+```{=html}
+<div class="destination-header">
+  <h3 class="destination-title">Kelowna</h3>
+  <p class="destination-subtitle">British Columbia · Canada</p>
+</div>
+```
 
 ```{=html}
 <div class="photo-grid">
@@ -38,12 +51,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ```
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/florida.png" alt="Boarding card for Florida">
+<div class="destination-header">
+  <h3 class="destination-title">Florida</h3>
+  <p class="destination-subtitle">United States</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/florida.png" alt="Boarding card for Florida">
+  </div>
 </div>
 ```
-
-### Florida
 
 ```{=html}
 <div class="photo-grid">
@@ -56,12 +71,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ```
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/dominican-republic.png" alt="Boarding card for Punta Cana">
+<div class="destination-header">
+  <h3 class="destination-title">Punta Cana</h3>
+  <p class="destination-subtitle">Dominican Republic</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/dominican-republic.png" alt="Boarding card for Punta Cana">
+  </div>
 </div>
 ```
-
-### Punta Cana
 
 ```{=html}
 <div class="photo-grid">
@@ -75,37 +92,39 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 
 ---
 
-## Ireland 
+## 🇮🇪 Ireland
+
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/dublin.png" alt="Boarding card for Dublin & Ireland">
+<div class="destination-header">
+  <p class="destination-subtitle">Home Base · 2023-2025</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/dublin.png" alt="Boarding card for ">
+  </div>
 </div>
 ```
 
-### Dublin & Ireland
-
 ```{=html}
 <div class="photo-grid">
-  <img src="photography/ireland/dublin-1.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-10.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-11.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-12.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-13.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-14.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-15.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-16.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-17.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-18.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-19.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-2.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-20.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-3.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-4.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-5.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-6.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-7.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-8.jpg" alt="Dublin & Ireland photo">
-  <img src="photography/ireland/dublin-9.jpg" alt="Dublin & Ireland photo">
+  <img src="photography/ireland/dublin-1.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-10.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-11.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-12.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-13.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-14.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-15.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-16.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-17.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-18.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-19.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-2.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-20.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-3.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-4.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-5.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-6.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-7.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-8.jpg" alt=" photo">
+  <img src="photography/ireland/dublin-9.jpg" alt=" photo">
 </div>
 ```
 
@@ -114,12 +133,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ## 🌍 Europe
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/netherlands.png" alt="Boarding card for Amsterdam">
+<div class="destination-header">
+  <h3 class="destination-title">Amsterdam</h3>
+  <p class="destination-subtitle">Netherlands</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/netherlands.png" alt="Boarding card for Amsterdam">
+  </div>
 </div>
 ```
-
-### Amsterdam
 
 ```{=html}
 <div class="photo-grid">
@@ -133,12 +154,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ```
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/denmark.png" alt="Boarding card for Copenhagen">
+<div class="destination-header">
+  <h3 class="destination-title">Copenhagen</h3>
+  <p class="destination-subtitle">Denmark</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/denmark.png" alt="Boarding card for Copenhagen">
+  </div>
 </div>
 ```
-
-### Copenhagen
 
 ```{=html}
 <div class="photo-grid">
@@ -152,12 +175,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ```
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/sweden.png" alt="Boarding card for Stockholm">
+<div class="destination-header">
+  <h3 class="destination-title">Stockholm</h3>
+  <p class="destination-subtitle">Sweden</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/sweden.png" alt="Boarding card for Stockholm">
+  </div>
 </div>
 ```
-
-### Stockholm
 
 ```{=html}
 <div class="photo-grid">
@@ -171,12 +196,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ```
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/uk.png" alt="Boarding card for Edinburgh & Glasgow">
+<div class="destination-header">
+  <h3 class="destination-title">Edinburgh & Glasgow</h3>
+  <p class="destination-subtitle">United Kingdom</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/uk.png" alt="Boarding card for Edinburgh & Glasgow">
+  </div>
 </div>
 ```
-
-### Edinburgh & Glasgow
 
 ```{=html}
 <div class="photo-grid">
@@ -190,12 +217,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ```
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/germany.png" alt="Boarding card for Germany">
+<div class="destination-header">
+  <h3 class="destination-title">Germany</h3>
+  <p class="destination-subtitle">Deutschland</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/germany.png" alt="Boarding card for Germany">
+  </div>
 </div>
 ```
-
-### Germany
 
 ```{=html}
 <div class="photo-grid">
@@ -209,12 +238,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ```
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/spain.png" alt="Boarding card for Mallorca & Alicante">
+<div class="destination-header">
+  <h3 class="destination-title">Mallorca & Alicante</h3>
+  <p class="destination-subtitle">Spain</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/spain.png" alt="Boarding card for Mallorca & Alicante">
+  </div>
 </div>
 ```
-
-### Mallorca & Alicante
 
 ```{=html}
 <div class="photo-grid">
@@ -228,12 +259,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ```
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/france.png" alt="Boarding card for Nice & Paris">
+<div class="destination-header">
+  <h3 class="destination-title">Nice & Paris</h3>
+  <p class="destination-subtitle">France</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/france.png" alt="Boarding card for Nice & Paris">
+  </div>
 </div>
 ```
-
-### Nice & Paris
 
 ```{=html}
 <div class="photo-grid">
@@ -250,12 +283,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ```
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/portugal.png" alt="Boarding card for Faro & Lisbon">
+<div class="destination-header">
+  <h3 class="destination-title">Faro & Lisbon</h3>
+  <p class="destination-subtitle">Portugal</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/portugal.png" alt="Boarding card for Faro & Lisbon">
+  </div>
 </div>
 ```
-
-### Faro & Lisbon
 
 ```{=html}
 <div class="photo-grid">
@@ -276,12 +311,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ## 🇮🇹 Italy Road Trip
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/italy.png" alt="Boarding card for Lake Como · Bormio · Dolomites · Venice · Parma">
+<div class="destination-header">
+  <h3 class="destination-title">Lake Como · Bormio · Dolomites · Venice · Parma</h3>
+  <p class="destination-subtitle">Italy · Summer 2024</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/italy.png" alt="Boarding card for Lake Como · Bormio · Dolomites · Venice · Parma">
+  </div>
 </div>
 ```
-
-### Lake Como · Bormio · Dolomites · Venice · Parma
 
 ```{=html}
 <div class="photo-grid">
@@ -305,12 +342,14 @@ Living in Dublin for the past few years meant one thing. A lot of airports, a lo
 ## 🇲🇦 Morocco
 
 ```{=html}
-<div class="boarding-card-container">
-  <img src="photography/boarding-cards/morocco.png" alt="Boarding card for Marrakesh">
+<div class="destination-header">
+  <h3 class="destination-title">Marrakesh</h3>
+  <p class="destination-subtitle">Morocco</p>
+  <div class="boarding-card-container">
+    <img src="photography/boarding-cards/morocco.png" alt="Boarding card for Marrakesh">
+  </div>
 </div>
 ```
-
-### Marrakesh
 
 ```{=html}
 <div class="photo-grid">

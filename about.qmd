@@ -11,7 +11,7 @@ in Dublin, Ireland. The degree is unusual by design. I completed three years in 
 
 My academic focus sits at the intersection of business and data: how you collect 
 it, make sense of it, and turn it into decisions that actually matter. Outside the 
-classroom, I'm a photogrophare and traveller with a passion for learning about new cultures.
+classroom, I'm a photographer and traveller with a passion for learning about new cultures.
 I believe that the best way to understand something is to go and see it yourself. [^1]
 
 [^1]: The photography page on this site is a small record of that: a collection of  
@@ -52,14 +52,14 @@ flowchart LR
 ## Education
 
 ::: {.callout-note icon=false}
-### 🎓 Dublin City University — Global Business
+### 🎓 Dublin City University – Global Business
 **BA Global Business** · 2024–2026 · Dublin, Ireland  
 Modules include Machine Learning and Advanced Python, New Enterprise Development, 
 Business Strategy, Innovation Economics, Workflow & Data Management, and Business Ethics.
 :::
 
 ::: {.callout-note icon=false}
-### 🎓 Brock University — Business Administration
+### 🎓 Brock University – Business Administration
 **BBA (Hons) Business Administration** · 2021–2026 · St. Catharines, Ontario, Canada  
 Goodman School of Business. Focus on operations, data analytics, 
 and strategic management.

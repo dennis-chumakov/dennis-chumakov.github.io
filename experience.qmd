@@ -6,7 +6,7 @@ page-layout: article
 ## Work Experience
 
 ::: {.callout-note icon=false}
-### 🏢 HR Business Partner Intern — An Post
+### 🏢 HR Business Partner Intern – An Post
 **January 2025 – August 2025** · Dublin, Ireland
 
 - Developed Excel dashboards that contributed to a **4% reduction in absence rates** over six months

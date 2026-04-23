@@ -35,13 +35,13 @@ The dissertation was completed across four sequential components:
 
 ```{mermaid}
 flowchart LR
-    A[Research Proposal - Component 1] --> B[Literature Review - Component 2]
-    B --> C[Research Methodology - Component 3]
-    C --> D[Research Results - Component 4]
-    style A fill:#264653,color:#fff
-    style B fill:#264653,color:#fff
-    style C fill:#264653,color:#fff
-    style D fill:#2a9d8f,color:#fff
+    A["Research Proposal"] --> B["Literature Review"]
+    B --> C["Research Methodology"]
+    C --> D["Research Results"]
+    style A fill:#3d5a40,color:#fff
+    style B fill:#3d5a40,color:#fff
+    style C fill:#3d5a40,color:#fff
+    style D fill:#8b5e3c,color:#fff
 ```
 
 | Component | Description |

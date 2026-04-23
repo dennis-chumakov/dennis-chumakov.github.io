@@ -38,13 +38,13 @@ based on correlation analysis and model performance:
 
 ```{mermaid}
 flowchart LR
-    A[Iteration 1 - Baseline] --> B[Correlation Analysis]
-    B --> C[Iteration 2 - Expanded]
-    C --> D[Iteration 3 - Refined]
-    style A fill:#264653,color:#fff
-    style B fill:#6c757d,color:#fff
-    style C fill:#264653,color:#fff
-    style D fill:#2a9d8f,color:#fff
+    A["Iteration 1 – Baseline"] --> B["Correlation Analysis"]
+    B --> C["Iteration 2 – Expanded"]
+    C --> D["Iteration 3 – Refined"]
+    style A fill:#3d5a40,color:#fff
+    style B fill:#3d5a40,color:#fff
+    style C fill:#3d5a40,color:#fff
+    style D fill:#8b5e3c,color:#fff
 ```
 
 | Iteration | Feature Set | Key Change |

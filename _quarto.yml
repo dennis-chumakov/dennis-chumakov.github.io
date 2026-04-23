@@ -45,12 +45,13 @@ format:
     mermaid:
       theme: neutral
       themeVariables:
-        primaryColor: "#264653"
+        primaryColor: "#3d5a40"
         primaryTextColor: "#ffffff"
-        primaryBorderColor: "#264653"
-        lineColor: "#264653"
-        secondaryColor: "#2a9d8f"
+        primaryBorderColor: "#3d5a40"
+        lineColor: "#3d5a40"
+        secondaryColor: "#3d5a40"
         tertiaryColor: "#f5f5f5"
+      fig-width: 8
 
 
 

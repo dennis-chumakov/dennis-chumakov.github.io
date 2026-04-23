@@ -151,7 +151,7 @@
     "href": "about.html#my-journey",
     "title": "About Me",
     "section": "My Journey",
-    "text": "My Journey\n\n\n\n\n\nflowchart LR\n    A[\"2021 – Brock University\"] --&gt; B[\"2022 – 1st Internship\"]\n    B --&gt; C[\"2023 – DCU Dublin\"]\n    C --&gt; D[\"2024 – 2nd Internship\"]\n    D --&gt; E[\"2025/2026 – Final Year\"]\n    style A fill:#3d5a40,color:#fff\n    style B fill:#3d5a40,color:#fff\n    style C fill:#3d5a40,color:#fff\n    style D fill:#3d5a40,color:#fff\n    style E fill:#8b5e3c,color:#fff"
+    "text": "My Journey\n\n\n\n\n\nflowchart LR\n    A[\"2021 – Brock University\"] --&gt; B[\"2024 – 1st Internship\"]\n    B --&gt; C[\"2024 – DCU Dublin\"]\n    C --&gt; D[\"2025 – 2nd Internship\"]\n    D --&gt; E[\"2025/2026 – Final Year\"]\n    style A fill:#3d5a40,color:#fff\n    style B fill:#3d5a40,color:#fff\n    style C fill:#3d5a40,color:#fff\n    style D fill:#3d5a40,color:#fff\n    style E fill:#8b5e3c,color:#fff"
   },
   {
     "objectID": "about.html#skills",

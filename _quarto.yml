@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Dennis Chumakov"
-  favicon: favicon/favicon.ico
+  favicon: favicon/favicon.png
   navbar:
     title: false
     logo: images/dc_logo.png

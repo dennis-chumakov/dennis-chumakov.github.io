@@ -36,7 +36,7 @@ No subscription. No complexity.
 
 {{< video https://youtu.be/1A4hBhPMogE >}}
 
-![FreshTRACK prototype — in-fridge camera unit and companion app](../../images/freshtrack-prototype.png){fig-alt="FreshTRACK prototype image" fig-align="center"}
+![FreshTRACK prototype: in-fridge camera unit and companion app](../../images/freshtrack-prototype.png){fig-alt="FreshTRACK prototype image" fig-align="center"}
 
 ---
 

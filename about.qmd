@@ -22,24 +22,18 @@ my favourite photos from home and my travels abroad.
 ## My Journey
 
 ```{mermaid}
-timeline
-    title Academic & Professional Journey
-    2021 : Started BBA at Brock University
-         : St. Catharines, Ontario, Canada
-    2024 : First internship experience
-         : Developed a passion for the automotive industry and operations 
-    2024 : Transferred to DCU for Global Business
-         : Dublin, Ireland
-    2025 : Second internship experience
-         : Developed Excel and Power BI skills
-         : Found my passion for data analytics
-    2025/2026 : Final Year of College 
-         : FreshTRACK Startup — New Enterprise Development 
-         : Machine Learning research paper
-         : Undergraduate Dissertation
-         : ePortfolio
-         : Brock and DCU Graduation
+flowchart LR
+    A["2021<br/>Brock University<br/>St. Catharines, Canada"] --> B["2022<br/>First Internship<br/>Automotive Industry"]
+    B --> C["2023<br/>Transferred to DCU<br/>Dublin, Ireland"]
+    C --> D["2024<br/>Second Internship<br/>An Post, Dublin"]
+    D --> E["2025/2026<br/>Final Year<br/>Dissertation · ML · FreshTRACK"]
+    style A fill:#264653,color:#fff
+    style B fill:#264653,color:#fff
+    style C fill:#2a9d8f,color:#fff
+    style D fill:#2a9d8f,color:#fff
+    style E fill:#264653,color:#fff
 ```
+
 
 ---
 

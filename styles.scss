@@ -1,101 +1,193 @@
 /*-- scss:defaults --*/
 
-// Import font
+// ============================================================
+// GOOGLE FONT
+// ============================================================
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
 
-// Colours
-$light-sage: #8aa68b;
-$sage-gray: #d2d6d2;
-$brown-gray: #474336;
-$white-active: #ffffff;
+// ============================================================
+// COLOUR PALETTE
+// ============================================================
+$sage-green:     #8aa68b;
+$sage-gray:      #d2d6d2;
+$dark-brown:     #474336;
+$white:          #ffffff;
+$charcoal:       #264653;
+$teal:           #2a9d8f;
+$coral:          #e76f51;
+$gold:           #e9c46a;
+$muted:          #6c757d;
 
-// Base colours
-$navbar-bg: $light-sage;
-$navbar-fg: $brown-gray;
-$body-bg: $sage-gray;
-
-// Bootstrap navbar variables
-$navbar-light-color: $brown-gray;
-$navbar-light-hover-color: $white-active;
-$navbar-light-active-color: $white-active;
+// ============================================================
+// THEME VARIABLES — LIGHT MODE (DEFAULT)
+// ============================================================
+$navbar-bg:                  $sage-green;
+$navbar-fg:                  $dark-brown;
+$body-bg:                    $sage-gray;
+$body-color:                 #2b2b2b;
+$link-color:                 $charcoal;
+$navbar-light-color:         $dark-brown;
+$navbar-light-hover-color:   $white;
+$navbar-light-active-color:  $white;
 
 /*-- scss:rules --*/
 
+// ============================================================
+// BASE TYPOGRAPHY
+// ============================================================
 body {
   font-family: "Google Sans Flex", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
-h1, h2, h3, h4, h5, h6,
-.navbar,
-.navbar .nav-link,
-.navbar-brand {
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+// ============================================================
+// DARK MODE
+// ============================================================
+body.dark-mode {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0 !important;
+
+  .navbar {
+    background-color: #111111 !important;
+  }
+
+  .navbar .nav-link {
+    color: #cccccc !important;
+  }
+
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active {
+    color: $white !important;
+  }
+
+  .card {
+    background-color: #2a2a2a !important;
+    border-color: #333333 !important;
+    color: #e0e0e0 !important;
+  }
+
+  .callout-note {
+    background-color: rgba(38, 70, 83, 0.2) !important;
+  }
+
+  .callout-tip {
+    background-color: rgba(42, 157, 143, 0.2) !important;
+  }
+
+  .callout-important {
+    background-color: rgba(231, 111, 81, 0.2) !important;
+  }
+
+  .quarto-about-jolla h1.title,
+  .quarto-about-jolla p.subtitle {
+    color: #e0e0e0 !important;
+  }
+
+  .destination-subtitle {
+    color: #aaaaaa !important;
+  }
+}
+
+// Dark mode toggle button
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  background-color: $charcoal;
+  color: $white;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $teal;
+  }
+}
+
+// ============================================================
+// NAVBAR
+// ============================================================
+.navbar {
   font-family: "Google Sans Flex", sans-serif;
 }
 
-//Navbar Logo
 .navbar-brand img {
   max-height: 70px;
   width: auto;
 }
 
-
-// Navbar links
 .navbar .nav-link {
   position: relative;
-  color: $brown-gray !important;
+  color: $dark-brown !important;
   transition: color 0.25s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: $white;
+    transition: width 0.25s ease;
+  }
+
+  &:hover {
+    color: $white !important;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &.active {
+    color: $white !important;
+
+    &::after {
+      width: 100%;
+    }
+  }
 }
 
-// Underline animation for navbar links 
-.navbar .nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background-color: $white-active;
-  transition: width 0.25s ease;
-}
+// ============================================================
+// TITLE BLOCKS
+// ============================================================
 
-// Hover state
-.navbar .nav-link:hover {
-  color: $white-active !important;
-}
-
-.navbar .nav-link:hover::after {
-  width: 100%;
-}
-
-// Active page
-.navbar .nav-link.active {
-  color: $white-active !important;
-}
-
-.navbar .nav-link.active::after {
-  width: 100%;
-}
-
-
-// Hide title blocks globally
+// Hide globally
 .quarto-title-block,
 #title-block-header {
   display: none !important;
 }
 
-//Restore and centre on landing page only 
+// Restore on landing page
 .quarto-about-jolla #title-block-header,
 .quarto-about-jolla .quarto-title-block {
   display: block !important;
   text-align: center !important;
 }
 
-.quarto-about-jolla h1.title,
-.quarto-about-jolla p.subtitle {
-  text-align: center !important;
+.quarto-about-jolla .quarto-title-meta {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-//Fix the Gap between title and subtitle on landing page 
 .quarto-about-jolla #title-block-header {
   margin: 0 !important;
   padding: 0 !important;
@@ -106,23 +198,100 @@ h1, h2, h3, h4, h5, h6,
   padding: 0 !important;
 }
 
-.quarto-about-jolla .quarto-title-meta {
-  display: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 .quarto-about-jolla h1.title {
+  text-align: center !important;
   margin-bottom: 0.25rem !important;
   padding: 0 !important;
 }
 
 .quarto-about-jolla p.subtitle {
+  text-align: center !important;
   margin-top: 0 !important;
   padding: 0 !important;
 }
 
-//For grid and boarding card styling on photography page 
+// ============================================================
+// CALLOUT BLOCKS
+// ============================================================
+.callout {
+  border-radius: 4px !important;
+  border-left-width: 3px !important;
+}
+
+.callout-note {
+  background-color: rgba(38, 70, 83, 0.05) !important;
+  border-left-color: $charcoal !important;
+}
+
+.callout-tip {
+  background-color: rgba(42, 157, 143, 0.05) !important;
+  border-left-color: $teal !important;
+}
+
+.callout-important {
+  background-color: rgba(231, 111, 81, 0.05) !important;
+  border-left-color: $coral !important;
+}
+
+.callout-caution {
+  background-color: rgba(38, 70, 83, 0.05) !important;
+  border-left-color: $charcoal !important;
+}
+
+.callout-warning {
+  background-color: rgba(233, 196, 106, 0.08) !important;
+  border-left-color: $gold !important;
+}
+
+.callout-header {
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+}
+
+// ============================================================
+// PHOTOGRAPHY PAGE
+// ============================================================
+.photography-intro {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.destination-header {
+  margin: 2rem 0 1rem 0;
+}
+
+.destination-title {
+  font-size: 1.8rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.25rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.destination-subtitle {
+  color: $muted !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 1rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+}
+
+.boarding-card-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1rem 0;
+
+  img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+}
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -143,50 +312,11 @@ h1, h2, h3, h4, h5, h6,
   transform: scale(1.02) !important;
 }
 
-.boarding-card-container {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0 1rem 0;
-
-  img {
-    max-width: 500px;
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  }
-}
-
-.photography-intro {
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.7;
-}
-
-// for regional headings 
-.photography-page h2 {
-  font-size: 2.5rem !important;
-  margin-top: 3rem !important;
-}
-
-//New rules for Photography page 
-.destination-header {
-  margin: 2rem 0 1rem 0;
-}
-
-.destination-title {
-  font-size: 1.8rem !important;
-  font-weight: 600 !important;
-  margin-bottom: 0.25rem !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-}
-
-.destination-subtitle {
-  color: #6c757d !important;
-  font-size: 0.95rem !important;
-  margin-bottom: 1rem !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.1em !important;
+// ============================================================
+// SMALL TEXT UTILITY
+// ============================================================
+.small-text {
+  font-size: 0.8rem;
+  color: $muted;
+  margin-top: 1rem;
 }

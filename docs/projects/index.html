@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9030f33f87e5e8c6b9bf21e232396d68.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2de66bb79c0a8d1a155a5a4848af454e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -324,6 +324,43 @@ Apr 15, 2025
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
+<script>
+
+const btn = document.createElement('button');
+
+btn.className = 'dark-mode-toggle';
+
+btn.innerHTML = '🌙';
+
+btn.title = 'Toggle dark mode';
+
+document.body.appendChild(btn);
+
+
+
+btn.addEventListener('click', () => {
+
+  document.body.classList.toggle('dark-mode');
+
+  btn.innerHTML = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+
+  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+
+});
+
+
+
+// Persist preference across pages
+
+if (localStorage.getItem('darkMode') === 'true') {
+
+  document.body.classList.add('dark-mode');
+
+  btn.innerHTML = '☀️';
+
+}
+
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

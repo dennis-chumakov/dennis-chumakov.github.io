@@ -26,7 +26,7 @@ timeline
     title Academic & Professional Journey
     2021 : Started BBA at Brock University
          : St. Catharines, Ontario, Canada
-    2022 : First internship experience
+    2024 : First internship experience
          : Developed a passion for the automotive industry and operations 
     2024 : Transferred to DCU for Global Business
          : Dublin, Ireland
@@ -37,7 +37,8 @@ timeline
          : FreshTRACK Startup — New Enterprise Development 
          : Machine Learning research paper
          : Undergraduate Dissertation
-         : ePortfolio and graduation
+         : ePortfolio
+         : Brock and DCU Graduation
 ```
 
 ---

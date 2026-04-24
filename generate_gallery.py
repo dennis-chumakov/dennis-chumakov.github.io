@@ -4,7 +4,7 @@ sections = [
     {
         'heading': '## 🍁 North America',
         'destinations': [
-            {'folder': 'photography/north-america/ontario', 'title': 'Ontario', 'subtitle': 'Canada', 'boarding_card': None},
+            {'folder': 'photography/north-america/ontario', 'title': 'Ontario (Home)', 'subtitle': 'Canada', 'boarding_card': None},
             {'folder': 'photography/north-america/kelowna', 'title': 'Kelowna', 'subtitle': 'British Columbia · Canada', 'boarding_card': None},
             {'folder': 'photography/north-america/florida', 'title': 'Florida', 'subtitle': 'United States', 'boarding_card': 'photography/boarding-cards/florida.png'},
             {'folder': 'photography/north-america/dominican-republic', 'title': 'Punta Cana', 'subtitle': 'Dominican Republic', 'boarding_card': 'photography/boarding-cards/dominican-republic.png'},
@@ -13,7 +13,7 @@ sections = [
     {
         'heading': '## 🇮🇪 Ireland',
         'destinations': [
-            {'folder': 'photography/ireland', 'title': '', 'subtitle': 'Home Base · 2023-2025', 'boarding_card': 'photography/boarding-cards/dublin.png'},
+            {'folder': 'photography/ireland', 'title': '', 'subtitle': 'Home Base · 2024-2026', 'boarding_card': 'photography/boarding-cards/dublin.png'},
         ]
     },
     {

@@ -16,22 +16,22 @@ of my favourite shots from the places I have been lucky enough to explore.
 
 ```{=html}
 <div class="destination-header">
-  <h3 class="destination-title">Ontario</h3>
+  <h3 class="destination-title">Ontario (Home)</h3>
   <p class="destination-subtitle">Canada</p>
 </div>
 ```
 
 ```{=html}
 <div class="photo-grid">
-  <img src="photography/north-america/ontario/ontario-1.jpg" alt="Ontario photo">
-  <img src="photography/north-america/ontario/ontario-2.jpg" alt="Ontario photo">
-  <img src="photography/north-america/ontario/ontario-3.jpg" alt="Ontario photo">
-  <img src="photography/north-america/ontario/ontario-4.jpg" alt="Ontario photo">
-  <img src="photography/north-america/ontario/ontario-5.jpg" alt="Ontario photo">
-  <img src="photography/north-america/ontario/ontario-6.jpg" alt="Ontario photo">
-  <img src="photography/north-america/ontario/ontario-7.jpg" alt="Ontario photo">
-  <img src="photography/north-america/ontario/ontario-8.jpg" alt="Ontario photo">
-  <img src="photography/north-america/ontario/ontario-9.jpg" alt="Ontario photo">
+  <img src="photography/north-america/ontario/ontario-1.jpg" alt="Ontario (Home) photo">
+  <img src="photography/north-america/ontario/ontario-2.jpg" alt="Ontario (Home) photo">
+  <img src="photography/north-america/ontario/ontario-3.jpg" alt="Ontario (Home) photo">
+  <img src="photography/north-america/ontario/ontario-4.jpg" alt="Ontario (Home) photo">
+  <img src="photography/north-america/ontario/ontario-5.jpg" alt="Ontario (Home) photo">
+  <img src="photography/north-america/ontario/ontario-6.jpg" alt="Ontario (Home) photo">
+  <img src="photography/north-america/ontario/ontario-7.jpg" alt="Ontario (Home) photo">
+  <img src="photography/north-america/ontario/ontario-8.jpg" alt="Ontario (Home) photo">
+  <img src="photography/north-america/ontario/ontario-9.jpg" alt="Ontario (Home) photo">
 </div>
 ```
 
@@ -98,7 +98,7 @@ of my favourite shots from the places I have been lucky enough to explore.
 
 ```{=html}
 <div class="destination-header">
-  <p class="destination-subtitle">Home Base · 2023-2025</p>
+  <p class="destination-subtitle">Home Base · 2024-2026</p>
   <div class="boarding-card-container">
     <img src="photography/boarding-cards/dublin.png" alt="Boarding card for ">
   </div>

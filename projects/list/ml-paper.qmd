@@ -29,6 +29,8 @@ A chronological 70/30 train/test split was applied, training on data encompassin
 the 2008 financial crisis, and testing on the COVID-19 shock and post-pandemic
 inflationary period.
 
+[View Research Paper PDF](../../ml-paper//dennis-chumakov-ml-research-paper.pdf){target="_blank"}
+
 ---
 
 ## Research Pipeline

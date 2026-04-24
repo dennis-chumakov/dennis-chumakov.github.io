@@ -243,6 +243,13 @@ body.dark-mode {
     color: #8ab89a !important;
   }
 
+  //For cell-output of active code chunks 
+  .cell-output,
+  .cell-output pre,
+  .cell-output code {
+    color: #e0e0e0 !important;
+  }
+
 }
 
 // Dark mode toggle button

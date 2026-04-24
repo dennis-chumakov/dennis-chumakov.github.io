@@ -1,2 +1,49 @@
-/.quarto/
+# =========================
+# System Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Quarto / Web Output
+# =========================
+.quarto/
+_site/
+_book/
 **/*.quarto_ipynb
+
+# =========================
+# Python / Jupyter
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+venv/
+env/
+.env/
+
+# =========================
+# Sensitive Data / Secrets
+# =========================
+.env
+secrets.json
+credentials.json
+*.pem
+
+# =========================
+# Large Files / Data
+# =========================
+*.csv
+*.tsv
+*.dat
+*.sqlite
+*.db
+*.zip
+*.tar.gz
+
+# Allow specific small datasets needed for site build
+!projects/list/SPY_dataset.csv
+!projects/list/survey_sample.csv
+/.quarto/
